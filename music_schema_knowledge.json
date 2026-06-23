@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-06-23",
+    "description": "Single source of truth for the 4-folder macro schema. The DJ MUSIC SETUP HELPER agent reads this file at session start to derive all classification and folder-routing logic. New subgenres are appended here automatically when conservative creation is triggered."
+  },
+  "master_folders": [
+    {
+      "id": "folder_1",
+      "name": "DJ CHILL / GROOVE",
+      "bpm_min": 120,
+      "bpm_max": 126,
+      "local_path": "music",
+      "subgenres": [
+        {
+          "name": "Afro House",
+          "local_folder": "music/afro house",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "Deep House",
+          "local_folder": "music/deep house",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "Melodic House",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Progressive House",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Indie Dance",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Deep Techno",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        }
+      ]
+    },
+    {
+      "id": "folder_2",
+      "name": "DJ PEAK HOUSE / CLUB",
+      "bpm_min": 126,
+      "bpm_max": 132,
+      "local_path": "music",
+      "subgenres": [
+        {
+          "name": "Tech House",
+          "local_folder": "music/tech house",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "Bass House",
+          "local_folder": "music/bass house",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "House",
+          "local_folder": "music/house",
+          "spotify_playlist": null,
+          "notes": "General house catch-all"
+        },
+        {
+          "name": "Electro House",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Melbourne Bounce",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Speed Garage",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Breakbeat",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        }
+      ]
+    },
+    {
+      "id": "folder_3",
+      "name": "DJ FAST TECH / GROOVE",
+      "bpm_min": 138,
+      "bpm_max": 145,
+      "local_path": "music",
+      "subgenres": [
+        {
+          "name": "Techno",
+          "local_folder": "music/techno",
+          "spotify_playlist": null,
+          "notes": "Peak-time techno mapped here"
+        },
+        {
+          "name": "Minimal Techno",
+          "local_folder": "music/minimal techno",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "Trance",
+          "local_folder": "music/trance",
+          "spotify_playlist": null,
+          "notes": "Eurotrance / trance set"
+        },
+        {
+          "name": "Melodic Techno",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "trance_tecno folder used as melodic techno / trance-techno blend"
+        },
+        {
+          "name": "Hard Groove",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "High Tech",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Psytrance",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "Traditional 138–145 BPM range only; higher BPM moves to folder_4"
+        }
+      ]
+    },
+    {
+      "id": "folder_4",
+      "name": "DJ HARD / NEO-RAVE",
+      "bpm_min": 145,
+      "bpm_max": 175,
+      "local_path": "music",
+      "subgenres": [
+        {
+          "name": "Hard House",
+          "local_folder": "music/hard house",
+          "spotify_playlist": null,
+          "notes": null
+        },
+        {
+          "name": "Hard Techno",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Industrial",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Neo Trance",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Hypertechno",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Hard Dance",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Hard Trance",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Hardtekk",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Drum & Bass",
+          "local_folder": null,
+          "spotify_playlist": null,
+          "notes": "170+ BPM outlier; only classify here if BPM is confirmed above 170"
+        }
+      ]
+    }
+  ]
+}
