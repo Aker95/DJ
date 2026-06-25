@@ -1,1 +1,8 @@
 music/
+.env
+spotify_snapshot.json
+delta.json
+.spotify_cache
+__pycache__/
+*.pyc
+.venv/

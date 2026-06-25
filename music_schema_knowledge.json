@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0.0",
-    "last_updated": "2026-06-23",
+    "last_updated": "2026-06-24",
     "description": "Single source of truth for the 4-folder macro schema. The DJ MUSIC SETUP HELPER agent reads this file at session start to derive all classification and folder-routing logic. New subgenres are appended here automatically when conservative creation is triggered."
   },
   "master_folders": [
@@ -14,38 +14,38 @@
       "subgenres": [
         {
           "name": "Afro House",
-          "local_folder": "music/afro house",
+          "local_folder": "music/DJ CHILL - GROOVE/afro house",
           "spotify_playlist": null,
           "notes": null
         },
         {
           "name": "Deep House",
-          "local_folder": "music/deep house",
-          "spotify_playlist": null,
+          "local_folder": "music/DJ CHILL - GROOVE/deep house",
+          "spotify_playlist": "3cSdjYmyJBJgROSt3cDVai",
           "notes": null
         },
         {
           "name": "Melodic House",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ CHILL - GROOVE/melodic house",
+          "spotify_playlist": "24NQ7y3KMjJmb6CF6xSjod",
           "notes": "No local folder yet"
         },
         {
           "name": "Progressive House",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ CHILL - GROOVE/progressive house",
+          "spotify_playlist": "0QWtQZ33sWi3qEoN4ZV8yk",
           "notes": "No local folder yet"
         },
         {
           "name": "Indie Dance",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ CHILL - GROOVE/indie dance",
+          "spotify_playlist": "53DFM0CekLPJddsR6JMVRe",
           "notes": "No local folder yet"
         },
         {
           "name": "Deep Techno",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ CHILL - GROOVE/deep techno",
+          "spotify_playlist": "3ZAydMjvN5MWufl0NNjz3C",
           "notes": "No local folder yet"
         }
       ]
@@ -59,44 +59,44 @@
       "subgenres": [
         {
           "name": "Tech House",
-          "local_folder": "music/tech house",
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/tech house",
+          "spotify_playlist": "5jZh4kDXiCQgsV14rXodeU",
           "notes": null
         },
         {
           "name": "Bass House",
-          "local_folder": "music/bass house",
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/bass house",
+          "spotify_playlist": "43svIFGjakkgfKWhUfAOi8",
           "notes": null
         },
         {
           "name": "House",
-          "local_folder": "music/house",
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/house",
           "spotify_playlist": null,
           "notes": "General house catch-all"
         },
         {
           "name": "Electro House",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/electro house",
+          "spotify_playlist": "7i8o0VgU31gXPIZT2vUvrz",
           "notes": "No local folder yet"
         },
         {
           "name": "Melbourne Bounce",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/melbourne bounce",
+          "spotify_playlist": "6oMac9fcBIAkCTA52Z8Bck",
           "notes": "No local folder yet"
         },
         {
           "name": "Speed Garage",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/speed garage",
+          "spotify_playlist": "4maDYpjYSV3eFV02fgkrZr",
           "notes": "No local folder yet"
         },
         {
           "name": "Breakbeat",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/breakbeat",
+          "spotify_playlist": "2Zlo0ywiKU9Kkb4zIS9zeA",
           "notes": "No local folder yet"
         }
       ]
@@ -104,50 +104,50 @@
     {
       "id": "folder_3",
       "name": "DJ FAST TECH / GROOVE",
-      "bpm_min": 138,
+      "bpm_min": 132,
       "bpm_max": 145,
       "local_path": "music",
       "subgenres": [
         {
-          "name": "Techno",
-          "local_folder": "music/techno",
-          "spotify_playlist": null,
-          "notes": "Peak-time techno mapped here"
+          "name": "Peak-Time Techno",
+          "local_folder": "music/DJ FAST TECH - GROOVE/peak time techno",
+          "spotify_playlist": "2U0I2Ak4InIlGYPDNkLTEj",
+          "notes": "Driving club techno, 138–145 BPM"
         },
         {
           "name": "Minimal Techno",
-          "local_folder": "music/minimal techno",
-          "spotify_playlist": null,
+          "local_folder": "music/DJ FAST TECH - GROOVE/minimal techno",
+          "spotify_playlist": "0B3WoheGNqol1B69LM9Y8n",
           "notes": null
         },
         {
           "name": "Trance",
-          "local_folder": "music/trance",
+          "local_folder": "music/DJ FAST TECH - GROOVE/trance",
           "spotify_playlist": null,
           "notes": "Eurotrance / trance set"
         },
         {
           "name": "Melodic Techno",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ FAST TECH - GROOVE/melodic techno",
+          "spotify_playlist": "04h38580Eo0gufUQfNS5fY",
           "notes": "trance_tecno folder used as melodic techno / trance-techno blend"
         },
         {
           "name": "Hard Groove",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ FAST TECH - GROOVE/hard groove",
+          "spotify_playlist": "4Py7h6B4a8OrCKzecm3aoz",
           "notes": "No local folder yet"
         },
         {
           "name": "High Tech",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ FAST TECH - GROOVE/high tech",
+          "spotify_playlist": "6ynFrg2aZBLOz5KCJaNABJ",
           "notes": "No local folder yet"
         },
         {
           "name": "Psytrance",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ FAST TECH - GROOVE/psytrance",
+          "spotify_playlist": "4mpOj1tD3PGQzuyv8fgivi",
           "notes": "Traditional 138–145 BPM range only; higher BPM moves to folder_4"
         }
       ]
@@ -161,55 +161,61 @@
       "subgenres": [
         {
           "name": "Hard House",
-          "local_folder": "music/hard house",
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hard house",
+          "spotify_playlist": "1I3kb2SoSLLtiuiY95cdJ2",
           "notes": null
         },
         {
           "name": "Hard Techno",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hard techno",
+          "spotify_playlist": "0YOmri2e8qOVUiM713ezUr",
           "notes": "No local folder yet"
         },
         {
           "name": "Industrial",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/industrial",
+          "spotify_playlist": "5aQsvcIuYlulrY5rXHBCBz",
           "notes": "No local folder yet"
         },
         {
           "name": "Neo Trance",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/neo trance",
+          "spotify_playlist": "196XMLHP7Vylrv66vEIZxn",
           "notes": "No local folder yet"
         },
         {
           "name": "Hypertechno",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hypertechno",
+          "spotify_playlist": "1RcTvRoQeHN4hMm24P7Ik3",
           "notes": "No local folder yet"
         },
         {
           "name": "Hard Dance",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hard dance",
+          "spotify_playlist": "1CJQFCjoxT8Tq2CC8QTVYq",
           "notes": "No local folder yet"
         },
         {
           "name": "Hard Trance",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hard trance",
+          "spotify_playlist": "7Ci8ClpWjOTOruSTfb0trQ",
           "notes": "No local folder yet"
         },
         {
           "name": "Hardtekk",
-          "local_folder": null,
-          "spotify_playlist": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/hardtekk",
+          "spotify_playlist": "3mOFq9X9gDUyI4KW3R222h",
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Hardstyle",
+          "local_folder": "music/DJ HARD - NEO-RAVE/hardstyle",
+          "spotify_playlist": "5jPLi1mMMGywafMadaMJWo",
           "notes": "No local folder yet"
         },
         {
           "name": "Drum & Bass",
-          "local_folder": null,
+          "local_folder": "music/DJ HARD - NEO-RAVE/drum & bass",
           "spotify_playlist": null,
           "notes": "170+ BPM outlier; only classify here if BPM is confirmed above 170"
         }
