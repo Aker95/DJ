@@ -24,6 +24,7 @@ recon_mod = importlib.import_module("03b_reconcile_unsorted")
 preprocess_stem = recon_mod.preprocess_stem
 normalize = recon_mod.normalize
 match_scores = recon_mod.match_scores
+artist_found_in_stem = recon_mod.artist_found_in_stem
 get_schema_folders = recon_mod.get_schema_folders
 
 
@@ -245,8 +246,33 @@ class TestMatchScores:
 
 
 # ---------------------------------------------------------------------------
-# get_schema_folders
+# artist_found_in_stem
 # ---------------------------------------------------------------------------
+
+class TestArtistFoundInStem:
+    def test_artist_found_when_buried_in_multi_artist_stem(self):
+        """'Laidback Luke' is present in the raw stem even though it wasn't
+        parsed as cand_artist (because it follows '&')."""
+        stem = "Steve Angello & Laidback Luke Feat. Robin S. - Show Me Love (Extended Mix)"
+        assert artist_found_in_stem("Laidback Luke", stem) is True
+
+    def test_artist_found_after_track_number(self):
+        """'Rachel Row' is in the stem despite a 4-digit fake track number prefix."""
+        stem = "1491 - Rachel Row - Follow The Step (Justin Martin Remix)"
+        assert artist_found_in_stem("Rachel Row", stem) is True
+
+    def test_artist_found_in_underscore_stem(self):
+        """Artist embedded in an all-underscore filename with no dash separator."""
+        stem = "Duke Dumont_Duality_08_Love Song"
+        assert artist_found_in_stem("Duke Dumont", stem) is True
+
+    def test_artist_not_in_stem_returns_false(self):
+        """'Daft Punk' does not appear in '07 Around the World' — expected edge case."""
+        stem = "07 Around the World"
+        assert artist_found_in_stem("Daft Punk", stem) is False
+
+    def test_empty_ref_artist_returns_false(self):
+        assert artist_found_in_stem("", "Some Artist - Some Track") is False
 
 class TestGetSchemaFolders:
     def test_returns_resolved_paths(self, tmp_path, sample_schema):

@@ -34,9 +34,9 @@ def main():
                 # local_folder is relative to project root e.g. "music/DJ PEAK HOUSE - CLUB/tech house"
                 full_path = PROJECT_ROOT / local_folder
             else:
-                # Derive: music/<master folder dir>/<subgenre name>
+                # Derive: music/<subgenre name lowercased>
                 derived_name = sg["name"].lower().replace("/", "-")
-                full_path = music_root / mf_dir / derived_name
+                full_path = music_root / derived_name
 
             if full_path.exists():
                 print(f"  ✓  {sg['name']:<30}  {full_path.relative_to(PROJECT_ROOT)}")

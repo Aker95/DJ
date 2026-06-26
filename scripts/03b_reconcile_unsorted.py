@@ -27,8 +27,9 @@ import re
 import shutil
 import sys
 from datetime import datetime, timezone
-from difflib import SequenceMatcher
 from pathlib import Path
+
+from rapidfuzz import fuzz as rf
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -42,6 +43,14 @@ RE_TRACK_NUM = re.compile(r"^[\d]{1,3}[-_\s]+")
 RE_SITE_PREFIX = re.compile(r"^[A-Za-z0-9]+\.[a-zA-Z]{2,4}\s*-\s*")
 RE_MIX_SUFFIX = re.compile(
     r"\s*[\(\[][^\)\]]*\b(mix|edit|remix|dub|vip|radio|original|extended|club|version|rework|cut|instrumental)\b[^\)\]]*[\)\]]",
+    re.IGNORECASE,
+)
+RE_DASH_MIX = re.compile(
+    r"\s*-\s*[^-]*\b(mix|edit|remix|dub|vip|radio|original|extended|club|version|rework|cut|instrumental)\b[^-]*$",
+    re.IGNORECASE,
+)
+RE_FEAT = re.compile(
+    r"[\(\[]?(?:feat\.?|ft\.?|with|&)\s+[^\)\]]*[\)\]]?",
     re.IGNORECASE,
 )
 
@@ -81,33 +90,39 @@ def normalize(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def _title_score(cand: str, ref: str) -> float:
-    """
-    Compare two titles, also trying just the base part of `ref` (before the first
-    ' - '). This handles the common case where the local file's mix suffix was
-    stripped by RE_MIX_SUFFIX but the Spotify title still carries a shorter version
-    of it (e.g. cand='Rise', ref='Rise - Deluxe Mix' → base='Rise' → score 1.0).
-    """
-    s_full = SequenceMatcher(None, normalize(cand), normalize(ref)).ratio()
-    ref_base = ref.split(" - ", 1)[0] if " - " in ref else ref
-    s_base = SequenceMatcher(None, normalize(cand), normalize(ref_base)).ratio()
-    return max(s_full, s_base)
+def clean(s: str) -> str:
+    """Deep-clean a string for matching: strip mix suffixes, feat tags, normalise."""
+    s = RE_MIX_SUFFIX.sub("", s)
+    s = RE_DASH_MIX.sub("", s)
+    s = RE_FEAT.sub("", s)
+    return normalize(s).strip()
 
 
 def match_scores(cand_artist: str, cand_title: str, delta_artist: str, delta_title: str) -> tuple[float, float]:
     """
     Return best (artist_score, title_score) trying both field orderings.
+    Uses rapidfuzz token_set_ratio with clean() pre-processing.
     Handles filenames where title and artist are swapped (e.g. "Title - Artist").
     """
-    a1 = SequenceMatcher(None, normalize(cand_artist), normalize(delta_artist)).ratio()
-    t1 = _title_score(cand_title, delta_title)
+    ca, ra = clean(cand_artist), clean(delta_artist)
+    ct, rt = clean(cand_title), clean(delta_title)
+
+    a1 = rf.token_set_ratio(ca, ra) / 100
+    t1 = rf.token_set_ratio(ct, rt) / 100
     # Try swapped order
-    a2 = SequenceMatcher(None, normalize(cand_title), normalize(delta_artist)).ratio()
-    t2 = _title_score(cand_artist, delta_title)
+    a2 = rf.token_set_ratio(ct, ra) / 100
+    t2 = rf.token_set_ratio(ca, rt) / 100
     # Return the ordering that produces the higher combined score
     if a1 + t1 >= a2 + t2:
         return a1, t1
     return a2, t2
+
+
+def artist_found_in_stem(ref_artist: str, stem: str) -> bool:
+    """Return True if the Spotify ref_artist appears as a substring in the raw filename stem."""
+    ra = normalize(clean(ref_artist))
+    s = normalize(stem.replace("_", " "))
+    return bool(ra) and ra in s
 
 
 def get_schema_folders(schema: dict) -> set[Path]:
@@ -179,7 +194,10 @@ def main():
                 cand_artist, cand_title = preprocess_stem(f.stem)
                 a_score, t_score = match_scores(cand_artist, cand_title, track["artist"], track["title"])
 
-                if a_score >= 0.80 and t_score >= 0.85:
+                stage1 = a_score >= 0.80 and t_score >= 0.85
+                stage2 = (not stage1) and t_score >= 0.95 and artist_found_in_stem(track["artist"], f.stem)
+
+                if stage1 or stage2:
                     # Resolve destination from live schema (never trust stale delta paths)
                     sg_key = track["subgenre"].strip().lower()
                     dest_folder = subgenre_folder_index.get(sg_key)
@@ -190,9 +208,10 @@ def main():
                     dest = dest_folder / f.name
                     shutil.move(str(f), str(dest))
 
+                    stage_label = "standard" if stage1 else "artist-in-stem fallback"
                     print(f"[FOUND]  {d.name}/{f.name}")
                     print(f"         → matched: {track['artist']} - {track['title']}")
-                    print(f"         → scores:  artist {a_score:.2f}  title {t_score:.2f}")
+                    print(f"         → scores:  artist {a_score:.2f}  title {t_score:.2f}  [{stage_label}]")
                     print(f"         → moved to: {dest_folder.relative_to(PROJECT_ROOT)}/\n")
 
                     reconciled += 1
