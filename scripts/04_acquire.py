@@ -22,15 +22,12 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-import re
-import unicodedata
-
 import requests
-from rapidfuzz import fuzz as rf
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.config import load_env, load_schema, PROJECT_ROOT
+from utils.matching import filename_matches, sig_words
 
 DELTA_PATH = PROJECT_ROOT / "delta.json"
 AUDIO_EXTENSIONS = {".mp3", ".flac", ".wav", ".aiff", ".aif", ".m4a", ".opus"}
@@ -73,88 +70,15 @@ def slskd_search(base_url: str, api_key: str, query: str, timeout_s: int = 30) -
     return data if isinstance(data, list) else []
 
 
-# ---------------------------------------------------------------------------
-# Filename quality gate (same two-stage pipeline as 03_delta_scan)
-# ---------------------------------------------------------------------------
-
-_RE_MIX_SUFFIX = re.compile(r"\s*[-–]\s*(original|extended|club|radio|vocal|instrumental|remaster\w*)\s*(mix|edit|version|remix)?\s*$", re.I)
-_RE_FEAT = re.compile(r"\s*(feat\.?|ft\.?|featuring)\s+[^(]+", re.I)
-_RE_TRACK_NUM = re.compile(r"^\d+[.\s]+")
-_RE_SITE_PREFIX = re.compile(r"^SpotiDownloader\.com\s*-\s*", re.I)
-
-
-def _normalize(s: str) -> str:
-    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-
-
-def _clean(s: str) -> str:
-    s = _RE_MIX_SUFFIX.sub("", s)
-    s = _RE_FEAT.sub("", s)
-    return _normalize(s).strip()
-
-
-def _preprocess_stem(stem: str) -> tuple[str, str]:
-    s = stem.replace("_", " ")
-    had_site = bool(_RE_SITE_PREFIX.match(s))
-    s = _RE_SITE_PREFIX.sub("", s)
-    s = _RE_TRACK_NUM.sub("", s)
-    s = _RE_MIX_SUFFIX.sub("", s)
-    s = s.strip(" -")
-    if " - " not in s:
-        return "", s.strip()
-    if had_site:
-        title, artist = s.rsplit(" - ", 1)
-        return artist.strip(), title.strip()
-    parts = s.split(" - ", 1)
-    return parts[0].strip(), parts[1].strip()
-
-
-_STOPWORDS = {"the", "a", "an", "and", "or", "of", "in", "on", "at", "to", "ft", "feat"}
-
-
-def _sig_words(s: str) -> list[str]:
-    """Return significant (non-stopword, length > 2) normalised words."""
-    return [w for w in _normalize(s).split() if len(w) > 2 and w not in _STOPWORDS]
-
-
-def _filename_matches(filename: str, artist: str, title: str) -> bool:
-    """Stage 0 (regex) → Stage 1 (fuzzy) → Stage 2 (fuzzy+substring) quality check."""
-    raw_stem = filename.replace("\\", "/").split("/")[-1]
-    raw_stem = Path(raw_stem).stem
-    norm_stem = _normalize(raw_stem.replace("_", " "))
-
-    # --- Stage 0: fast regex — all significant title words present as whole words ---
-    title_words = _sig_words(title)
-    artist_words = _sig_words(artist)
-    if title_words and all(re.search(r"\b" + re.escape(w) + r"\b", norm_stem) for w in title_words):
-        # At least one artist word must also appear (avoids title-only collisions)
-        if not artist_words or any(re.search(r"\b" + re.escape(w) + r"\b", norm_stem) for w in artist_words):
-            return True
-
-    # --- Stage 1 & 2: fuzzy token-set-ratio ---
-    cand_artist, cand_title = _preprocess_stem(raw_stem)
-    ca, ra = _clean(cand_artist), _clean(artist)
-    ct, rt = _clean(cand_title), _clean(title)
-    a1 = rf.token_set_ratio(ca, ra) / 100
-    t1 = rf.token_set_ratio(ct, rt) / 100
-    a2 = rf.token_set_ratio(ct, ra) / 100
-    t2 = rf.token_set_ratio(ca, rt) / 100
-    a_score, t_score = (a1, t1) if a1 + t1 >= a2 + t2 else (a2, t2)
-    stage1 = a_score >= 0.80 and t_score >= 0.85
-    artist_in_stem = bool(ra) and ra in norm_stem
-    stage2 = (not stage1) and t_score >= 0.95 and artist_in_stem
-    return stage1 or stage2
-
-
 def pick_best_file(
     results: list, min_bitrate_kbps: int, preferred_formats: list,
     artist: str = "", title: str = "",
-    max_candidates: int = 3,
+    max_candidates: int = 5,
 ) -> list[tuple[str, str, int]]:
     """Return up to max_candidates ranked (username, filename, size) tuples.
 
     Sorted best-first: format priority → extended mix → largest size.
-    Files are pre-filtered by a two-stage fuzzy filename quality gate.
+    Files are pre-filtered by a filename quality gate (filename_matches).
     """
     candidates = []
     for result in results:
@@ -176,7 +100,7 @@ def pick_best_file(
             if ext == "mp3" and estimated_bitrate < min_bitrate_kbps:
                 continue
             # Quality gate: filename must match the target artist/title
-            if artist and title and not _filename_matches(filename, artist, title):
+            if artist and title and not filename_matches(filename, artist, title):
                 continue
             priority = preferred_formats.index(ext) if ext in preferred_formats else 99
             not_extended = 0 if "extended" in filename.lower() else 1

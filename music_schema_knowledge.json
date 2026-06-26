@@ -70,12 +70,6 @@
           "notes": null
         },
         {
-          "name": "House",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/house",
-          "spotify_playlist": null,
-          "notes": "General house catch-all"
-        },
-        {
           "name": "Electro House",
           "local_folder": "music/DJ PEAK HOUSE - CLUB/electro house",
           "spotify_playlist": "7i8o0VgU31gXPIZT2vUvrz",
@@ -119,12 +113,6 @@
           "local_folder": "music/DJ FAST TECH - GROOVE/minimal techno",
           "spotify_playlist": "0B3WoheGNqol1B69LM9Y8n",
           "notes": null
-        },
-        {
-          "name": "Trance",
-          "local_folder": "music/DJ FAST TECH - GROOVE/trance",
-          "spotify_playlist": null,
-          "notes": "Eurotrance / trance set"
         },
         {
           "name": "Melodic Techno",
@@ -211,6 +199,12 @@
           "name": "Hardstyle",
           "local_folder": "music/DJ HARD - NEO-RAVE/hardstyle",
           "spotify_playlist": "5jPLi1mMMGywafMadaMJWo",
+          "notes": "No local folder yet"
+        },
+        {
+          "name": "Schranz",
+          "local_folder": null,
+          "spotify_playlist": "44dbf0BjNTXOHsfuxjClGZ",
           "notes": "No local folder yet"
         },
         {

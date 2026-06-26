@@ -10,14 +10,10 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 
+from utils.matching import normalize, clean, preprocess_stem, match_scores, artist_found_in_stem
+
 import importlib
 delta_mod = importlib.import_module("03_delta_scan")
-
-normalize = delta_mod.normalize
-clean = delta_mod.clean
-preprocess_stem = delta_mod.preprocess_stem
-match_scores = delta_mod.match_scores
-artist_found_in_stem = delta_mod.artist_found_in_stem
 load_local_stems = delta_mod.load_local_stems
 is_local_match = delta_mod.is_local_match
 
@@ -139,9 +135,11 @@ class TestPreprocessStem:
         _, title = preprocess_stem("Artist - Track (Extended Mix)")
         assert "extended" not in title.lower()
 
-    def test_strips_remix_suffix(self):
-        _, title = preprocess_stem("Artist - Track (Someone's Remix)")
-        assert "remix" not in title.lower()
+    def test_preserves_named_remix_suffix(self):
+        """Named remixes like (Jamie Jones Remix) are preserved for matching."""
+        _, title = preprocess_stem("Artist - Track (Someone Remix)")
+        assert "remix" in title.lower()
+        assert "track" in title.lower()
 
     def test_strips_square_bracket_version(self):
         _, title = preprocess_stem("Artist - Track [Club Edit]")

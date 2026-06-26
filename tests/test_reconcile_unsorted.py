@@ -18,13 +18,10 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 
+from utils.matching import normalize, clean, preprocess_stem, match_scores, artist_found_in_stem
+
 import importlib
 recon_mod = importlib.import_module("03b_reconcile_unsorted")
-
-preprocess_stem = recon_mod.preprocess_stem
-normalize = recon_mod.normalize
-match_scores = recon_mod.match_scores
-artist_found_in_stem = recon_mod.artist_found_in_stem
 get_schema_folders = recon_mod.get_schema_folders
 
 
@@ -64,9 +61,11 @@ class TestPreprocessStem:
         _, title = preprocess_stem("Artist - Track (Extended Mix)")
         assert "extended" not in title.lower()
 
-    def test_strips_remix_suffix(self):
-        _, title = preprocess_stem("Artist - Track (Someone's Remix)")
-        assert "remix" not in title.lower()
+    def test_preserves_named_remix_suffix(self):
+        """Named remixes like (Jamie Jones Remix) are preserved for matching."""
+        _, title = preprocess_stem("Artist - Track (Someone Remix)")
+        assert "remix" in title.lower()
+        assert "track" in title.lower()
 
     def test_strips_square_bracket_version(self):
         _, title = preprocess_stem("Artist - Track [Club Edit]")
