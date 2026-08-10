@@ -430,6 +430,17 @@ class TestFilenameMatches:
             "DJ Misjah", "Access - Joris Voorn Remix",
         )
 
+    @pytest.mark.xfail(
+        strict=True,
+        reason="Known bug: an unrequested named remix must not match the Spotify version",
+    )
+    def test_rejects_unrequested_named_remix_for_base_spotify_title(self):
+        """Regression: do not acquire a named remix when Spotify requests the base title."""
+        assert not filename_matches(
+            "Tiësto - Adagio for Strings (Danjo & Styles Remix).flac",
+            "Tiësto", "Adagio for Strings",
+        )
+
     # Rejection — wrong track
     def test_rejects_completely_wrong_file(self):
         """'02. Easy Riders' must not match Victor Ruiz / Lucky Strike."""

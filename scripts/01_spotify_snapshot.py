@@ -23,6 +23,7 @@ from spotipy.exceptions import SpotifyException
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.config import load_env, load_schema, save_schema, PROJECT_ROOT
+from utils.schema import canonical_key, is_v2, iter_destinations
 from utils.spotify_auth import get_spotify_client, clear_token_cache
 
 SNAPSHOT_PATH = PROJECT_ROOT / "spotify_snapshot.json"
@@ -68,11 +69,26 @@ def fetch_all_tracks(sp, playlist_id: str) -> list | None:
 def build_subgenre_index(schema: dict) -> dict:
     """Returns {normalized_name: (master_folder_name, subgenre_dict)}."""
     index = {}
+    if is_v2(schema):
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT):
+            node = destination["playlist_node"]
+            index[canonical_key(destination["name"])] = (
+                destination["master_folder"], node
+            )
+        return index
     for folder in schema["master_folders"]:
         for sg in folder["subgenres"]:
             key = sg["name"].strip().lower()
             index[key] = (folder["name"], sg)
     return index
+
+
+def build_destination_index(schema: dict) -> dict:
+    """Return normalized playlist-name routing records for schema v1 or v2."""
+    return {
+        canonical_key(destination["name"]): destination
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT)
+    }
 
 
 def main():
@@ -84,7 +100,7 @@ def main():
     all_playlists = fetch_all_playlists(sp)
     print(f"  Found {len(all_playlists)} playlists total.\n")
 
-    subgenre_index = build_subgenre_index(schema)
+    destination_index = build_destination_index(schema)
     schema_modified = False
     snapshot_playlists = []
     skipped_bag = []
@@ -98,16 +114,18 @@ def main():
             skipped_bag.append(name)
             continue
 
-        norm_name = name.lower()
-        if norm_name not in subgenre_index:
+        norm_name = canonical_key(name)
+        if norm_name not in destination_index:
             continue
 
-        master_folder_name, sg = subgenre_index[norm_name]
+        destination = destination_index[norm_name]
+        master_folder_name = destination["master_folder"]
+        playlist_node = destination["playlist_node"]
         print(f"  [MATCH]  {name}  →  {master_folder_name}")
 
         # Back-fill playlist ID into schema
-        if sg["spotify_playlist"] is None:
-            sg["spotify_playlist"] = pl_id
+        if playlist_node.get("spotify_playlist") is None:
+            playlist_node["spotify_playlist"] = pl_id
             schema_modified = True
 
         tracks = fetch_all_tracks(sp, pl_id)
@@ -119,9 +137,16 @@ def main():
         snapshot_playlists.append({
             "playlist_id": pl_id,
             "playlist_name": name,
-            "schema_subgenre": sg["name"],
+            "schema_subgenre": destination["name"],
+            "classification_level": destination["classification_level"],
+            "main_genre": destination.get("main_genre"),
+            "subgenre": destination.get("subgenre"),
             "master_folder": master_folder_name,
-            "local_folder": sg.get("local_folder"),
+            "local_folder": (
+                str(destination["local_folder"].relative_to(PROJECT_ROOT))
+                if destination.get("local_folder")
+                else None
+            ),
             "tracks": tracks,
         })
 

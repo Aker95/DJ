@@ -16,17 +16,20 @@ Run: python scripts/04_acquire.py
 """
 
 import json
+import subprocess
 import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.config import load_env, load_schema, PROJECT_ROOT
+from utils.schema import canonical_key, iter_destinations
 from utils.matching import filename_matches, sig_words
 
 DELTA_PATH = PROJECT_ROOT / "delta.json"
@@ -34,11 +37,70 @@ AUDIO_EXTENSIONS = {".mp3", ".flac", ".wav", ".aiff", ".aif", ".m4a", ".opus"}
 SLSKD_DOWNLOADS_DIR = Path.home() / ".slskd" / "downloads"
 PARALLEL_WORKERS = 3  # concurrent downloads
 _SEARCH_LOCK = threading.Lock()  # one slskd search at a time to avoid 429s
+SLSKD_CONTAINER_NAME = "slskd"
 
 
 # ---------------------------------------------------------------------------
 # slskd helpers
 # ---------------------------------------------------------------------------
+
+def ensure_slskd_available(
+    base_url: str,
+    api_key: str,
+    retries: int = 15,
+    retry_delay_s: float = 1.0,
+) -> None:
+    """Ensure the slskd API is ready, starting its local Docker container if needed."""
+    headers = {"X-API-Key": api_key or ""}
+    session_url = f"{base_url.rstrip('/')}/api/v0/session"
+
+    def check() -> None:
+        response = requests.get(session_url, headers=headers, timeout=3)
+        response.raise_for_status()
+
+    try:
+        check()
+        return
+    except requests.RequestException as initial_error:
+        hostname = (urlparse(base_url).hostname or "").lower()
+        if hostname not in {"localhost", "127.0.0.1", "::1"}:
+            raise RuntimeError(
+                f"slskd is unavailable at {base_url}: {initial_error}"
+            ) from initial_error
+
+    try:
+        result = subprocess.run(
+            ["docker", "start", SLSKD_CONTAINER_NAME],
+            capture_output=True,
+            text=True,
+            timeout=20,
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError) as error:
+        raise RuntimeError(
+            f"slskd is unavailable and Docker could not start {SLSKD_CONTAINER_NAME!r}: {error}"
+        ) from error
+
+    if result.returncode != 0:
+        detail = result.stderr.strip() or result.stdout.strip() or "unknown Docker error"
+        raise RuntimeError(
+            f"slskd is unavailable and `docker start {SLSKD_CONTAINER_NAME}` failed: {detail}"
+        )
+
+    last_error: requests.RequestException | None = None
+    for _ in range(retries):
+        try:
+            check()
+            print(f"Started Docker container {SLSKD_CONTAINER_NAME!r}; API is ready.")
+            return
+        except requests.RequestException as error:
+            last_error = error
+            time.sleep(retry_delay_s)
+
+    raise RuntimeError(
+        f"Docker started {SLSKD_CONTAINER_NAME!r}, but slskd did not become ready at "
+        f"{base_url}: {last_error}"
+    )
 
 def slskd_search(base_url: str, api_key: str, query: str, timeout_s: int = 30) -> list:
     headers = {"X-API-Key": api_key, "Content-Type": "application/json"}
@@ -222,13 +284,11 @@ def wait_for_slskd_file(
 
 def build_subgenre_folder_index(schema: dict) -> dict[str, Path]:
     """Return {normalized_subgenre_name: local_folder_path} from the live schema."""
-    index = {}
-    for folder in schema["master_folders"]:
-        for sg in folder["subgenres"]:
-            lf = sg.get("local_folder")
-            if lf:
-                index[sg["name"].strip().lower()] = PROJECT_ROOT / lf
-    return index
+    return {
+        canonical_key(destination["name"]): destination["local_folder"]
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT)
+        if destination.get("local_folder")
+    }
 
 
 def already_downloaded(local_folder: Path, artist: str, title: str) -> bool:
@@ -249,7 +309,7 @@ def process_track(i: int, total: int, track: dict, env: dict,
     """Download a single track (runs in a thread worker)."""
     artist = track["artist"]
     title = track["title"]
-    sg_key = track.get("subgenre", "").strip().lower()
+    sg_key = canonical_key(track.get("subgenre") or track.get("main_genre", ""))
     local_folder = subgenre_index.get(sg_key) or PROJECT_ROOT / track["local_folder"]
     local_folder.mkdir(parents=True, exist_ok=True)
 
@@ -333,6 +393,12 @@ def main():
     if confirm != "y":
         print("Aborted.")
         sys.exit(0)
+
+    try:
+        ensure_slskd_available(env["SLSKD_BASE_URL"], env["SLSKD_API_KEY"])
+    except RuntimeError as error:
+        print(f"ERROR: {error}")
+        sys.exit(1)
 
     print(f"\nRunning {PARALLEL_WORKERS} parallel workers …\n")
 

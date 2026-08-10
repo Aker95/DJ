@@ -1,0 +1,23 @@
+{
+  "artifact_type": "module_06_approval",
+  "artifact_version": 1,
+  "approved_at": "2026-08-07T21:45:41.159935+00:00",
+  "reviewed_by": [
+    "codex",
+    "user"
+  ],
+  "source_playlist_id": "3ccwhQZUar8NrnYqMJSpuR",
+  "provisional_json_sha256": "d8c33a5c42a9342c1ae9cbe6b3e887f4e82a2508743203ee113f7878020d78db",
+  "provisional_markdown_sha256": "5862f2ad9fad5b934ba358a19347d5d9d15dbd02cb9315659c75de6e0b538d5c",
+  "reviewed_json_sha256": "822d2a4131b22d355ad9ef879c8ec1da20462e8b847857b87973b0c19ac2e76d",
+  "reviewed_markdown_sha256": "4e6a2297c3db36e05d08dab9cefc3e2b6d5696c75f57f21a8e3a2d3d3bc547d1",
+  "classify_results_sha256": "2ed6f9d5ca97b4bafeb8b3b0d329f4a435f193978620719692d7c5a710150b12",
+  "applied_taxonomy": {
+    "main_genres": [],
+    "subgenres": [
+      "Speed House"
+    ],
+    "aliases": [],
+    "routing_changes": 0
+  }
+}

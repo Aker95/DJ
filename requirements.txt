@@ -6,3 +6,5 @@ yt-dlp>=2024.1.0
 rapidfuzz>=3.0.0
 pandas>=2.0.0
 matplotlib>=3.7.0
+musicbrainzngs>=0.7.1
+pylast>=5.2.0

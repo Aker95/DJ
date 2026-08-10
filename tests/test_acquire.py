@@ -162,9 +162,11 @@ class TestPickBestFile:
             self._make_result("u2", [self._make_file("track.flac", size=20_000_000)]),
             self._make_result("u3", [self._make_file("track.mp3", bitrate=320)]),
             self._make_result("u4", [self._make_file("track.mp3", bitrate=320)]),
+            self._make_result("u5", [self._make_file("track.mp3", bitrate=320)]),
+            self._make_result("u6", [self._make_file("track.mp3", bitrate=320)]),
         ]
         candidates = pick_best_file(results, 320, ["flac", "wav", "aiff", "mp3"])
-        assert len(candidates) <= 3
+        assert len(candidates) <= 5
         # Best (largest flac) is first
         assert candidates[0][0] == "u1"
 
@@ -201,6 +203,7 @@ class TestAcquireMain:
             patch.object(acquire_mod, "load_env", return_value=env),
             patch.object(acquire_mod, "load_schema", return_value=self._fake_schema(delta)),
             patch("builtins.input", return_value=user_input),
+            patch.object(acquire_mod, "ensure_slskd_available"),
             patch.object(acquire_mod, "slskd_search", return_value=slskd_results or []),
             patch.object(acquire_mod, "slskd_download"),
             patch.object(acquire_mod, "wait_for_slskd_file", return_value=None if not slskd_download_ok else str(tmp_path / "track.flac")),
@@ -274,6 +277,7 @@ class TestAcquireMain:
             }),
             patch.object(acquire_mod, "load_schema", return_value=fake_schema),
             patch("builtins.input", return_value="y"),
+            patch.object(acquire_mod, "ensure_slskd_available"),
             patch.object(acquire_mod, "slskd_search", side_effect=lambda *a, **kw: search_calls.append(a) or []),
         ):
             (tmp_path / "delta.json").write_text(json.dumps(sample_delta))
@@ -305,6 +309,7 @@ class TestAcquireMain:
             }),
             patch.object(acquire_mod, "load_schema", return_value=fake_schema),
             patch("builtins.input", return_value="y"),
+            patch.object(acquire_mod, "ensure_slskd_available"),
             patch.object(acquire_mod, "slskd_search", return_value=[]),
         ):
             (tmp_path / "delta.json").write_text(json.dumps(sample_delta))

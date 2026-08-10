@@ -1,52 +1,158 @@
 {
   "_meta": {
-    "version": "1.0.0",
-    "last_updated": "2026-06-24",
-    "description": "Single source of truth for the 4-folder macro schema. The DJ MUSIC SETUP HELPER agent reads this file at session start to derive all classification and folder-routing logic. New subgenres are appended here automatically when conservative creation is triggered."
+    "version": "2.0.0",
+    "last_updated": "2026-08-07",
+    "description": "Canonical three-level DJ taxonomy: BPM master folder, global main genre, and optional subgenre. Aliases are lookup-only and never create duplicate folders or playlists.",
+    "folder_migration_status": "complete"
   },
+  "main_genres": [
+    {
+      "id": "house",
+      "name": "House",
+      "aliases": [],
+      "spotify_playlist": null,
+      "notes": "Global parent and broad-classification fallback."
+    },
+    {
+      "id": "techno",
+      "name": "Techno",
+      "aliases": [],
+      "spotify_playlist": "78zz7WAZgLWrqvjtbCYbro",
+      "notes": "Global parent and broad-classification fallback."
+    },
+    {
+      "id": "trance",
+      "name": "Trance",
+      "aliases": [],
+      "spotify_playlist": "4OXx7oQOmQzq2PEfiUvsuz",
+      "notes": "Global parent and broad-classification fallback."
+    },
+    {
+      "id": "hard-dance",
+      "name": "Hard Dance",
+      "aliases": [
+        "Harddance"
+      ],
+      "spotify_playlist": "1CJQFCjoxT8Tq2CC8QTVYq",
+      "notes": "Global parent; reuses the existing Hard Dance playlist."
+    },
+    {
+      "id": "garage",
+      "name": "Garage",
+      "aliases": [
+        "UK Garage"
+      ],
+      "spotify_playlist": null,
+      "notes": "Global parent and broad-classification fallback."
+    },
+    {
+      "id": "breakbeat",
+      "name": "Breakbeat",
+      "aliases": [
+        "Breaks"
+      ],
+      "spotify_playlist": "2Zlo0ywiKU9Kkb4zIS9zeA",
+      "notes": "Direct parent destination; no leaf subgenre required."
+    },
+    {
+      "id": "indie-dance",
+      "name": "Indie Dance",
+      "aliases": [],
+      "spotify_playlist": "53DFM0CekLPJddsR6JMVRe",
+      "notes": "Direct parent destination; no leaf subgenre required."
+    },
+    {
+      "id": "drum-bass",
+      "name": "Drum & Bass",
+      "aliases": [
+        "Drum and Bass",
+        "DnB",
+        "D&B"
+      ],
+      "spotify_playlist": null,
+      "notes": "Direct parent destination; 170+ BPM outlier."
+    },
+    {
+      "id": "latin-rave",
+      "name": "Latin Rave",
+      "aliases": [],
+      "spotify_playlist": "3HlinAABamNkw9H8vt0pHA",
+      "notes": "A canonical parent for fast Latin club hybrids whose identity is not adequately represented by Trance, House, Techno or generic Hard Dance."
+    }
+  ],
   "master_folders": [
     {
       "id": "folder_1",
       "name": "DJ CHILL / GROOVE",
       "bpm_min": 120,
       "bpm_max": 126,
-      "local_path": "music",
-      "subgenres": [
+      "local_path": "music/DJ CHILL - GROOVE",
+      "genre_placements": [
         {
-          "name": "Afro House",
-          "local_folder": "music/DJ CHILL - GROOVE/afro house",
-          "spotify_playlist": null,
-          "notes": null
+          "main_genre_id": "house",
+          "local_folder": "music/DJ CHILL - GROOVE/house",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "afro-house",
+              "name": "Afro House",
+              "aliases": [],
+              "local_folder": "music/DJ CHILL - GROOVE/house/afro house",
+              "migration_status": "complete",
+              "spotify_playlist": null,
+              "notes": null
+            },
+            {
+              "id": "deep-house",
+              "name": "Deep House",
+              "aliases": [],
+              "local_folder": "music/DJ CHILL - GROOVE/house/deep house",
+              "migration_status": "complete",
+              "spotify_playlist": "3cSdjYmyJBJgROSt3cDVai",
+              "notes": null
+            },
+            {
+              "id": "melodic-house",
+              "name": "Melodic House",
+              "aliases": [],
+              "local_folder": "music/DJ CHILL - GROOVE/house/melodic house",
+              "migration_status": "complete",
+              "spotify_playlist": "24NQ7y3KMjJmb6CF6xSjod",
+              "notes": null
+            },
+            {
+              "id": "progressive-house",
+              "name": "Progressive House",
+              "aliases": [],
+              "local_folder": "music/DJ CHILL - GROOVE/house/progressive house",
+              "migration_status": "complete",
+              "spotify_playlist": "0QWtQZ33sWi3qEoN4ZV8yk",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Deep House",
-          "local_folder": "music/DJ CHILL - GROOVE/deep house",
-          "spotify_playlist": "3cSdjYmyJBJgROSt3cDVai",
-          "notes": null
+          "main_genre_id": "techno",
+          "local_folder": "music/DJ CHILL - GROOVE/techno",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "deep-techno",
+              "name": "Deep Techno",
+              "aliases": [],
+              "local_folder": "music/DJ CHILL - GROOVE/techno/deep techno",
+              "migration_status": "complete",
+              "spotify_playlist": "3ZAydMjvN5MWufl0NNjz3C",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Melodic House",
-          "local_folder": "music/DJ CHILL - GROOVE/melodic house",
-          "spotify_playlist": "24NQ7y3KMjJmb6CF6xSjod",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Progressive House",
-          "local_folder": "music/DJ CHILL - GROOVE/progressive house",
-          "spotify_playlist": "0QWtQZ33sWi3qEoN4ZV8yk",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Indie Dance",
+          "main_genre_id": "indie-dance",
           "local_folder": "music/DJ CHILL - GROOVE/indie dance",
-          "spotify_playlist": "53DFM0CekLPJddsR6JMVRe",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Deep Techno",
-          "local_folder": "music/DJ CHILL - GROOVE/deep techno",
-          "spotify_playlist": "3ZAydMjvN5MWufl0NNjz3C",
-          "notes": "No local folder yet"
+          "legacy_local_folder": "music/DJ CHILL - GROOVE/indie dance",
+          "migration_status": "complete",
+          "subgenres": []
         }
       ]
     },
@@ -55,43 +161,73 @@
       "name": "DJ PEAK HOUSE / CLUB",
       "bpm_min": 126,
       "bpm_max": 132,
-      "local_path": "music",
-      "subgenres": [
+      "local_path": "music/DJ PEAK HOUSE - CLUB",
+      "genre_placements": [
         {
-          "name": "Tech House",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/tech house",
-          "spotify_playlist": "5jZh4kDXiCQgsV14rXodeU",
-          "notes": null
+          "main_genre_id": "house",
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/house",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "tech-house",
+              "name": "Tech House",
+              "aliases": [],
+              "local_folder": "music/DJ PEAK HOUSE - CLUB/house/tech house",
+              "migration_status": "complete",
+              "spotify_playlist": "5jZh4kDXiCQgsV14rXodeU",
+              "notes": null
+            },
+            {
+              "id": "bass-house",
+              "name": "Bass House",
+              "aliases": [],
+              "local_folder": "music/DJ PEAK HOUSE - CLUB/house/bass house",
+              "migration_status": "complete",
+              "spotify_playlist": "43svIFGjakkgfKWhUfAOi8",
+              "notes": null
+            },
+            {
+              "id": "electro-house",
+              "name": "Electro House",
+              "aliases": [],
+              "local_folder": "music/DJ PEAK HOUSE - CLUB/house/electro house",
+              "migration_status": "complete",
+              "spotify_playlist": "7i8o0VgU31gXPIZT2vUvrz",
+              "notes": null
+            },
+            {
+              "id": "melbourne-bounce",
+              "name": "Melbourne Bounce",
+              "aliases": [],
+              "local_folder": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce",
+              "migration_status": "complete",
+              "spotify_playlist": "6oMac9fcBIAkCTA52Z8Bck",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Bass House",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/bass house",
-          "spotify_playlist": "43svIFGjakkgfKWhUfAOi8",
-          "notes": null
+          "main_genre_id": "garage",
+          "local_folder": "music/DJ PEAK HOUSE - CLUB/garage",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "speed-garage",
+              "name": "Speed Garage",
+              "aliases": [],
+              "local_folder": "music/DJ PEAK HOUSE - CLUB/garage/speed garage",
+              "migration_status": "complete",
+              "spotify_playlist": "4maDYpjYSV3eFV02fgkrZr",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Electro House",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/electro house",
-          "spotify_playlist": "7i8o0VgU31gXPIZT2vUvrz",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Melbourne Bounce",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/melbourne bounce",
-          "spotify_playlist": "6oMac9fcBIAkCTA52Z8Bck",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Speed Garage",
-          "local_folder": "music/DJ PEAK HOUSE - CLUB/speed garage",
-          "spotify_playlist": "4maDYpjYSV3eFV02fgkrZr",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Breakbeat",
+          "main_genre_id": "breakbeat",
           "local_folder": "music/DJ PEAK HOUSE - CLUB/breakbeat",
-          "spotify_playlist": "2Zlo0ywiKU9Kkb4zIS9zeA",
-          "notes": "No local folder yet"
+          "legacy_local_folder": "music/DJ PEAK HOUSE - CLUB/breakbeat",
+          "migration_status": "complete",
+          "subgenres": []
         }
       ]
     },
@@ -100,43 +236,117 @@
       "name": "DJ FAST TECH / GROOVE",
       "bpm_min": 132,
       "bpm_max": 145,
-      "local_path": "music",
-      "subgenres": [
+      "local_path": "music/DJ FAST TECH - GROOVE",
+      "genre_placements": [
         {
-          "name": "Peak-Time Techno",
-          "local_folder": "music/DJ FAST TECH - GROOVE/peak time techno",
-          "spotify_playlist": "2U0I2Ak4InIlGYPDNkLTEj",
-          "notes": "Driving club techno, 138–145 BPM"
+          "main_genre_id": "techno",
+          "local_folder": "music/DJ FAST TECH - GROOVE/techno",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "peak-time-techno",
+              "name": "Peak-Time Techno",
+              "aliases": [
+                "Peak Time Techno",
+                "Techno (Peak Time / Driving)"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/techno/peak time techno",
+              "migration_status": "complete",
+              "spotify_playlist": "2U0I2Ak4InIlGYPDNkLTEj",
+              "notes": "Driving club techno, 138–145 BPM."
+            },
+            {
+              "id": "minimal-techno",
+              "name": "Minimal Techno",
+              "aliases": [],
+              "local_folder": "music/DJ FAST TECH - GROOVE/techno/minimal techno",
+              "migration_status": "complete",
+              "spotify_playlist": "0B3WoheGNqol1B69LM9Y8n",
+              "notes": null
+            },
+            {
+              "id": "melodic-techno",
+              "name": "Melodic Techno",
+              "aliases": [],
+              "local_folder": "music/DJ FAST TECH - GROOVE/techno/melodic techno",
+              "migration_status": "complete",
+              "spotify_playlist": "04h38580Eo0gufUQfNS5fY",
+              "notes": "Melodic techno / trance-techno blend."
+            },
+            {
+              "id": "hard-groove",
+              "name": "Hard Groove",
+              "aliases": [
+                "Hardgroove"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/techno/hard groove",
+              "migration_status": "complete",
+              "spotify_playlist": "4Py7h6B4a8OrCKzecm3aoz",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Minimal Techno",
-          "local_folder": "music/DJ FAST TECH - GROOVE/minimal techno",
-          "spotify_playlist": "0B3WoheGNqol1B69LM9Y8n",
-          "notes": null
-        },
-        {
-          "name": "Melodic Techno",
-          "local_folder": "music/DJ FAST TECH - GROOVE/melodic techno",
-          "spotify_playlist": "04h38580Eo0gufUQfNS5fY",
-          "notes": "trance_tecno folder used as melodic techno / trance-techno blend"
-        },
-        {
-          "name": "Hard Groove",
-          "local_folder": "music/DJ FAST TECH - GROOVE/hard groove",
-          "spotify_playlist": "4Py7h6B4a8OrCKzecm3aoz",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "High Tech",
-          "local_folder": "music/DJ FAST TECH - GROOVE/high tech",
-          "spotify_playlist": "6ynFrg2aZBLOz5KCJaNABJ",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Psytrance",
-          "local_folder": "music/DJ FAST TECH - GROOVE/psytrance",
-          "spotify_playlist": "4mpOj1tD3PGQzuyv8fgivi",
-          "notes": "Traditional 138–145 BPM range only; higher BPM moves to folder_4"
+          "main_genre_id": "trance",
+          "local_folder": "music/DJ FAST TECH - GROOVE/trance",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "high-tech",
+              "name": "High Tech",
+              "aliases": [
+                "Hi-Tech",
+                "Hi Tech"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/trance/high tech",
+              "migration_status": "complete",
+              "spotify_playlist": "6ynFrg2aZBLOz5KCJaNABJ",
+              "notes": "High-speed psychedelic trance style."
+            },
+            {
+              "id": "psytrance",
+              "name": "Psytrance",
+              "aliases": [
+                "Psy-Trance",
+                "Psy Trance"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/trance/psytrance",
+              "migration_status": "complete",
+              "spotify_playlist": "4mpOj1tD3PGQzuyv8fgivi",
+              "notes": "Traditional 138–145 BPM range."
+            },
+            {
+              "id": "uplifting-trance",
+              "name": "Uplifting Trance",
+              "aliases": [],
+              "local_folder": "music/DJ FAST TECH - GROOVE/trance/uplifting trance",
+              "migration_status": "complete",
+              "spotify_playlist": "4dWtHpAHQYllaaB7p9QNuN",
+              "notes": "A recognized melodic trance form with euphoric builds and releases that are too specific for the Trance parent alone."
+            },
+            {
+              "id": "eurotrance",
+              "name": "Eurotrance",
+              "aliases": [
+                "Euro Trance"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/trance/eurotrance",
+              "migration_status": "complete",
+              "spotify_playlist": "2TUN5l6FCvaSTyb9CcVjCE",
+              "notes": "A recognized European melodic/dance-oriented trance style; the exact release explicitly identifies its Eurotrance program."
+            },
+            {
+              "id": "raw-trance",
+              "name": "Raw Trance",
+              "aliases": [
+                "Trance (Raw / Deep / Hypnotic)"
+              ],
+              "local_folder": "music/DJ FAST TECH - GROOVE/trance/raw trance",
+              "migration_status": "complete",
+              "spotify_playlist": "741IRMj2ARZCStkWXRKFDo",
+              "notes": "A recognized contemporary trance lane emphasizing raw percussion, hypnotic repetition and techno-adjacent drive; it is more specific than the Trance parent and is not a synonym of Neo Trance or Hard Trance."
+            }
+          ]
         }
       ]
     },
@@ -145,73 +355,203 @@
       "name": "DJ HARD / NEO-RAVE",
       "bpm_min": 145,
       "bpm_max": 175,
-      "local_path": "music",
-      "subgenres": [
+      "local_path": "music/DJ HARD - NEO-RAVE",
+      "genre_placements": [
         {
-          "name": "Hard House",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hard house",
-          "spotify_playlist": "1I3kb2SoSLLtiuiY95cdJ2",
-          "notes": null
+          "main_genre_id": "house",
+          "local_folder": "music/DJ HARD - NEO-RAVE/house",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "hard-house",
+              "name": "Hard House",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/house/hard house",
+              "migration_status": "complete",
+              "spotify_playlist": "1I3kb2SoSLLtiuiY95cdJ2",
+              "notes": null
+            },
+            {
+              "id": "speed-house",
+              "name": "Speed House",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/house/speed house",
+              "migration_status": "complete",
+              "spotify_playlist": "3HUVMsTxkOFe3CkoU280wZ",
+              "notes": "A recognized fast-house fusion of speed garage and bass house; it is not a synonym of Hard House, Speed Garage or Bass House."
+            }
+          ]
         },
         {
-          "name": "Hard Techno",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hard techno",
-          "spotify_playlist": "0YOmri2e8qOVUiM713ezUr",
-          "notes": "No local folder yet"
+          "main_genre_id": "techno",
+          "local_folder": "music/DJ HARD - NEO-RAVE/techno",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "hard-techno",
+              "name": "Hard Techno",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/techno/hard techno",
+              "migration_status": "complete",
+              "spotify_playlist": "0YOmri2e8qOVUiM713ezUr",
+              "notes": null
+            },
+            {
+              "id": "industrial",
+              "name": "Industrial",
+              "aliases": [
+                "Industrial Techno"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/techno/industrial",
+              "migration_status": "complete",
+              "spotify_playlist": "5aQsvcIuYlulrY5rXHBCBz",
+              "notes": null
+            },
+            {
+              "id": "schranz",
+              "name": "Schranz",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/techno/schranz",
+              "migration_status": "complete",
+              "spotify_playlist": "44dbf0BjNTXOHsfuxjClGZ",
+              "notes": null
+            }
+          ]
         },
         {
-          "name": "Industrial",
-          "local_folder": "music/DJ HARD - NEO-RAVE/industrial",
-          "spotify_playlist": "5aQsvcIuYlulrY5rXHBCBz",
-          "notes": "No local folder yet"
+          "main_genre_id": "trance",
+          "local_folder": "music/DJ HARD - NEO-RAVE/trance",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "neo-trance",
+              "name": "Neo Trance",
+              "aliases": [
+                "Neo-Trance"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/trance/neo trance",
+              "migration_status": "complete",
+              "spotify_playlist": "196XMLHP7Vylrv66vEIZxn",
+              "notes": null
+            },
+            {
+              "id": "hard-trance",
+              "name": "Hard Trance",
+              "aliases": [
+                "Hardtrance"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/trance/hard trance",
+              "migration_status": "complete",
+              "spotify_playlist": "7Ci8ClpWjOTOruSTfb0trQ",
+              "notes": null
+            },
+            {
+              "id": "trance-main-floor",
+              "name": "Trance (Main Floor)",
+              "aliases": [
+                "Main Floor Trance"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/trance/trance main floor",
+              "migration_status": "complete",
+              "spotify_playlist": "0yiAeT0apV82OOVPvzVPD1",
+              "notes": "Beatport's current Trance (Main Floor) category repeatedly identifies these exact recordings and is more precise than a generic Trance fallback."
+            },
+            {
+              "id": "hard-trance-pop",
+              "name": "Hard Trance Pop",
+              "aliases": [
+                "Hard-Trance-Pop"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/trance/hard trance pop",
+              "migration_status": "complete",
+              "spotify_playlist": "5oupPzu93fAX1bFAFGSUKW",
+              "notes": "The creator's own description for a pop-forward sound harder than hard house and softer than hard techno; it is precise without duplicating Hard Trance."
+            }
+          ]
         },
         {
-          "name": "Neo Trance",
-          "local_folder": "music/DJ HARD - NEO-RAVE/neo trance",
-          "spotify_playlist": "196XMLHP7Vylrv66vEIZxn",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Hypertechno",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hypertechno",
-          "spotify_playlist": "1RcTvRoQeHN4hMm24P7Ik3",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Hard Dance",
+          "main_genre_id": "hard-dance",
           "local_folder": "music/DJ HARD - NEO-RAVE/hard dance",
-          "spotify_playlist": "1CJQFCjoxT8Tq2CC8QTVYq",
-          "notes": "No local folder yet"
+          "legacy_local_folder": "music/DJ HARD - NEO-RAVE/hard dance",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "hypertechno",
+              "name": "Hypertechno",
+              "aliases": [
+                "Hyper Techno"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno",
+              "migration_status": "complete",
+              "spotify_playlist": "1RcTvRoQeHN4hMm24P7Ik3",
+              "notes": null
+            },
+            {
+              "id": "hardtekk",
+              "name": "Hardtekk",
+              "aliases": [
+                "Hard Tekk"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/hard dance/hardtekk",
+              "migration_status": "complete",
+              "spotify_playlist": "3mOFq9X9gDUyI4KW3R222h",
+              "notes": null
+            },
+            {
+              "id": "hardstyle",
+              "name": "Hardstyle",
+              "aliases": [
+                "Hard Style"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/hard dance/hardstyle",
+              "migration_status": "complete",
+              "spotify_playlist": "5jPLi1mMMGywafMadaMJWo",
+              "notes": null
+            },
+            {
+              "id": "neo-rave",
+              "name": "Neo Rave",
+              "aliases": [
+                "Neo-Rave"
+              ],
+              "local_folder": "music/DJ HARD - NEO-RAVE/hard dance/neo rave",
+              "migration_status": "complete",
+              "spotify_playlist": "5F9unsJVwI8gQQsD4b9qjd",
+              "notes": "A current Hard Dance / Hardcore store category. It remains separate from Neo Trance because the canonical parent and musical emphasis differ."
+            },
+            {
+              "id": "hard-bounce",
+              "name": "Hard Bounce",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/hard dance/hard bounce",
+              "migration_status": "complete",
+              "spotify_playlist": "0TlD2P4z1q72lmBSMZy72H",
+              "notes": "A recognized contemporary hard-dance style used by the artists in this scene; it should not be collapsed into Hardstyle or Hard Trance."
+            }
+          ]
         },
         {
-          "name": "Hard Trance",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hard trance",
-          "spotify_playlist": "7Ci8ClpWjOTOruSTfb0trQ",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Hardtekk",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hardtekk",
-          "spotify_playlist": "3mOFq9X9gDUyI4KW3R222h",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Hardstyle",
-          "local_folder": "music/DJ HARD - NEO-RAVE/hardstyle",
-          "spotify_playlist": "5jPLi1mMMGywafMadaMJWo",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Schranz",
-          "local_folder": "music/DJ HARD - NEO-RAVE/schranz",
-          "spotify_playlist": "44dbf0BjNTXOHsfuxjClGZ",
-          "notes": "No local folder yet"
-        },
-        {
-          "name": "Drum & Bass",
+          "main_genre_id": "drum-bass",
           "local_folder": "music/DJ HARD - NEO-RAVE/drum & bass",
-          "spotify_playlist": null,
-          "notes": "170+ BPM outlier; only classify here if BPM is confirmed above 170"
+          "legacy_local_folder": "music/DJ HARD - NEO-RAVE/drum & bass",
+          "migration_status": "complete",
+          "subgenres": []
+        },
+        {
+          "main_genre_id": "latin-rave",
+          "local_folder": "music/DJ HARD - NEO-RAVE/latin rave",
+          "migration_status": "complete",
+          "subgenres": [
+            {
+              "id": "nasty-club",
+              "name": "Nasty Club",
+              "aliases": [],
+              "local_folder": "music/DJ HARD - NEO-RAVE/latin rave/nasty club",
+              "migration_status": "complete",
+              "spotify_playlist": "74DiTgVs9CKP8aGmFbIUZ2",
+              "notes": "Creator-defined fusion of Latin rhythms, guaracha/reggaeton, trance, hard house and techno; distinct enough to avoid flattening the tracks into a broad rave bucket."
+            }
+          ]
         }
       ]
     }

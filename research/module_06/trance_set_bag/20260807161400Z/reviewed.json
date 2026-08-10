@@ -1,0 +1,2910 @@
+{
+  "artifact_type": "spotify_genre_research",
+  "artifact_version": 2,
+  "status": "approved",
+  "source_playlist_id": "39aSAxWOwWEwqoACmBafsG",
+  "source_playlist_name": "Trance set  bag",
+  "prepared_at": "2026-08-07T16:14:00.590636+00:00",
+  "schema_version": "2.0.0",
+  "taxonomy_context": {
+    "main_genres": [
+      {
+        "name": "House",
+        "aliases": []
+      },
+      {
+        "name": "Techno",
+        "aliases": []
+      },
+      {
+        "name": "Trance",
+        "aliases": []
+      },
+      {
+        "name": "Hard Dance",
+        "aliases": [
+          "Harddance"
+        ]
+      },
+      {
+        "name": "Garage",
+        "aliases": [
+          "UK Garage"
+        ]
+      },
+      {
+        "name": "Breakbeat",
+        "aliases": [
+          "Breaks"
+        ]
+      },
+      {
+        "name": "Indie Dance",
+        "aliases": []
+      },
+      {
+        "name": "Drum & Bass",
+        "aliases": [
+          "Drum and Bass",
+          "DnB",
+          "D&B"
+        ]
+      }
+    ],
+    "destinations": [
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "House",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "House",
+        "subgenre": "Afro House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "House",
+        "subgenre": "Deep House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "House",
+        "subgenre": "Melodic House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "House",
+        "subgenre": "Progressive House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": "Deep Techno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ CHILL / GROOVE",
+        "main_genre": "Indie Dance",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "House",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "House",
+        "subgenre": "Tech House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "House",
+        "subgenre": "Bass House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "House",
+        "subgenre": "Electro House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "House",
+        "subgenre": "Melbourne Bounce",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "Garage",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "Garage",
+        "subgenre": "Speed Garage",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ PEAK HOUSE / CLUB",
+        "main_genre": "Breakbeat",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": "Peak-Time Techno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": "Minimal Techno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": "Melodic Techno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Techno",
+        "subgenre": "Hard Groove",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Trance",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Trance",
+        "subgenre": "High Tech",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ FAST TECH / GROOVE",
+        "main_genre": "Trance",
+        "subgenre": "Psytrance",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "House",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "House",
+        "subgenre": "Hard House",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Techno",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Techno",
+        "subgenre": "Hard Techno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Techno",
+        "subgenre": "Industrial",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Techno",
+        "subgenre": "Schranz",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Trance",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Trance",
+        "subgenre": "Neo Trance",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Trance",
+        "subgenre": "Hard Trance",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Hard Dance",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Hard Dance",
+        "subgenre": "Hypertechno",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Hard Dance",
+        "subgenre": "Hardtekk",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Hard Dance",
+        "subgenre": "Hardstyle",
+        "classification_level": "subgenre"
+      },
+      {
+        "master_folder": "DJ HARD / NEO-RAVE",
+        "main_genre": "Drum & Bass",
+        "subgenre": null,
+        "classification_level": "main_genre"
+      }
+    ],
+    "policy": [
+      "Every valid track must receive at least a canonical main genre.",
+      "Use a parent fallback plus review flags when a subtype is not defensible.",
+      "Artist-profile evidence is allowed; broad/conflicting labels require documented judgment.",
+      "Propose precise new taxonomy nodes, but merge synonyms as aliases."
+    ]
+  },
+  "total_tracks": 54,
+  "tracks": [
+    {
+      "spotify_track_id": "3nbMmbCHfLUnjcr5Z31bez",
+      "artists": [
+        {
+          "spotify_artist_id": "32EPfJgEPYMc9W0qTJPGjl",
+          "name": "Cleopard2000"
+        }
+      ],
+      "artist": "Cleopard2000",
+      "title": "EMBRACE THE NIGHT",
+      "album": "EMBRACE THE NIGHT",
+      "spotify_album_id": "0y26BUJ2cgxTCfkEPzRlgn",
+      "isrc": "QZMHP2499283",
+      "duration_ms": 263612,
+      "release_date": "2024-08-06",
+      "spotify_url": "https://open.spotify.com/track/3nbMmbCHfLUnjcr5Z31bez",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "rationale": "The exact release is tagged Trance at 155 BPM, while Cleopard2000 describes a modern Trance/Hard Trance/Eurodance revival; Neo Trance is the best canonical fit.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "EMBRACE THE NIGHT",
+          "url": "https://soundcloud.com/cleopard2000/embrace-the-night-1",
+          "scope": "track"
+        },
+        {
+          "provider": "SongBPM",
+          "title": "Cleopard2000 tempo profile",
+          "url": "https://songbpm.com/%40cleopard2000",
+          "scope": "metadata"
+        },
+        {
+          "provider": "Spotify",
+          "title": "Cleopard2000 artist profile",
+          "url": "https://open.spotify.com/artist/32EPfJgEPYMc9W0qTJPGjl",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "26CGK3elJApX4TfTDdCY8G",
+      "artists": [
+        {
+          "spotify_artist_id": "7cMFFJpjAoaLo8rMx0aVGl",
+          "name": "Siimon"
+        }
+      ],
+      "artist": "Siimon",
+      "title": "Bring It Back",
+      "album": "Bring It Back",
+      "spotify_album_id": "51s0yYUXhHRZurDHjdZLtE",
+      "isrc": "TCAHY2464574",
+      "duration_ms": 185600,
+      "release_date": "2024-02-19",
+      "spotify_url": "https://open.spotify.com/track/26CGK3elJApX4TfTDdCY8G",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "rationale": "Siimon tags the exact recording as Trance; its contemporary rave production is best represented by the existing Neo Trance leaf.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Bring It Back",
+          "url": "https://soundcloud.com/siimonsounds/caught-up-2-demo",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "0YswY3w2ZZwImIrnY0mlls",
+      "artists": [
+        {
+          "spotify_artist_id": "0fwVrpm40ibmSV0BNqbQgT",
+          "name": "Baron Von Trax"
+        },
+        {
+          "spotify_artist_id": "72w1EkEE1vlElW5FnbVAiY",
+          "name": "Jim Jonathan"
+        }
+      ],
+      "artist": "Baron Von Trax, Jim Jonathan",
+      "title": "Thrill",
+      "album": "Thrill",
+      "spotify_album_id": "6pavB8cEjN5osr5CUH6qyE",
+      "isrc": "DEPI82415956",
+      "duration_ms": 179189,
+      "release_date": "2024-07-26",
+      "spotify_url": "https://open.spotify.com/track/0YswY3w2ZZwImIrnY0mlls",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 148 BPM recording as Trance (Main Floor), directly supporting the new canonical leaf.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Thrill",
+          "url": "https://www.beatport.com/track/thrill/19048892",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6TnnyFi6wLxV74NFpgNX0r",
+      "artists": [
+        {
+          "spotify_artist_id": "2o5jDhtHVPhrJdv3cEQ99Z",
+          "name": "Tiësto"
+        }
+      ],
+      "artist": "Tiësto",
+      "title": "Adagio for Strings",
+      "album": "Just Be",
+      "spotify_album_id": "1TkaArr8Y2mW4Qj40UEJaI",
+      "isrc": "NLE710480320",
+      "duration_ms": 443426,
+      "release_date": "2004-05-14",
+      "spotify_url": "https://open.spotify.com/track/6TnnyFi6wLxV74NFpgNX0r",
+      "main_genre": "Trance",
+      "subgenre": "Uplifting Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.98,
+      "rationale": "The exact 140 BPM release is Main Floor Trance and the composition is widely described as uplifting trance; Uplifting Trance captures the musical form more precisely.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Adagio for Strings",
+          "url": "https://www.beatport.com/track/adagio-for-strings/8417516",
+          "scope": "track"
+        },
+        {
+          "provider": "Wikipedia",
+          "title": "Adagio for Strings release history",
+          "url": "https://en.wikipedia.org/wiki/Adagio_for_Strings_%28Ti%C3%ABsto_song%29",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6df97OoVKmhLGCCduiZ22v",
+      "artists": [
+        {
+          "spotify_artist_id": "2GR0zwyO8NyrSyGmueuG35",
+          "name": "Noro$t"
+        },
+        {
+          "spotify_artist_id": "00ZUrbsgpvhKyFE0roi833",
+          "name": "Santi999"
+        },
+        {
+          "spotify_artist_id": "5wUBxg6sS8DJKjpyClpYCE",
+          "name": "Zoas"
+        }
+      ],
+      "artist": "Noro$t, Santi999, Zoas",
+      "title": "todo parece estar bien",
+      "album": "todo parece estar bien",
+      "spotify_album_id": "0BKnccB9wyvZvcwXgo6XNt",
+      "isrc": "QZTH92586594",
+      "duration_ms": 170679,
+      "release_date": "2026-05-15",
+      "spotify_url": "https://open.spotify.com/track/6df97OoVKmhLGCCduiZ22v",
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.74,
+      "rationale": "Noro$t defines Nasty Club as a 150–165 BPM fusion of Latin rhythms, guaracha/reggaeton, trance, hard house and techno. That creator-defined style is more precise than a generic hard-rave label.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Noro$t artist profile and Nasty Club description",
+          "url": "https://soundcloud.com/norostmusic",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": true,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "2n8umcGOgh3brAJP0SstKY",
+      "artists": [
+        {
+          "spotify_artist_id": "2GR0zwyO8NyrSyGmueuG35",
+          "name": "Noro$t"
+        }
+      ],
+      "artist": "Noro$t",
+      "title": "DOWN",
+      "album": "DOWN",
+      "spotify_album_id": "5GP2cKy2caFwagrBd4yypy",
+      "isrc": "QZTH82556583",
+      "duration_ms": 216705,
+      "release_date": "2026-03-09",
+      "spotify_url": "https://open.spotify.com/track/2n8umcGOgh3brAJP0SstKY",
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "The exact recording is published by Noro$t with the Nasty Club genre, making the creator-defined classification direct.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "DOWN",
+          "url": "https://soundcloud.com/norostmusic/norost-down",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": true,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4qBilM7ghVNTfY8GueRAXP",
+      "artists": [
+        {
+          "spotify_artist_id": "6eFNUPYVzIxTqtJ3p3O2lu",
+          "name": "Eskha"
+        }
+      ],
+      "artist": "Eskha",
+      "title": "Hard & Trance",
+      "album": "Hard & Trance",
+      "spotify_album_id": "6Rs3V8l4gnq3aojFT4wO20",
+      "isrc": "QZZ7K2699069",
+      "duration_ms": 283076,
+      "release_date": "2026-05-14",
+      "spotify_url": "https://open.spotify.com/track/4qBilM7ghVNTfY8GueRAXP",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "rationale": "The exact title and Eskha's Modern Hard Trance profile agree on Hard Trance.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Eskha profile and Hard & Trance",
+          "url": "https://m.soundcloud.com/eskha",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "64n1FmL5OBDnGAYt4EdQ3X",
+      "artists": [
+        {
+          "spotify_artist_id": "2GR0zwyO8NyrSyGmueuG35",
+          "name": "Noro$t"
+        }
+      ],
+      "artist": "Noro$t",
+      "title": "Just Dance, Solo Bailelo",
+      "album": "Just Dance, Solo Bailelo",
+      "spotify_album_id": "0FKt8efIhI6SUfoFy5yhcQ",
+      "isrc": "QZS642596310",
+      "duration_ms": 216000,
+      "release_date": "2025-10-28",
+      "spotify_url": "https://open.spotify.com/track/64n1FmL5OBDnGAYt4EdQ3X",
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.74,
+      "rationale": "This Noro$t recording belongs to the artist's self-defined Nasty Club practice: fast Latin club rhythms fused with trance, hard house and techno.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Noro$t artist profile and Nasty Club description",
+          "url": "https://soundcloud.com/norostmusic",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": true,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7G2KKlmxVBl3x2zTW4TxFE",
+      "artists": [
+        {
+          "spotify_artist_id": "6mrd6VB8APeUr5ATWunRZX",
+          "name": "DJ Traytex"
+        }
+      ],
+      "artist": "DJ Traytex",
+      "title": "4everyours",
+      "album": "4everyours",
+      "spotify_album_id": "7rFY5jy9mqMWRRlkqNnTjD",
+      "isrc": "DEH742611604",
+      "duration_ms": 215200,
+      "release_date": "2026-05-15",
+      "spotify_url": "https://open.spotify.com/track/7G2KKlmxVBl3x2zTW4TxFE",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.85,
+      "rationale": "The exact catalog entry is Trance at 77 BPM half-time, equivalent to roughly 154 BPM in the track's felt pulse; Hard Trance is the appropriate fast placement.",
+      "evidence": [
+        {
+          "provider": "Volumo",
+          "title": "DJ Traytex catalog: 4everyours",
+          "url": "https://volumo.com/artist/71273-dj-traytex",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "17RQChStJoGxkfwmpfjVNl",
+      "artists": [
+        {
+          "spotify_artist_id": "41EaXCRp3eOibImiIUUCx5",
+          "name": "Antonym"
+        },
+        {
+          "spotify_artist_id": "7q6gx2J7fy969LK4hGRw8Y",
+          "name": "Kichta"
+        }
+      ],
+      "artist": "Antonym, Kichta",
+      "title": "MAKE DA RAVE",
+      "album": "MAKE DA RAVE",
+      "spotify_album_id": "0wHROhQxj1zm1kvJNyEwqb",
+      "isrc": "QM6P42677794",
+      "duration_ms": 201290,
+      "release_date": "2026-05-22",
+      "spotify_url": "https://open.spotify.com/track/17RQChStJoGxkfwmpfjVNl",
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "rationale": "The exact 155 BPM release is categorized as Hard Dance / Hardcore / Neo Rave, supporting Neo Rave as a Hard Dance leaf rather than a Trance synonym.",
+      "evidence": [
+        {
+          "provider": "BeatStats",
+          "title": "MAKE DA RAVE",
+          "url": "https://www.beatstats.com/artist/antonym/248450?genre=0&period=2",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Antonym releases",
+          "url": "https://www.beatport.com/artist/antonym/248450/releases",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "2wIMjopqymO05jtA7LKE44",
+      "artists": [
+        {
+          "spotify_artist_id": "2GR0zwyO8NyrSyGmueuG35",
+          "name": "Noro$t"
+        }
+      ],
+      "artist": "Noro$t",
+      "title": "FOTOGENICA",
+      "album": "FOTOGENICA",
+      "spotify_album_id": "05DwbpbzERXhDxJFjpIuaK",
+      "isrc": "QZS652528323",
+      "duration_ms": 192756,
+      "release_date": "2025-11-21",
+      "spotify_url": "https://open.spotify.com/track/2wIMjopqymO05jtA7LKE44",
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Noro$t labels the exact recording Nasty Club, directly matching the artist's creator-defined Latin rave style.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "FOTOGENICA",
+          "url": "https://soundcloud.com/norostmusic/noro-t-fotogenica",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": true,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "0za7DvMEblA6ZCOPQB17Hj",
+      "artists": [
+        {
+          "spotify_artist_id": "7uS4z6GqvIIdZbVq327Ak9",
+          "name": "Alt8"
+        }
+      ],
+      "artist": "Alt8",
+      "title": "Next 2 Me",
+      "album": "Next 2 Me",
+      "spotify_album_id": "0YiMngZIW7ldRZRI4Kw2Pu",
+      "isrc": "DGA0P2429127",
+      "duration_ms": 259245,
+      "release_date": "2024-11-14",
+      "spotify_url": "https://open.spotify.com/track/0za7DvMEblA6ZCOPQB17Hj",
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 155 BPM recording as Neo Rave.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Next 2 Me",
+          "url": "https://www.beatport.com/track/next-2-me/19606495",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "59IwqDfglT8yEzXYRc2HwF",
+      "artists": [
+        {
+          "spotify_artist_id": "1vK8NnrPlBlF34LaiFX1SK",
+          "name": "Funk Tribu"
+        }
+      ],
+      "artist": "Funk Tribu",
+      "title": "reborn (alma)",
+      "album": "reborn (alma)",
+      "spotify_album_id": "434uucK4P2Y66KzXtWHfjZ",
+      "isrc": "QM6P42642547",
+      "duration_ms": 213520,
+      "release_date": "2026-05-29",
+      "spotify_url": "https://open.spotify.com/track/59IwqDfglT8yEzXYRc2HwF",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "Release coverage frames the track as a euphoric first chapter of Funk Tribu's new project, while current artist coverage places him in the new wave of trance-influenced club music; Neo Trance is the closest existing leaf.",
+      "evidence": [
+        {
+          "provider": "Electronic Groove",
+          "title": "Funk Tribu introduces LIFE with reborn (alma)",
+          "url": "https://electronicgroove.com/funk-tribu-introduces-life-with-first-single-reborn-alma/",
+          "scope": "release"
+        },
+        {
+          "provider": "EDMTunes",
+          "title": "Funk Tribu releases reborn (alma)",
+          "url": "https://www.edmtunes.com/2026/05/funk-tribu-releases-rebornalma-ahead-of-upcoming-ep/amp/",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "1KpWOjSqJMdXaEVh2rMwQl",
+      "artists": [
+        {
+          "spotify_artist_id": "37HNoMIyEavGIJnIPCA6Kv",
+          "name": "Matty Ralph"
+        },
+        {
+          "spotify_artist_id": "2XqkFv7puGh2cP0azCZdoc",
+          "name": "JOKESONYOU"
+        }
+      ],
+      "artist": "Matty Ralph, JOKESONYOU",
+      "title": "Heaven",
+      "album": "Heaven",
+      "spotify_album_id": "3OKiUj9tN6ci7yF7iyOewl",
+      "isrc": "NLZ542600174",
+      "duration_ms": 152432,
+      "release_date": "2026-05-08",
+      "spotify_url": "https://open.spotify.com/track/1KpWOjSqJMdXaEVh2rMwQl",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 148 BPM recording as Trance (Main Floor).",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Heaven",
+          "url": "https://www.beatport.com/track/heaven/28542711",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7Hl79ondCfqsJm7t12MJU2",
+      "artists": [
+        {
+          "spotify_artist_id": "5EfxH7IbMythnXm9REuSyr",
+          "name": "THISO"
+        }
+      ],
+      "artist": "THISO",
+      "title": "All I Wanna",
+      "album": "Reload EP",
+      "spotify_album_id": "5cz96DCoO0EArxEojybjeX",
+      "isrc": "QT3F22554673",
+      "duration_ms": 298850,
+      "release_date": "2025-10-17",
+      "spotify_url": "https://open.spotify.com/track/7Hl79ondCfqsJm7t12MJU2",
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "rationale": "Shazam identifies the exact 155 BPM recording as Techno. Its speed places it in the hard folder, so Hard Techno is the most useful specific leaf, with the broad source retained as a review flag.",
+      "evidence": [
+        {
+          "provider": "Shazam",
+          "title": "All I Wanna",
+          "url": "https://www.shazam.com/song/1845385599/all-i-wanna/music-video",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "1NUrZluiGCRucIvcjiRMCM",
+      "artists": [
+        {
+          "spotify_artist_id": "0HhkKgvROcEteI6vfUjvbv",
+          "name": "Tom Carroll"
+        }
+      ],
+      "artist": "Tom Carroll",
+      "title": "Wicked With You",
+      "album": "Wicked With You",
+      "spotify_album_id": "0T77mYfP5wbmDDUg7rkScz",
+      "isrc": "QM4TX2663724",
+      "duration_ms": 232367,
+      "release_date": "2026-03-20",
+      "spotify_url": "https://open.spotify.com/track/1NUrZluiGCRucIvcjiRMCM",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.9,
+      "rationale": "The exact release appears on Tom Carroll's profile, which explicitly describes him as a hard-trance artist.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Tom Carroll artist profile and Wicked With You",
+          "url": "https://open.spotify.com/artist/0HhkKgvROcEteI6vfUjvbv",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3BbguSQ6gCOyJ4iarQEy7t",
+      "artists": [
+        {
+          "spotify_artist_id": "49e9A9elFAUS9sCDMTyiWC",
+          "name": "Krl Mx"
+        }
+      ],
+      "artist": "Krl Mx",
+      "title": "Panic Angel Science",
+      "album": "Panic Angel Science",
+      "spotify_album_id": "5f0jDpgBzZZxaIwxQ6HICW",
+      "isrc": "DGA052564545",
+      "duration_ms": 276468,
+      "release_date": "2025-10-09",
+      "spotify_url": "https://open.spotify.com/track/3BbguSQ6gCOyJ4iarQEy7t",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "rationale": "Shazam labels the exact 160 BPM recording Trance. Although Krl Mx also works in hard-techno contexts, the recording-specific tag and tempo support Hard Trance.",
+      "evidence": [
+        {
+          "provider": "Shazam",
+          "title": "Panic Angel Science",
+          "url": "https://www.shazam.com/song/1844396851/panic-angel-science",
+          "scope": "track"
+        },
+        {
+          "provider": "Spotify",
+          "title": "Krl Mx artist profile",
+          "url": "https://open.spotify.com/artist/49e9A9elFAUS9sCDMTyiWC",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7y2k0nnWXKBYSZ9Ob6qrXm",
+      "artists": [
+        {
+          "spotify_artist_id": "1rC3ytYxm8NTaVdpD1A7kb",
+          "name": "Vespera"
+        }
+      ],
+      "artist": "Vespera",
+      "title": "No Time In Space",
+      "album": "No Time In Space",
+      "spotify_album_id": "6ZCUd1PFowM1cjyFNqief1",
+      "isrc": "QM4TX2672880",
+      "duration_ms": 211354,
+      "release_date": "2026-03-13",
+      "spotify_url": "https://open.spotify.com/track/7y2k0nnWXKBYSZ9Ob6qrXm",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "The label's exact extended mix is explicitly tagged Hardtrance; the spelling is normalized as an alias of Hard Trance.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "No Time In Space (Extended Mix)",
+          "url": "https://soundcloud.com/tribe-rec/no-times-in-space-extended-mix?in=vesssspera%2Fsets%2Freleases",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6lxwMRkzn2P96BEDNSvez8",
+      "artists": [
+        {
+          "spotify_artist_id": "1kxtffrAERKKcf29V1heRs",
+          "name": "snoritz"
+        }
+      ],
+      "artist": "snoritz",
+      "title": "Kiss Me in the Rain",
+      "album": "BRING BACK EUROTRANCE",
+      "spotify_album_id": "5dFoSAJkmWafmRE2mFieV7",
+      "isrc": "GBMJG2606859",
+      "duration_ms": 282428,
+      "release_date": "2026-04-17",
+      "spotify_url": "https://open.spotify.com/track/6lxwMRkzn2P96BEDNSvez8",
+      "main_genre": "Trance",
+      "subgenre": "Eurotrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.9,
+      "rationale": "The exact 144 BPM recording is on the explicitly titled BRING BACK EUROTRANCE release. Eurotrance is a useful canonical leaf rather than a one-off alias.",
+      "evidence": [
+        {
+          "provider": "Shazam",
+          "title": "Kiss Me in the Rain / BRING BACK EUROTRANCE",
+          "url": "https://www.shazam.com/song/1884657963/kiss-me-in-the-rain",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7e8jGH2hOUpgKfw3tcdTrC",
+      "artists": [
+        {
+          "spotify_artist_id": "5YJQDXCY8nFTf6BuHcYvJn",
+          "name": "MATRAKK"
+        }
+      ],
+      "artist": "MATRAKK",
+      "title": "Taste My Love",
+      "album": "Taste My Love",
+      "spotify_album_id": "3IOrj5mxaM4uMcd0zMRiR3",
+      "isrc": "CBEFB2602855",
+      "duration_ms": 172000,
+      "release_date": "2026-05-29",
+      "spotify_url": "https://open.spotify.com/track/7e8jGH2hOUpgKfw3tcdTrC",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 150 BPM recording as Hard Trance.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "MATRAKK tracks: Taste My Love",
+          "url": "https://www.beatport.com/artist/matrakk/852121/tracks",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7jzSBql5qemZ7MiAn70lDO",
+      "artists": [
+        {
+          "spotify_artist_id": "5YJQDXCY8nFTf6BuHcYvJn",
+          "name": "MATRAKK"
+        }
+      ],
+      "artist": "MATRAKK",
+      "title": "COMING BACK",
+      "album": "COMING BACK",
+      "spotify_album_id": "1lBLG3ciyOquj5XRw0XOHO",
+      "isrc": "FRX452504310",
+      "duration_ms": 159795,
+      "release_date": "2025-06-27",
+      "spotify_url": "https://open.spotify.com/track/7jzSBql5qemZ7MiAn70lDO",
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact recording as Neo Rave at approximately 150 BPM.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "MATRAKK tracks: Coming Back",
+          "url": "https://www.beatport.com/artist/matrakk/852121/tracks",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4RdVUi6qXpyIebizY2zTQD",
+      "artists": [
+        {
+          "spotify_artist_id": "6ZGqNbBtVrSU2EgalYQksc",
+          "name": "Linds"
+        },
+        {
+          "spotify_artist_id": "7BHuR017oGOoVOufUqT8ld",
+          "name": "annxious"
+        }
+      ],
+      "artist": "Linds, annxious",
+      "title": "Under Pressure",
+      "album": "Under Pressure",
+      "spotify_album_id": "6ttQhtrfHVyBmvs5AZMTZ1",
+      "isrc": "DE1QW2624957",
+      "duration_ms": 193745,
+      "release_date": "2026-05-22",
+      "spotify_url": "https://open.spotify.com/track/4RdVUi6qXpyIebizY2zTQD",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "The exact release is categorized as Trance and Linds' profile emphasizes contemporary trance-rave and hardgroove percussion; Neo Trance is more informative than leaving it at the parent.",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "title": "Under Pressure",
+          "url": "https://music.apple.com/tr/album/under-pressure-single/6766506244",
+          "scope": "release"
+        },
+        {
+          "provider": "Spotify",
+          "title": "Linds artist profile",
+          "url": "https://open.spotify.com/artist/6ZGqNbBtVrSU2EgalYQksc",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "64meeYiAweSjle711YjWXu",
+      "artists": [
+        {
+          "spotify_artist_id": "433bbqlxHokixaQTTkXZ0S",
+          "name": "Pawlowski"
+        }
+      ],
+      "artist": "Pawlowski",
+      "title": "Make It Smooth",
+      "album": "Make It Smooth",
+      "spotify_album_id": "53BiIZZqcjGNb3VjrWujSE",
+      "isrc": "FXR752512940",
+      "duration_ms": 344558,
+      "release_date": "2026-04-24",
+      "spotify_url": "https://open.spotify.com/track/64meeYiAweSjle711YjWXu",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 150 BPM recording as Trance (Main Floor).",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Make It Smooth",
+          "url": "https://www.beatport.com/track/make-it-smooth/28443772",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4VRjfOLBvwPbtk8p5srOqf",
+      "artists": [
+        {
+          "spotify_artist_id": "4MiEz25tF9BmzSEU0XKqxS",
+          "name": "Noise Mafia"
+        },
+        {
+          "spotify_artist_id": "0tiNnfjDsClhxh7CoINKM5",
+          "name": "Europe DJ"
+        }
+      ],
+      "artist": "Noise Mafia, Europe DJ",
+      "title": "Say Goodbye (feat. EUROPE DJ)",
+      "album": "Say Goodbye (feat. EUROPE DJ)",
+      "spotify_album_id": "67VstjKEHN50TDCKR5lBxk",
+      "isrc": "QMFMG2527104",
+      "duration_ms": 219200,
+      "release_date": "2025-12-05",
+      "spotify_url": "https://open.spotify.com/track/4VRjfOLBvwPbtk8p5srOqf",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.85,
+      "rationale": "The label tags the exact extended mix Trance, while Beatport places the 150 BPM release in its main-stage bucket; Trance (Main Floor) best reconciles the evidence.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Say Goodbye (Extended Mix)",
+          "url": "https://soundcloud.com/tribe-rec/say-goodbye-ft-europe-dj-extended-mix",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Say Goodbye",
+          "url": "https://www.beatport.com/track/say-goodbye/22441205",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "conflicting-sources",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3bycUlW05MiCsDgSKds8sj",
+      "artists": [
+        {
+          "spotify_artist_id": "6H9sRmDCsXzsWK7jEg1thF",
+          "name": "Adrian Mills"
+        },
+        {
+          "spotify_artist_id": "3H9fzIjoZZkC7clF38xDbm",
+          "name": "TATITA"
+        }
+      ],
+      "artist": "Adrian Mills, TATITA",
+      "title": "TODAVÍA",
+      "album": "PROBANDO PROBANDO",
+      "spotify_album_id": "6Hu58XEyWpB94scgGcv1Z9",
+      "isrc": "QM6MZ2619954",
+      "duration_ms": 204150,
+      "release_date": "2026-03-20",
+      "spotify_url": "https://open.spotify.com/track/3bycUlW05MiCsDgSKds8sj",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hard Bounce",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "rationale": "Adrian Mills is closely identified with the current Hard Bounce and Hard Trance scene. With no stronger exact-release genre source, Hard Bounce is the best artist-level judgment and is explicitly flagged.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Adrian Mills artist profile",
+          "url": "https://open.spotify.com/artist/6H9sRmDCsXzsWK7jEg1thF",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6nkwZpSWKlxCWwOth2XyLe",
+      "artists": [
+        {
+          "spotify_artist_id": "2nLwJtlNUhvEcELjkXd7v5",
+          "name": "WILDERÍCH"
+        }
+      ],
+      "artist": "WILDERÍCH",
+      "title": "FAVORITE DRUG",
+      "album": "GABRIEL",
+      "spotify_album_id": "1xwZm3Tp2gINjTu2rAZrWZ",
+      "isrc": "QM6P42698160",
+      "duration_ms": 309699,
+      "release_date": "2026-06-12",
+      "spotify_url": "https://open.spotify.com/track/6nkwZpSWKlxCWwOth2XyLe",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hard Bounce",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "rationale": "WILDERÍCH's release context sits in the same fast Hard Bounce/Hard Trance circuit. The exact subgenre is a Codex judgment from artist and release context, so it remains review-flagged.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "WILDERÍCH artist profile and Favorite Drug",
+          "url": "https://open.spotify.com/artist/2nLwJtlNUhvEcELjkXd7v5",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5xe8auGi1VhNnulwRR87k4",
+      "artists": [
+        {
+          "spotify_artist_id": "629DRpzxtk6FhLuqMfSqqP",
+          "name": "Mika Heggemann"
+        },
+        {
+          "spotify_artist_id": "30tToHC6q3nB7Lious0MZW",
+          "name": "Teletech"
+        }
+      ],
+      "artist": "Mika Heggemann, Teletech",
+      "title": "Anti Club",
+      "album": "Anti Club",
+      "spotify_album_id": "4ncjn4iHSa7tf9LNplnLhQ",
+      "isrc": "DEH742515240",
+      "duration_ms": 306315,
+      "release_date": "2025-05-23",
+      "spotify_url": "https://open.spotify.com/track/5xe8auGi1VhNnulwRR87k4",
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 152 BPM recording as Neo Rave.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Anti Club",
+          "url": "https://www.beatport.com/track/t/20513848?currency=USD",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6Cb6beO5ZVbyWRlPI2EAtD",
+      "artists": [
+        {
+          "spotify_artist_id": "1nEXVZDTFiRElurifYU4Ky",
+          "name": "Madpace"
+        },
+        {
+          "spotify_artist_id": "66cKWiMTrFJ9VTftFhkbOg",
+          "name": "ENERGIC"
+        }
+      ],
+      "artist": "Madpace, ENERGIC",
+      "title": "GTA MODE",
+      "album": "GTA MODE",
+      "spotify_album_id": "24mCXRiLcn9C13KfjzK6Fa",
+      "isrc": "DGA052595327",
+      "duration_ms": 224518,
+      "release_date": "2025-10-31",
+      "spotify_url": "https://open.spotify.com/track/6Cb6beO5ZVbyWRlPI2EAtD",
+      "main_genre": "Hard Dance",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "rationale": "Apple Music classifies the exact release as Hardcore. Because the current schema has no defensible matching hardcore leaf, it routes to the Hard Dance parent instead of forcing Hardstyle or Hardtekk.",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "title": "GTA MODE",
+          "url": "https://music.apple.com/gb/album/gta-mode-single/1846450607",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1CJQFCjoxT8Tq2CC8QTVYq",
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4w2xQjcY4Xu6uUlUkYaOH7",
+      "artists": [
+        {
+          "spotify_artist_id": "6H9sRmDCsXzsWK7jEg1thF",
+          "name": "Adrian Mills"
+        },
+        {
+          "spotify_artist_id": "5lo98rtXBC7oYpOEsyLc94",
+          "name": "Schrotthagen"
+        }
+      ],
+      "artist": "Adrian Mills, Schrotthagen",
+      "title": "FUTURO (INTRO)",
+      "album": "PROBANDO PROBANDO",
+      "spotify_album_id": "6Hu58XEyWpB94scgGcv1Z9",
+      "isrc": "QM4TW2684433",
+      "duration_ms": 306150,
+      "release_date": "2026-03-20",
+      "spotify_url": "https://open.spotify.com/track/4w2xQjcY4Xu6uUlUkYaOH7",
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "rationale": "Beatport classifies the exact release as Neo Rave. Other tempo services place its felt tempo near 158–160 BPM, so the store's 126 BPM field is treated as a metadata conflict rather than a folder cue.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "FUTURO (INTRO)",
+          "url": "https://www.beatport.com/track/futuro/23880139",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "conflicting-sources",
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6uiwZSnLjzPPrypb5afDus",
+      "artists": [
+        {
+          "spotify_artist_id": "2b1Yc522In2BV3Q1fj2JzY",
+          "name": "DATSKO"
+        }
+      ],
+      "artist": "DATSKO",
+      "title": "Miracles",
+      "album": "Miracles",
+      "spotify_album_id": "6YRaM3DRrwKBS3JMBSjXbh",
+      "isrc": "SEYOK2409431",
+      "duration_ms": 318000,
+      "release_date": "2025-06-17",
+      "spotify_url": "https://open.spotify.com/track/6uiwZSnLjzPPrypb5afDus",
+      "main_genre": "Hard Dance",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.65,
+      "rationale": "The exact 160 BPM recording is broadly categorized as Electronica, while DATSKO describes his work as very high-BPM and current coverage emphasizes a harder, heavier sound. Hard Dance is the safest parent-level judgment.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Miracles",
+          "url": "https://www.beatport.com/track/miracles/20637039",
+          "scope": "track"
+        },
+        {
+          "provider": "Shazam",
+          "title": "Miracles",
+          "url": "https://www.shazam.com/song/1741922568/miracles",
+          "scope": "track"
+        },
+        {
+          "provider": "Hot Press",
+          "title": "DATSKO interview",
+          "url": "https://www.hotpress.com/music/datsko-on-his-electric-picnic-debut-i-play-a-very-high-bpm-set-it-takes-a-lot-of-energy-out-of-you-but-its-going-to-be-insane-23044417",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata",
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1CJQFCjoxT8Tq2CC8QTVYq",
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3tvlMJVpXT11bwB2OgHsj3",
+      "artists": [
+        {
+          "spotify_artist_id": "4V8AR3bBMhrLaWirYLKBEe",
+          "name": "Kalte Liebe"
+        },
+        {
+          "spotify_artist_id": "0VevbPTec9d8audiahBL3f",
+          "name": "CAIVA"
+        }
+      ],
+      "artist": "Kalte Liebe, CAIVA",
+      "title": "Always On My Mind",
+      "album": "Always On My Mind",
+      "spotify_album_id": "4YWRFcOxXtCfLEHB6bAeU5",
+      "isrc": "DECE72501195",
+      "duration_ms": 255000,
+      "release_date": "2025-05-02",
+      "spotify_url": "https://open.spotify.com/track/3tvlMJVpXT11bwB2OgHsj3",
+      "main_genre": "Techno",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "The exact 148 BPM recording has only a broad Dance tag, while CAIVA is consistently categorized as Techno. That supports the Techno parent without inventing a narrower leaf.",
+      "evidence": [
+        {
+          "provider": "Shazam",
+          "title": "Always On My Mind",
+          "url": "https://www.shazam.com/en-us/song/1811114140/always-on-my-mind",
+          "scope": "track"
+        },
+        {
+          "provider": "Apple Music",
+          "title": "CAIVA artist profile",
+          "url": "https://music.apple.com/us/artist/caiva/1552052492",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7JFH1pIbhv14d2TE6KiAeN",
+      "artists": [
+        {
+          "spotify_artist_id": "1vK8NnrPlBlF34LaiFX1SK",
+          "name": "Funk Tribu"
+        },
+        {
+          "spotify_artist_id": "7ypPN35cJ9wfF2Zs7aYS33",
+          "name": "Dillistone"
+        }
+      ],
+      "artist": "Funk Tribu, Dillistone",
+      "title": "where are you taking me? (mente)",
+      "album": "where are you taking me? (mente)",
+      "spotify_album_id": "1aycvMYkEvofbfft4h9wo5",
+      "isrc": "QM6P42642589",
+      "duration_ms": 227938,
+      "release_date": "2026-07-03",
+      "spotify_url": "https://open.spotify.com/track/7JFH1pIbhv14d2TE6KiAeN",
+      "main_genre": "House",
+      "subgenre": "Hard House",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "The exact 148 BPM release is broadly tagged Dance, while catalog context places the record in the current Hard House circuit. Hard House is the most useful judgment, with the conflicting trance influence retained for review.",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "where are you taking me? (mente)",
+          "url": "https://www.mixgraph.io/tracks/dillistone-where-are-you-taking-me-mente-extended-mix",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "where are you taking me? release",
+          "url": "https://www.beatport.com/release/where-are-you-taking-me-mente-extended-mix/6865023",
+          "scope": "release"
+        },
+        {
+          "provider": "RecentMusic",
+          "title": "Hard House artist context",
+          "url": "https://recentmusic.com/genre/hard-house/",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1I3kb2SoSLLtiuiY95cdJ2",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "63UTDmJiUZ4tXyaWiqilel",
+      "artists": [
+        {
+          "spotify_artist_id": "5YJQDXCY8nFTf6BuHcYvJn",
+          "name": "MATRAKK"
+        }
+      ],
+      "artist": "MATRAKK",
+      "title": "Toda La Noche",
+      "album": "Toda La Noche",
+      "spotify_album_id": "7u2DDOkWSs2LSnCiNh6KNB",
+      "isrc": "CBEFB2603540",
+      "duration_ms": 221095,
+      "release_date": "2026-06-24",
+      "spotify_url": "https://open.spotify.com/track/63UTDmJiUZ4tXyaWiqilel",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 146 BPM recording as Hard Trance.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "MATRAKK tracks: Toda La Noche",
+          "url": "https://www.beatport.com/artist/matrakk/852121/tracks",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "14QxAfVyMTaTpYvR5z1Mrj",
+      "artists": [
+        {
+          "spotify_artist_id": "2DDqcRRVt2xLxMYHD7FQk1",
+          "name": "L.zwo"
+        }
+      ],
+      "artist": "L.zwo",
+      "title": "Cava Sella",
+      "album": "Cava Sella",
+      "spotify_album_id": "5NJt2cE6rPOGODMOFEB7XM",
+      "isrc": "FRX202652858",
+      "duration_ms": 188025,
+      "release_date": "2026-06-18",
+      "spotify_url": "https://open.spotify.com/track/14QxAfVyMTaTpYvR5z1Mrj",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "The exact release is by L.zwo, whose biographies describe melodic, uplifting and bounce-driven trance. The contemporary 157 BPM context makes Neo Trance the best existing leaf.",
+      "evidence": [
+        {
+          "provider": "Bandcamp",
+          "title": "Cava Sella",
+          "url": "https://rawppl.bandcamp.com/track/cava-sella",
+          "scope": "track"
+        },
+        {
+          "provider": "Resident Advisor",
+          "title": "L.zwo biography",
+          "url": "https://ra.co/dj/l.zwo/biography",
+          "scope": "artist"
+        },
+        {
+          "provider": "Dream Nation",
+          "title": "L.zwo profile",
+          "url": "https://dreamnation.fr/en/artiste/l-zwo/",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3mO6sZ4jgNGf65VGiipS9J",
+      "artists": [
+        {
+          "spotify_artist_id": "6ZGqNbBtVrSU2EgalYQksc",
+          "name": "Linds"
+        }
+      ],
+      "artist": "Linds",
+      "title": "Joyride",
+      "album": "Joyride",
+      "spotify_album_id": "04COTJC7BweUXUZYzPOILd",
+      "isrc": "NL6WK2600652",
+      "duration_ms": 208295,
+      "release_date": "2026-06-19",
+      "spotify_url": "https://open.spotify.com/track/3mO6sZ4jgNGf65VGiipS9J",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "rationale": "Apple Music categorizes the exact release as Trance, and Linds' trance-rave profile supports the modern Neo Trance leaf.",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "title": "Joyride",
+          "url": "https://music.apple.com/de/album/joyride-single/6777956710?l=en-GB",
+          "scope": "release"
+        },
+        {
+          "provider": "Spotify",
+          "title": "Linds artist profile",
+          "url": "https://open.spotify.com/artist/6ZGqNbBtVrSU2EgalYQksc",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7b9gveUc7gp8JWxQEWtPPI",
+      "artists": [
+        {
+          "spotify_artist_id": "629DRpzxtk6FhLuqMfSqqP",
+          "name": "Mika Heggemann"
+        }
+      ],
+      "artist": "Mika Heggemann",
+      "title": "All That You Love",
+      "album": "All That You Love",
+      "spotify_album_id": "6NVFpp93hfDYv8Du5SKCWx",
+      "isrc": "DECE72602041",
+      "duration_ms": 278918,
+      "release_date": "2026-05-08",
+      "spotify_url": "https://open.spotify.com/track/7b9gveUc7gp8JWxQEWtPPI",
+      "main_genre": "Hard Dance",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.62,
+      "rationale": "The exact release belongs to Mika Heggemann, whose catalog crosses Neo Rave and Main Floor Trance. Without a reliable exact tag, Hard Dance is the honest parent fallback.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "All That You Love",
+          "url": "https://open.spotify.com/album/6NVFpp93hfDYv8Du5SKCWx",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Mika Heggemann catalog",
+          "url": "https://www.beatport.com/artist/mika-heggemann/1286756/tracks",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1CJQFCjoxT8Tq2CC8QTVYq",
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5m2L4XD7yoQ9gCgvLZJ47K",
+      "artists": [
+        {
+          "spotify_artist_id": "2RibmjRGf8SiwxdCQZ9N1C",
+          "name": "David Löhlein"
+        },
+        {
+          "spotify_artist_id": "1EJ9teYCbzR1V2uGOaqzK5",
+          "name": "RIVVAA"
+        },
+        {
+          "spotify_artist_id": "7n35qLqM5KST1SYogipxl1",
+          "name": "Amante"
+        }
+      ],
+      "artist": "David Löhlein, RIVVAA, Amante",
+      "title": "Esperate - Extended Mix",
+      "album": "Esperate",
+      "spotify_album_id": "4QmWjI0AZ8dlqijmChEtw1",
+      "isrc": "NLF712602613",
+      "duration_ms": 185706,
+      "release_date": "2026-05-29",
+      "spotify_url": "https://open.spotify.com/track/5m2L4XD7yoQ9gCgvLZJ47K",
+      "main_genre": "Trance",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.65,
+      "rationale": "The exact 146 BPM mix is broadly Dance/Pop and its Bandcamp release mixes house, Latin pop, psy, techno and trance tags. Trance is the best parent judgment, but the evidence does not justify a narrower leaf.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Esperate (Extended Mix)",
+          "url": "https://www.beatport.com/track/t/28862363?currency=GBP",
+          "scope": "track"
+        },
+        {
+          "provider": "Bandcamp",
+          "title": "Esperate release",
+          "url": "https://davidloehlein.bandcamp.com/album/esperate",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3slVbxxqvroRRgKXBsH9mE",
+      "artists": [
+        {
+          "spotify_artist_id": "0LAMskg8u2rGlNDYvlRZdq",
+          "name": "Part Time Killer"
+        },
+        {
+          "spotify_artist_id": "4efMaC6iEPkKQ0ouYeGdCF",
+          "name": "Layton"
+        }
+      ],
+      "artist": "Part Time Killer, Layton",
+      "title": "Summer in My Ears",
+      "album": "Summer in My Ears",
+      "spotify_album_id": "4CTD061mBDfYFEIzcC6k3x",
+      "isrc": "DEA622502476",
+      "duration_ms": 140800,
+      "release_date": "2025-08-22",
+      "spotify_url": "https://open.spotify.com/track/3slVbxxqvroRRgKXBsH9mE",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance Pop",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.95,
+      "rationale": "Part Time Killer describes the project's sound as Hard-Trance-Pop—harder than hard house and softer than hard techno—and the exact recording is 150 BPM. The creator-defined leaf is precise and defensible.",
+      "evidence": [
+        {
+          "provider": "FAZEmag",
+          "title": "Part Time Killer: Summer in My Ears",
+          "url": "https://www.fazemag.de/part-time-killer-den-sommer-im-ohr/",
+          "scope": "release"
+        },
+        {
+          "provider": "Shazam",
+          "title": "Summer in My Ears",
+          "url": "https://www.shazam.com/song/1823254386/summer-in-my-ears",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4uayfJhcQlWGzKgkVSdOQY",
+      "artists": [
+        {
+          "spotify_artist_id": "0VevbPTec9d8audiahBL3f",
+          "name": "CAIVA"
+        }
+      ],
+      "artist": "CAIVA",
+      "title": "Unlove You",
+      "album": "Unlove You",
+      "spotify_album_id": "7s84H8qfRyPdlve7Xji3iq",
+      "isrc": "DEUM72603046",
+      "duration_ms": 208926,
+      "release_date": "2026-05-22",
+      "spotify_url": "https://open.spotify.com/track/4uayfJhcQlWGzKgkVSdOQY",
+      "main_genre": "Techno",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.65,
+      "rationale": "CAIVA is consistently categorized as Techno. With no dependable narrower recording tag, the track routes to the Techno parent and keeps an artist-only flag.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "CAIVA artist profile and Unlove You",
+          "url": "https://open.spotify.com/artist/0VevbPTec9d8audiahBL3f",
+          "scope": "artist"
+        },
+        {
+          "provider": "Apple Music",
+          "title": "CAIVA artist genre",
+          "url": "https://music.apple.com/mx/artist/caiva/1552052492",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "target_kind": "main_genre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6BsCZ4Ufsg8pOwi39xbpPN",
+      "artists": [
+        {
+          "spotify_artist_id": "2DDqcRRVt2xLxMYHD7FQk1",
+          "name": "L.zwo"
+        }
+      ],
+      "artist": "L.zwo",
+      "title": "Lost",
+      "album": "Lost",
+      "spotify_album_id": "3xMa0YI3f57Bwe6k5mlajV",
+      "isrc": "DEUM72603466",
+      "duration_ms": 186666,
+      "release_date": "2026-07-10",
+      "spotify_url": "https://open.spotify.com/track/6BsCZ4Ufsg8pOwi39xbpPN",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "L.zwo's profiles consistently describe trance with melodic, uplifting and bounce elements. In the absence of a narrower exact tag, Neo Trance is the best artist-informed classification.",
+      "evidence": [
+        {
+          "provider": "Apple Music",
+          "title": "L.zwo artist profile",
+          "url": "https://music.apple.com/us/artist/l-zwo/1445705032",
+          "scope": "artist"
+        },
+        {
+          "provider": "Resident Advisor",
+          "title": "L.zwo biography",
+          "url": "https://ra.co/dj/l.zwo/biography",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6wSEQjF03gVTMF2gTK3099",
+      "artists": [
+        {
+          "spotify_artist_id": "6jOvaPYH1SCOGCM1um3RaU",
+          "name": "NSLZ"
+        },
+        {
+          "spotify_artist_id": "0tV5lt1qxmgzwgDnzhQKAa",
+          "name": "jnny"
+        }
+      ],
+      "artist": "NSLZ, jnny",
+      "title": "All My Life",
+      "album": "All My Life",
+      "spotify_album_id": "0QicHmYLA8LdE0BgYf65QD",
+      "isrc": "QZS672575516",
+      "duration_ms": 234038,
+      "release_date": "2025-06-25",
+      "spotify_url": "https://open.spotify.com/track/6wSEQjF03gVTMF2gTK3099",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "rationale": "The exact recording is tagged Trance and measures about 156 BPM. Its speed and hard-rave context support Hard Trance, with the broad source retained for review.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "All My Life",
+          "url": "https://soundcloud.com/nospeedlimitzone/nslz-jnny-all-my-life?in=nospeedlimitzone%2Fsets%2Freleases",
+          "scope": "track"
+        },
+        {
+          "provider": "SongData",
+          "title": "All My Life tempo",
+          "url": "https://songdata.io/track/6wSEQjF03gVTMF2gTK3099/All-My-Life-by-NSLZ-jnny",
+          "scope": "metadata"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "4rq5JOML0dE8OtDPwaQ73B",
+      "artists": [
+        {
+          "spotify_artist_id": "5YJQDXCY8nFTf6BuHcYvJn",
+          "name": "MATRAKK"
+        }
+      ],
+      "artist": "MATRAKK",
+      "title": "Midnight Illusion",
+      "album": "Midnight Illusion",
+      "spotify_album_id": "4vuhhPVCAK2qUZ6mrjClv9",
+      "isrc": "CBEFB2600245",
+      "duration_ms": 197800,
+      "release_date": "2026-02-27",
+      "spotify_url": "https://open.spotify.com/track/4rq5JOML0dE8OtDPwaQ73B",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.99,
+      "rationale": "Beatport classifies the exact 150 BPM recording as Trance (Main Floor).",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "MATRAKK tracks: Midnight Illusion",
+          "url": "https://www.beatport.com/artist/matrakk/852121/tracks",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "01jx3vXwUaw9cfFeBk8sJQ",
+      "artists": [
+        {
+          "spotify_artist_id": "0HHa7ZJZxUQlg5l2mB0N0f",
+          "name": "Marlon Hoffstadt"
+        },
+        {
+          "spotify_artist_id": "4lBSzo2LS8asEzoePv6VLM",
+          "name": "DJ Daddy Trance"
+        }
+      ],
+      "artist": "Marlon Hoffstadt, DJ Daddy Trance",
+      "title": "Supersonic",
+      "album": "Supersonic / Hands Up In The Sky",
+      "spotify_album_id": "0x72kHM5nCDu7qtoIJcnfT",
+      "isrc": "USUG12503829",
+      "duration_ms": 188108,
+      "release_date": "2025-05-23",
+      "spotify_url": "https://open.spotify.com/track/01jx3vXwUaw9cfFeBk8sJQ",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "rationale": "The exact release is tagged trance/eurodance/electro and runs in the high-energy DJ Daddy Trance lane; Trance (Main Floor) best represents its festival-facing 148 BPM function.",
+      "evidence": [
+        {
+          "provider": "Bandcamp",
+          "title": "Supersonic",
+          "url": "https://marlonhoffstadt.bandcamp.com/track/supersonic",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "0Xiilwq8VEWfL588KT8FGl",
+      "artists": [
+        {
+          "spotify_artist_id": "35KXyRbCBiVpqQzhrzk1Uk",
+          "name": "Mr.Machine"
+        }
+      ],
+      "artist": "Mr.Machine",
+      "title": "Ballad Of Doubt",
+      "album": "Ballad Of Doubt",
+      "spotify_album_id": "6bzm6GwoVVXxsoUkM6AWoz",
+      "isrc": "DGA072417452",
+      "duration_ms": 363311,
+      "release_date": "2024-08-08",
+      "spotify_url": "https://open.spotify.com/track/0Xiilwq8VEWfL588KT8FGl",
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.95,
+      "rationale": "The exact label upload is Techno and the Bandcamp release is tagged hard and industrial techno. Hard Techno is directly supported, with Industrial remaining a secondary influence.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Ballad Of Doubt",
+          "url": "https://soundcloud.com/no-mercy-label/mrmachine-ballad-of-doubt-no-mercy",
+          "scope": "track"
+        },
+        {
+          "provider": "Bandcamp",
+          "title": "Ballad Of Doubt",
+          "url": "https://nomercymusic.bandcamp.com/track/ballad-of-doubt",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7jWkjgyanEFBQ4f1hoTPS5",
+      "artists": [
+        {
+          "spotify_artist_id": "7c4fOBUstnjfbvSwtOJSiA",
+          "name": "Odymel"
+        },
+        {
+          "spotify_artist_id": "40DuSzxFswBymk0cjFnuqL",
+          "name": "Coach Harrison"
+        }
+      ],
+      "artist": "Odymel, Coach Harrison",
+      "title": "Knowledge is a weapon",
+      "album": "ENDLESS RECESS",
+      "spotify_album_id": "3OhzYZ9lAGHFevjvIMZUF6",
+      "isrc": "DEUM72510566",
+      "duration_ms": 240000,
+      "release_date": "2025-12-05",
+      "spotify_url": "https://open.spotify.com/track/7jWkjgyanEFBQ4f1hoTPS5",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.9,
+      "rationale": "The exact release is tagged hardtrance/trance/techno and is 148 BPM. Hard Trance is the dominant, canonical classification.",
+      "evidence": [
+        {
+          "provider": "Bandcamp",
+          "title": "Knowledge is a weapon",
+          "url": "https://odymel.bandcamp.com/track/knowledge-is-a-weapon-ft-coach-harrison",
+          "scope": "track"
+        },
+        {
+          "provider": "Shazam",
+          "title": "Knowledge is a weapon",
+          "url": "https://www.shazam.com/song/1852813813/knowledge-is-a-weapon-feat-coach-harrison",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5IhrCuPpO4mKHg6RVNGDx5",
+      "artists": [
+        {
+          "spotify_artist_id": "2b1Yc522In2BV3Q1fj2JzY",
+          "name": "DATSKO"
+        }
+      ],
+      "artist": "DATSKO",
+      "title": "Where Have You Been",
+      "album": "Where Have You Been",
+      "spotify_album_id": "3A69hnA6PgQauVt09Ksdwd",
+      "isrc": "UKRVV1900805",
+      "duration_ms": 228613,
+      "release_date": "2026-05-15",
+      "spotify_url": "https://open.spotify.com/track/5IhrCuPpO4mKHg6RVNGDx5",
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.85,
+      "rationale": "DATSKO tags the exact remix Trance, and the catalog tempo is about 158 BPM. The recording-specific tag and speed outweigh the store's broad Dance/Pop category.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Where Have You Been",
+          "url": "https://soundcloud.com/datskobeats/datsko-where-have-u-been-remix-4?in=therileystewart%2Fsets%2Fdec",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "DATSKO tracks",
+          "url": "https://www.beatport.com/artist/datsko/1054442/tracks",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5ZLMh6NE9EENfaBzdjSgY2",
+      "artists": [
+        {
+          "spotify_artist_id": "14lZi2xEonJg9DyYk9JBak",
+          "name": "Onlynumbers"
+        },
+        {
+          "spotify_artist_id": "7tW2EWm32eoG9655JEiFhU",
+          "name": "Lucie Hart"
+        },
+        {
+          "spotify_artist_id": "2o5jDhtHVPhrJdv3cEQ99Z",
+          "name": "Tiësto"
+        }
+      ],
+      "artist": "Onlynumbers, Lucie Hart, Tiësto",
+      "title": "Euphoric Night (feat. Lucie Hart) [Tiësto Remix]",
+      "album": "Euphoric Night (feat. Lucie Hart) [Tiësto Remix]",
+      "spotify_album_id": "5VK1rIhcykgTF7Hemzg6U8",
+      "isrc": "NLZ542500435",
+      "duration_ms": 153947,
+      "release_date": "2025-07-11",
+      "spotify_url": "https://open.spotify.com/track/5ZLMh6NE9EENfaBzdjSgY2",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "rationale": "The exact 152 BPM remix is cataloged as Mainstage/Dance rather than a precise underground genre. Its fast pop-vocal techno construction is best placed in Hypertechno, but this remains an inference.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Euphoric Night (Tiësto Remix)",
+          "url": "https://www.beatport.com/track/euphoric-night-feat-lucie-hart-tisto-remix/20736633",
+          "scope": "track"
+        },
+        {
+          "provider": "SoundCloud",
+          "title": "Euphoric Night (Tiësto Remix)",
+          "url": "https://soundcloud.com/onlynumbers-music/euphoric-night-feat-lucie-hart?in=tonyreddj%2Fsets%2Ftechnogasm",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata",
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5UI846kakgl3TCjjnS2kdg",
+      "artists": [
+        {
+          "spotify_artist_id": "1qUxaI5qlJjHsBBCohdkMh",
+          "name": "MAJED"
+        },
+        {
+          "spotify_artist_id": "78VO39HCLuuqEBGzPO6xts",
+          "name": "Luna Orbit"
+        }
+      ],
+      "artist": "MAJED, Luna Orbit",
+      "title": "All Around Me - Majed Remix",
+      "album": "All Around Me (Majed Remix)",
+      "spotify_album_id": "1K4bnbCGdls1tHDR4oLWSC",
+      "isrc": "CA5KR2529141",
+      "duration_ms": 179600,
+      "release_date": "2025-04-22",
+      "spotify_url": "https://open.spotify.com/track/5UI846kakgl3TCjjnS2kdg",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.74,
+      "rationale": "Coverage of the exact 150 BPM remix describes Middle Eastern textures combined with trap, hyperpop and techno. Hypertechno is the closest canonical dance-floor leaf, while the hybrid evidence is explicitly flagged.",
+      "evidence": [
+        {
+          "provider": "Beatportal",
+          "title": "MAJED: All Around Me remix",
+          "url": "https://www.beatportal.com/articles/1010668-from-viral-star-to-festival-stage-majed-makes-his-mark-as-a-breakout-touring-artist",
+          "scope": "track"
+        },
+        {
+          "provider": "SoundCloud",
+          "title": "All Around Me (Majed Remix)",
+          "url": "https://soundcloud.com/theonlymajed/all-around-me-majed-remix",
+          "scope": "track"
+        },
+        {
+          "provider": "SongData",
+          "title": "All Around Me tempo",
+          "url": "https://songdata.io/track/5UI846kakgl3TCjjnS2kdg/All-Around-Me-Majed-Remix-by-MAJED-Luna-Orbit",
+          "scope": "metadata"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata",
+        "conflicting-sources"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "0nPRRrlZk8rZsnTb5AsMW9",
+      "artists": [
+        {
+          "spotify_artist_id": "0TKFPt9w0AAEnhB9bd0pLy",
+          "name": "LUM!X"
+        }
+      ],
+      "artist": "LUM!X",
+      "title": "I Don't Even Like You",
+      "album": "I Don't Even Like You",
+      "spotify_album_id": "3Id0Bgp0diil4h4ri2DtB1",
+      "isrc": "DEUM72600200",
+      "duration_ms": 126240,
+      "release_date": "2026-02-13",
+      "spotify_url": "https://open.spotify.com/track/0nPRRrlZk8rZsnTb5AsMW9",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "rationale": "The exact release is broadly Dance, while LUM!X's fast pop-forward techno production aligns most closely with Hypertechno. The narrower label is a metadata-informed judgment rather than a direct store tag.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "I Don't Even Like You",
+          "url": "https://soundcloud.com/lumix_music/i-dont-even-like-you",
+          "scope": "track"
+        },
+        {
+          "provider": "Apple Music",
+          "title": "I Don't Even Like You",
+          "url": "https://music.apple.com/us/album/i-dont-even-like-you-single/1872980686",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "2EqvkJYnk3pCqlsaN89THt",
+      "artists": [
+        {
+          "spotify_artist_id": "0HHa7ZJZxUQlg5l2mB0N0f",
+          "name": "Marlon Hoffstadt"
+        },
+        {
+          "spotify_artist_id": "1GVuCyb4PlArufUZDUnRQi",
+          "name": "southstar"
+        }
+      ],
+      "artist": "Marlon Hoffstadt, southstar",
+      "title": "I Like",
+      "album": "I Like",
+      "spotify_album_id": "5qhFCBMK2qx3Vboaxwuh4W",
+      "isrc": "USUG12601549",
+      "duration_ms": 195918,
+      "release_date": "2026-06-05",
+      "spotify_url": "https://open.spotify.com/track/2EqvkJYnk3pCqlsaN89THt",
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.78,
+      "rationale": "The exact 147 BPM collaboration is described as a high-energy doorstamper and sits in Marlon Hoffstadt's DJ Daddy Trance catalog. Trance (Main Floor) best captures its function.",
+      "evidence": [
+        {
+          "provider": "Nieuwe Plaat",
+          "title": "Marlon Hoffstadt & southstar — I Like",
+          "url": "https://www.nieuweplaat.nl/electronic/marlon-hoffstadt-southstar-i-like/",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5KBM1vB9oIFyw95YgAfRbN",
+      "artists": [
+        {
+          "spotify_artist_id": "2MdFJmUQf3ckA99IhFF9my",
+          "name": "Ely Oaks"
+        }
+      ],
+      "artist": "Ely Oaks",
+      "title": "Babydoll",
+      "album": "Babydoll",
+      "spotify_album_id": "2dsJJGMOrvtgC8cApqckX6",
+      "isrc": "DE1N22600104",
+      "duration_ms": 115966,
+      "release_date": "2026-06-15",
+      "spotify_url": "https://open.spotify.com/track/5KBM1vB9oIFyw95YgAfRbN",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "rationale": "The exact 155 BPM recording is categorized broadly as Dance/Pop. Its accelerated pop-vocal techno format fits Hypertechno, but the specific leaf is inferred and review-flagged.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Babydoll",
+          "url": "https://www.beatport.com/pt/track/babydoll/29356850",
+          "scope": "track"
+        },
+        {
+          "provider": "SongBPM",
+          "title": "Babydoll tempo",
+          "url": "https://songbpm.com/%40ely-oaks/babydoll-ro1lq",
+          "scope": "metadata"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "2FRksccB4EJsFPMZDdnjre",
+      "artists": [
+        {
+          "spotify_artist_id": "6ZGqNbBtVrSU2EgalYQksc",
+          "name": "Linds"
+        }
+      ],
+      "artist": "Linds",
+      "title": "Journey",
+      "album": "Journey",
+      "spotify_album_id": "3FDR4cA5WYbcGMJEsYNRIz",
+      "isrc": "QMBZ92662662",
+      "duration_ms": 220872,
+      "release_date": "2026-07-17",
+      "spotify_url": "https://open.spotify.com/track/2FRksccB4EJsFPMZDdnjre",
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.65,
+      "rationale": "Linds' profile centers contemporary trance-rave with hardgroove percussion. With no stronger exact-track genre source, Neo Trance is the best artist-level classification.",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Linds artist profile",
+          "url": "https://open.spotify.com/artist/6ZGqNbBtVrSU2EgalYQksc",
+          "scope": "artist"
+        }
+      ],
+      "review_flags": [
+        "artist-only"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "2YSWJU0HINhi24oH19ALo6",
+      "artists": [
+        {
+          "spotify_artist_id": "0SfsnGyD8FpIN4U4WCkBZ5",
+          "name": "Armin van Buuren"
+        },
+        {
+          "spotify_artist_id": "2ZRQcIgzPCVaT9XKhXZIzh",
+          "name": "Gryffin"
+        }
+      ],
+      "artist": "Armin van Buuren, Gryffin",
+      "title": "What Took You So Long",
+      "album": "What Took You So Long",
+      "spotify_album_id": "5BxLMz1DhF1yZNdeAlID3h",
+      "isrc": "NLF712401158",
+      "duration_ms": 211058,
+      "release_date": "2024-03-22",
+      "spotify_url": "https://open.spotify.com/track/2YSWJU0HINhi24oH19ALo6",
+      "main_genre": "Trance",
+      "subgenre": "Uplifting Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.95,
+      "rationale": "The exact 140 BPM release is Vocal/Main Floor Trance and contemporary coverage describes it directly as trance. Its melodic vocal build supports Uplifting Trance.",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "What Took You So Long",
+          "url": "https://www.beatport.com/track/what-took-you-so-long/18758629",
+          "scope": "track"
+        },
+        {
+          "provider": "DJ Mag",
+          "title": "Armin van Buuren and Gryffin share trance single",
+          "url": "https://djmag.com/news/armin-van-buuren-and-gryffin-share-new-trance-single-what-took-you-so-long-listen",
+          "scope": "release"
+        }
+      ],
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": true,
+      "target_playlist_id": null,
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "6xupcsJHo3wW2tSVKwu4mf",
+      "artists": [
+        {
+          "spotify_artist_id": "0TKFPt9w0AAEnhB9bd0pLy",
+          "name": "LUM!X"
+        }
+      ],
+      "artist": "LUM!X",
+      "title": "Self Aware",
+      "album": "Self Aware",
+      "spotify_album_id": "5A94ZGE648fjXkHHSfh1xv",
+      "isrc": "QT8BV2656755",
+      "duration_ms": 151741,
+      "release_date": "2026-05-22",
+      "spotify_url": "https://open.spotify.com/track/6xupcsJHo3wW2tSVKwu4mf",
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.65,
+      "rationale": "The exact release is described as electronic/deep-pop EDM and LUM!X is categorized as Dance. Its fast, pop-forward techno construction is closest to Hypertechno, with the inference clearly flagged.",
+      "evidence": [
+        {
+          "provider": "SoundCloud",
+          "title": "Self Aware",
+          "url": "https://m.soundcloud.com/lumix_music/temper-city-self-aware-lum-x",
+          "scope": "track"
+        }
+      ],
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "review_status": "approved",
+      "is_new_main_genre_proposal": false,
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "target_kind": "subgenre",
+      "already_in_target_playlist": false
+    }
+  ],
+  "classification_policy": "codex_web_research_v2",
+  "proposed_main_genres": [
+    {
+      "id": "latin-rave",
+      "name": "Latin Rave",
+      "aliases": [],
+      "rationale": "A canonical parent for fast Latin club hybrids whose identity is not adequately represented by Trance, House, Techno or generic Hard Dance.",
+      "placements": [
+        {
+          "master_folder": "DJ HARD / NEO-RAVE",
+          "bpm_justification": "The affected Nasty Club recordings and the creator's definition occupy approximately 150–165 BPM."
+        }
+      ],
+      "affected_track_ids": [
+        "6df97OoVKmhLGCCduiZ22v",
+        "2n8umcGOgh3brAJP0SstKY",
+        "64n1FmL5OBDnGAYt4EdQ3X",
+        "2wIMjopqymO05jtA7LKE44"
+      ]
+    }
+  ],
+  "proposed_subgenres": [
+    {
+      "id": "nasty-club",
+      "name": "Nasty Club",
+      "aliases": [],
+      "main_genre": "Latin Rave",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "bpm_justification": "Noro$t defines the style around 150–165 BPM.",
+      "rationale": "Creator-defined fusion of Latin rhythms, guaracha/reggaeton, trance, hard house and techno; distinct enough to avoid flattening the tracks into a broad rave bucket.",
+      "affected_track_ids": [
+        "6df97OoVKmhLGCCduiZ22v",
+        "2n8umcGOgh3brAJP0SstKY",
+        "64n1FmL5OBDnGAYt4EdQ3X",
+        "2wIMjopqymO05jtA7LKE44"
+      ]
+    },
+    {
+      "id": "trance-main-floor",
+      "name": "Trance (Main Floor)",
+      "aliases": [
+        "Main Floor Trance"
+      ],
+      "main_genre": "Trance",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "bpm_justification": "The affected recordings are predominantly 147–150 BPM and therefore belong in the hard master folder.",
+      "rationale": "Beatport's current Trance (Main Floor) category repeatedly identifies these exact recordings and is more precise than a generic Trance fallback.",
+      "affected_track_ids": [
+        "0YswY3w2ZZwImIrnY0mlls",
+        "1KpWOjSqJMdXaEVh2rMwQl",
+        "64meeYiAweSjle711YjWXu",
+        "4VRjfOLBvwPbtk8p5srOqf",
+        "4rq5JOML0dE8OtDPwaQ73B",
+        "01jx3vXwUaw9cfFeBk8sJQ",
+        "2EqvkJYnk3pCqlsaN89THt"
+      ]
+    },
+    {
+      "id": "uplifting-trance",
+      "name": "Uplifting Trance",
+      "aliases": [],
+      "main_genre": "Trance",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "bpm_justification": "The two selected melodic/vocal recordings are 140 BPM, inside the 132–145 BPM master range.",
+      "rationale": "A recognized melodic trance form with euphoric builds and releases that are too specific for the Trance parent alone.",
+      "affected_track_ids": [
+        "6TnnyFi6wLxV74NFpgNX0r",
+        "2YSWJU0HINhi24oH19ALo6"
+      ]
+    },
+    {
+      "id": "eurotrance",
+      "name": "Eurotrance",
+      "aliases": [
+        "Euro Trance"
+      ],
+      "main_genre": "Trance",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "bpm_justification": "The affected recording is 144 BPM, inside the fast-tech master range.",
+      "rationale": "A recognized European melodic/dance-oriented trance style; the exact release explicitly identifies its Eurotrance program.",
+      "affected_track_ids": [
+        "6lxwMRkzn2P96BEDNSvez8"
+      ]
+    },
+    {
+      "id": "neo-rave",
+      "name": "Neo Rave",
+      "aliases": [
+        "Neo-Rave"
+      ],
+      "main_genre": "Hard Dance",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "bpm_justification": "The affected exact releases are approximately 150–155 BPM, with one source tempo discrepancy documented on its track.",
+      "rationale": "A current Hard Dance / Hardcore store category. It remains separate from Neo Trance because the canonical parent and musical emphasis differ.",
+      "affected_track_ids": [
+        "17RQChStJoGxkfwmpfjVNl",
+        "0za7DvMEblA6ZCOPQB17Hj",
+        "7jzSBql5qemZ7MiAn70lDO",
+        "5xe8auGi1VhNnulwRR87k4",
+        "4w2xQjcY4Xu6uUlUkYaOH7"
+      ]
+    },
+    {
+      "id": "hard-bounce",
+      "name": "Hard Bounce",
+      "aliases": [],
+      "main_genre": "Hard Dance",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "bpm_justification": "The selected artist contexts belong to the high-energy 145+ BPM hard-bounce circuit.",
+      "rationale": "A recognized contemporary hard-dance style used by the artists in this scene; it should not be collapsed into Hardstyle or Hard Trance.",
+      "affected_track_ids": [
+        "3bycUlW05MiCsDgSKds8sj",
+        "6nkwZpSWKlxCWwOth2XyLe"
+      ]
+    },
+    {
+      "id": "hard-trance-pop",
+      "name": "Hard Trance Pop",
+      "aliases": [
+        "Hard-Trance-Pop"
+      ],
+      "main_genre": "Trance",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "bpm_justification": "The affected exact recording is 150 BPM.",
+      "rationale": "The creator's own description for a pop-forward sound harder than hard house and softer than hard techno; it is precise without duplicating Hard Trance.",
+      "affected_track_ids": [
+        "3slVbxxqvroRRgKXBsH9mE"
+      ]
+    }
+  ],
+  "proposed_aliases": [
+    {
+      "alias": "Hardtrance",
+      "canonical_type": "subgenre",
+      "canonical_name": "Hard Trance",
+      "rationale": "Common closed spelling used by labels for the same established Hard Trance style; it must normalize to one node rather than create a duplicate."
+    }
+  ],
+  "proposed_routing_changes": [],
+  "summary": {
+    "by_main_genre": {
+      "Trance": 30,
+      "Latin Rave": 4,
+      "Hard Dance": 15,
+      "Techno": 4,
+      "House": 1
+    },
+    "by_subgenre": {
+      "Neo Trance": 8,
+      "Trance (Main Floor)": 7,
+      "Uplifting Trance": 2,
+      "Nasty Club": 4,
+      "Hard Trance": 10,
+      "Neo Rave": 5,
+      "Hard Techno": 2,
+      "Eurotrance": 1,
+      "Hard Bounce": 2,
+      "Hard Dance (parent)": 3,
+      "Techno (parent)": 2,
+      "Hard House": 1,
+      "Trance (parent)": 1,
+      "Hard Trance Pop": 1,
+      "Hypertechno": 5
+    },
+    "parent_fallbacks": 6,
+    "pending_classification": 0,
+    "review_flagged": 44,
+    "proposed_main_genres": 1,
+    "proposed_subgenres": 7,
+    "already_in_correct_playlist": 0
+  },
+  "approved_at": "2026-08-07T17:55:02.967852+00:00"
+}

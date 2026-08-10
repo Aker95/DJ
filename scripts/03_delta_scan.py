@@ -22,6 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.config import load_env, load_schema, PROJECT_ROOT
+from utils.schema import canonical_key, iter_destinations
 from utils.matching import (
     normalize,
     clean,
@@ -37,13 +38,11 @@ AUDIO_EXTENSIONS = {".mp3", ".flac", ".wav", ".aiff", ".aif", ".m4a"}
 
 def build_subgenre_folder_index(schema: dict) -> dict[str, Path]:
     """Return {normalized_subgenre_name: local_folder_path} from the live schema."""
-    index = {}
-    for folder in schema["master_folders"]:
-        for sg in folder["subgenres"]:
-            lf = sg.get("local_folder")
-            if lf:
-                index[sg["name"].strip().lower()] = PROJECT_ROOT / lf
-    return index
+    return {
+        canonical_key(destination["name"]): destination["local_folder"]
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT)
+        if destination.get("local_folder")
+    }
 
 
 def load_local_stems(folder_path: Path) -> list[str]:
@@ -84,7 +83,7 @@ def main():
     total_checked = 0
 
     for pl in snapshot["playlists"]:
-        sg_key = pl["schema_subgenre"].strip().lower()
+        sg_key = canonical_key(pl["schema_subgenre"])
         folder_path = subgenre_folder_index.get(sg_key)
         if folder_path is None:
             folder_path = music_root / pl["schema_subgenre"].lower().replace("/", "-")

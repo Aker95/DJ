@@ -1,0 +1,149 @@
+{
+  "artifact_type": "spotify_genre_research",
+  "artifact_version": 1,
+  "status": "provisional",
+  "source_playlist_id": "3FCiuZ8yhAu7iTf5k41Vio",
+  "source_playlist_name": "Test Playlist",
+  "prepared_at": "2026-07-29T10:50:16.450743+00:00",
+  "schema_version": "1.0.0",
+  "total_tracks": 5,
+  "tracks": [
+    {
+      "spotify_track_id": "4HYWGaqCkshGWu6stZxlmd",
+      "artists": [
+        {
+          "spotify_artist_id": "1vK8NnrPlBlF34LaiFX1SK",
+          "name": "Funk Tribu"
+        }
+      ],
+      "artist": "Funk Tribu",
+      "title": "I Got It For You",
+      "album": "Against All Odds",
+      "spotify_album_id": "7zN9akvqHX67uHiFTNE3Td",
+      "isrc": "DGA092417607",
+      "duration_ms": 214504,
+      "release_date": "2024-10-04",
+      "spotify_url": "https://open.spotify.com/track/4HYWGaqCkshGWu6stZxlmd",
+      "subgenre": null,
+      "master_folder": null,
+      "confidence": 0.0,
+      "rationale": "",
+      "sources": [],
+      "review_status": "uncertain",
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "7aIb17DMLcOhLJIc9vF6Aa",
+      "artists": [
+        {
+          "spotify_artist_id": "1vK8NnrPlBlF34LaiFX1SK",
+          "name": "Funk Tribu"
+        }
+      ],
+      "artist": "Funk Tribu",
+      "title": "Phonky Tribu",
+      "album": "The Midnight Club GT",
+      "spotify_album_id": "6a2QtF55Q67Tr69arnzPQW",
+      "isrc": "QZMHN2270801",
+      "duration_ms": 286145,
+      "release_date": "2021-10-21",
+      "spotify_url": "https://open.spotify.com/track/7aIb17DMLcOhLJIc9vF6Aa",
+      "subgenre": null,
+      "master_folder": null,
+      "confidence": 0.0,
+      "rationale": "",
+      "sources": [],
+      "review_status": "uncertain",
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "3OgdqZIgGIqusstV9IqX6p",
+      "artists": [
+        {
+          "spotify_artist_id": "0UMs6dTf23FC2fHc40fXNS",
+          "name": "KI/KI"
+        }
+      ],
+      "artist": "KI/KI",
+      "title": "What's a Girl to Do in '25",
+      "album": "What's a Girl to Do in '25",
+      "spotify_album_id": "2K9OkH3GAXoussmUIZHAfr",
+      "isrc": "USA2P2544761",
+      "duration_ms": 148047,
+      "release_date": "2025-09-12",
+      "spotify_url": "https://open.spotify.com/track/3OgdqZIgGIqusstV9IqX6p",
+      "subgenre": null,
+      "master_folder": null,
+      "confidence": 0.0,
+      "rationale": "",
+      "sources": [],
+      "review_status": "uncertain",
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5jWqlILvwGMwsk3ZKfhxPU",
+      "artists": [
+        {
+          "spotify_artist_id": "7c4fOBUstnjfbvSwtOJSiA",
+          "name": "Odymel"
+        }
+      ],
+      "artist": "Odymel",
+      "title": "Gucci",
+      "album": "Gucci",
+      "spotify_album_id": "44za2Kpy3rYooqJmhienHz",
+      "isrc": "CA5KR2418535",
+      "duration_ms": 273698,
+      "release_date": "2024-02-09",
+      "spotify_url": "https://open.spotify.com/track/5jWqlILvwGMwsk3ZKfhxPU",
+      "subgenre": null,
+      "master_folder": null,
+      "confidence": 0.0,
+      "rationale": "",
+      "sources": [],
+      "review_status": "uncertain",
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "already_in_target_playlist": false
+    },
+    {
+      "spotify_track_id": "5bcvu6T9QzdNFxTy6FZ0WQ",
+      "artists": [
+        {
+          "spotify_artist_id": "7c4fOBUstnjfbvSwtOJSiA",
+          "name": "Odymel"
+        }
+      ],
+      "artist": "Odymel",
+      "title": "Thank You (Rework)",
+      "album": "Thank You (Rework)",
+      "spotify_album_id": "01aReRIGYGkvz9RndUc7fh",
+      "isrc": "QZWFE2398433",
+      "duration_ms": 283200,
+      "release_date": "2023-11-24",
+      "spotify_url": "https://open.spotify.com/track/5bcvu6T9QzdNFxTy6FZ0WQ",
+      "subgenre": null,
+      "master_folder": null,
+      "confidence": 0.0,
+      "rationale": "",
+      "sources": [],
+      "review_status": "uncertain",
+      "is_new_subgenre_proposal": false,
+      "target_playlist_id": null,
+      "already_in_target_playlist": false
+    }
+  ],
+  "proposed_schema_additions": [],
+  "summary": {
+    "by_subgenre": {},
+    "uncertain": 5,
+    "proposed_schema_additions": 0,
+    "already_in_correct_playlist": 0
+  }
+}

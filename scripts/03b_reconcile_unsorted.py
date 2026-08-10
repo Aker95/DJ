@@ -31,6 +31,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.config import load_env, load_schema, PROJECT_ROOT
+from utils.schema import canonical_key, iter_destinations
 from utils.matching import (
     normalize,
     clean,
@@ -45,13 +46,11 @@ AUDIO_EXTENSIONS = {".mp3", ".flac", ".wav", ".aiff", ".aif", ".m4a"}
 
 def get_schema_folders(schema: dict) -> set[Path]:
     """Return resolved absolute paths of all schema-defined local folders."""
-    folders = set()
-    for folder in schema["master_folders"]:
-        for sg in folder["subgenres"]:
-            lf = sg.get("local_folder")
-            if lf:
-                folders.add((PROJECT_ROOT / lf).resolve())
-    return folders
+    return {
+        destination["local_folder"].resolve()
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT)
+        if destination.get("local_folder")
+    }
 
 
 def build_subgenre_folder_index(schema: dict) -> dict[str, Path]:
@@ -60,14 +59,11 @@ def build_subgenre_folder_index(schema: dict) -> dict[str, Path]:
     Used so 03b always resolves destination from the schema rather than the
     potentially-stale local_folder stored in delta.json / the snapshot.
     """
-    index = {}
-    for folder in schema["master_folders"]:
-        for sg in folder["subgenres"]:
-            lf = sg.get("local_folder")
-            if lf:
-                key = sg["name"].strip().lower()
-                index[key] = PROJECT_ROOT / lf
-    return index
+    return {
+        canonical_key(destination["name"]): destination["local_folder"]
+        for destination in iter_destinations(schema, project_root=PROJECT_ROOT)
+        if destination.get("local_folder")
+    }
 
 
 def main():
@@ -117,7 +113,9 @@ def main():
 
                 if stage1 or stage2:
                     # Resolve destination from live schema (never trust stale delta paths)
-                    sg_key = track["subgenre"].strip().lower()
+                    sg_key = canonical_key(
+                        track.get("subgenre") or track.get("main_genre", "")
+                    )
                     dest_folder = subgenre_folder_index.get(sg_key)
                     if dest_folder is None:
                         # Fallback: use whatever is in the delta (may be stale)

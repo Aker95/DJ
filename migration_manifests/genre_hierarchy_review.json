@@ -1,0 +1,2019 @@
+{
+  "artifact_type": "genre_hierarchy_migration",
+  "artifact_version": 1,
+  "status": "ready_for_review",
+  "created_at": "2026-08-07T16:13:13.633086+00:00",
+  "schema_path": "music_schema_knowledge.json",
+  "schema_sha256_before": "dd4a43a35974581b306f6caf43fd6a3eca6deea73d41ed63146012fecf91de9f",
+  "pending_nodes": [
+    {
+      "id": "afro-house",
+      "source_folder": "music/DJ CHILL - GROOVE/afro house",
+      "destination_folder": "music/DJ CHILL - GROOVE/house/afro house"
+    },
+    {
+      "id": "deep-house",
+      "source_folder": "music/DJ CHILL - GROOVE/deep house",
+      "destination_folder": "music/DJ CHILL - GROOVE/house/deep house"
+    },
+    {
+      "id": "melodic-house",
+      "source_folder": "music/DJ CHILL - GROOVE/melodic house",
+      "destination_folder": "music/DJ CHILL - GROOVE/house/melodic house"
+    },
+    {
+      "id": "progressive-house",
+      "source_folder": "music/DJ CHILL - GROOVE/progressive house",
+      "destination_folder": "music/DJ CHILL - GROOVE/house/progressive house"
+    },
+    {
+      "id": "deep-techno",
+      "source_folder": "music/DJ CHILL - GROOVE/deep techno",
+      "destination_folder": "music/DJ CHILL - GROOVE/techno/deep techno"
+    },
+    {
+      "id": "tech-house",
+      "source_folder": "music/DJ PEAK HOUSE - CLUB/tech house",
+      "destination_folder": "music/DJ PEAK HOUSE - CLUB/house/tech house"
+    },
+    {
+      "id": "bass-house",
+      "source_folder": "music/DJ PEAK HOUSE - CLUB/bass house",
+      "destination_folder": "music/DJ PEAK HOUSE - CLUB/house/bass house"
+    },
+    {
+      "id": "electro-house",
+      "source_folder": "music/DJ PEAK HOUSE - CLUB/electro house",
+      "destination_folder": "music/DJ PEAK HOUSE - CLUB/house/electro house"
+    },
+    {
+      "id": "melbourne-bounce",
+      "source_folder": "music/DJ PEAK HOUSE - CLUB/melbourne bounce",
+      "destination_folder": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce"
+    },
+    {
+      "id": "speed-garage",
+      "source_folder": "music/DJ PEAK HOUSE - CLUB/speed garage",
+      "destination_folder": "music/DJ PEAK HOUSE - CLUB/garage/speed garage"
+    },
+    {
+      "id": "peak-time-techno",
+      "source_folder": "music/DJ FAST TECH - GROOVE/peak time techno",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/techno/peak time techno"
+    },
+    {
+      "id": "minimal-techno",
+      "source_folder": "music/DJ FAST TECH - GROOVE/minimal techno",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/techno/minimal techno"
+    },
+    {
+      "id": "melodic-techno",
+      "source_folder": "music/DJ FAST TECH - GROOVE/melodic techno",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/techno/melodic techno"
+    },
+    {
+      "id": "hard-groove",
+      "source_folder": "music/DJ FAST TECH - GROOVE/hard groove",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/techno/hard groove"
+    },
+    {
+      "id": "high-tech",
+      "source_folder": "music/DJ FAST TECH - GROOVE/high tech",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/trance/high tech"
+    },
+    {
+      "id": "psytrance",
+      "source_folder": "music/DJ FAST TECH - GROOVE/psytrance",
+      "destination_folder": "music/DJ FAST TECH - GROOVE/trance/psytrance"
+    },
+    {
+      "id": "hard-house",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hard house",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/house/hard house"
+    },
+    {
+      "id": "hard-techno",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hard techno",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/techno/hard techno"
+    },
+    {
+      "id": "industrial",
+      "source_folder": "music/DJ HARD - NEO-RAVE/industrial",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/techno/industrial"
+    },
+    {
+      "id": "schranz",
+      "source_folder": "music/DJ HARD - NEO-RAVE/schranz",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/techno/schranz"
+    },
+    {
+      "id": "neo-trance",
+      "source_folder": "music/DJ HARD - NEO-RAVE/neo trance",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/trance/neo trance"
+    },
+    {
+      "id": "hard-trance",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hard trance",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/trance/hard trance"
+    },
+    {
+      "id": "hypertechno",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hypertechno",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno"
+    },
+    {
+      "id": "hardtekk",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hardtekk",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/hard dance/hardtekk"
+    },
+    {
+      "id": "hardstyle",
+      "source_folder": "music/DJ HARD - NEO-RAVE/hardstyle",
+      "destination_folder": "music/DJ HARD - NEO-RAVE/hard dance/hardstyle"
+    }
+  ],
+  "moves": [
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/Alex Wann - Milkshake (Original Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/Alex Wann - Milkshake (Original Mix).flac",
+      "size": 45554040,
+      "mtime_ns": 1770414253291620660
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/Rivo Disclosure Eliza Doolittle - You & Me Rivo Extended Mix-www.groovytunes.org.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/Rivo Disclosure Eliza Doolittle - You & Me Rivo Extended Mix-www.groovytunes.org.flac",
+      "size": 43592373,
+      "mtime_ns": 1770414568123106185
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/SpotiDownloader.com - Lied To Me - keyløud Afro House Remix - Lonely Night.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/SpotiDownloader.com - Lied To Me - keyløud Afro House Remix - Lonely Night.mp3",
+      "size": 6090251,
+      "mtime_ns": 1762916678507894130
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/SpotiDownloader.com - Solo Tu Y Yo - Andfølk.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/SpotiDownloader.com - Solo Tu Y Yo - Andfølk.mp3",
+      "size": 9304427,
+      "mtime_ns": 1767658035140307491
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/SpotiDownloader.com - Somebody - Edit - Sebjak.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/SpotiDownloader.com - Somebody - Edit - Sebjak.mp3",
+      "size": 9210339,
+      "mtime_ns": 1762916688761155089
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/afro house/SpotiDownloader.com - Sorry (with Madonna) - BLOND_ISH.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/afro house/SpotiDownloader.com - Sorry (with Madonna) - BLOND_ISH.mp3",
+      "size": 6622885,
+      "mtime_ns": 1762916691121784055
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep house/01. Andre Crom - You Don't Know.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/deep house/01. Andre Crom - You Don't Know.flac",
+      "size": 52554392,
+      "mtime_ns": 1782508822709738049
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep house/Josh Baker, Omar+ - Back It Up (MK Dub).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/deep house/Josh Baker, Omar+ - Back It Up (MK Dub).flac",
+      "size": 49480684,
+      "mtime_ns": 1782508522414006012
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/02. Kungs - Never Going Home (Lost Frequencies Extended Remix).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/02. Kungs - Never Going Home (Lost Frequencies Extended Remix).mp3",
+      "size": 10696261,
+      "mtime_ns": 1770415185058733227
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/1.04. We Want Your Soul.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/1.04. We Want Your Soul.flac",
+      "size": 50440287,
+      "mtime_ns": 1770414123068495515
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/16-Water (Bicep Remix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/16-Water (Bicep Remix).flac",
+      "size": 52179261,
+      "mtime_ns": 1782507696668873199
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/63. Twin Diplomacy, Jack August - Better Place  (Original Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/63. Twin Diplomacy, Jack August - Better Place  (Original Mix).flac",
+      "size": 34403201,
+      "mtime_ns": 1782506836876958868
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/AVAION - Other Side.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/AVAION - Other Side.mp3",
+      "size": 8361445,
+      "mtime_ns": 1770414597480462391
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Deeper Purpose - Operate (Extended Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Deeper Purpose - Operate (Extended Mix).flac",
+      "size": 39432720,
+      "mtime_ns": 1782507471967261891
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Everyone You Know - She Don't Dance (Lost Frequencies Remix) - 04 - She Don't Dance (Lost Frequencies Extended Remix).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Everyone You Know - She Don't Dance (Lost Frequencies Remix) - 04 - She Don't Dance (Lost Frequencies Extended Remix).mp3",
+      "size": 13727347,
+      "mtime_ns": 1782507816420693093
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Julien Fade - Losing You (Extended).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Julien Fade - Losing You (Extended).mp3",
+      "size": 12101010,
+      "mtime_ns": 1782508230362314582
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Klangkarussell - Ride.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Klangkarussell - Ride.flac",
+      "size": 28271692,
+      "mtime_ns": 1770414299952195187
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Lost Frequencies - Rise (Extended Deluxe Mix).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Lost Frequencies - Rise (Extended Deluxe Mix).mp3",
+      "size": 13131275,
+      "mtime_ns": 1770415264593641596
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Lost Frequencies_Black Friday (pretty like the sun)_02_Black Friday (pretty like the sun) (extended mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Lost Frequencies_Black Friday (pretty like the sun)_02_Black Friday (pretty like the sun) (extended mix).flac",
+      "size": 22270235,
+      "mtime_ns": 1782508055684729782
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/MARK - That's Where I Should Be (Extended).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/MARK - That's Where I Should Be (Extended).mp3",
+      "size": 7869189,
+      "mtime_ns": 1770414509564287425
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Paji - OPUS 7 (Original Mix).mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Paji - OPUS 7 (Original Mix).mp3",
+      "size": 17602478,
+      "mtime_ns": 1782507960807096864
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/SpotiDownloader.com - Dance In The Sunlight - Deluxe Version - Lost Frequencies.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/SpotiDownloader.com - Dance In The Sunlight - Deluxe Version - Lost Frequencies.mp3",
+      "size": 8340996,
+      "mtime_ns": 1766774678608980914
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/SpotiDownloader.com - Finally - Dayne S Deep Mix - Sweed.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/SpotiDownloader.com - Finally - Dayne S Deep Mix - Sweed.mp3",
+      "size": 15181869,
+      "mtime_ns": 1762916676239617703
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/SpotiDownloader.com - Night Blooming Jasmine - Rodriguez Jr. Remix - Eli & Fur.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/SpotiDownloader.com - Night Blooming Jasmine - Rodriguez Jr. Remix - Eli & Fur.mp3",
+      "size": 14895298,
+      "mtime_ns": 1762916643473262457
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/SpotiDownloader.com - Sternenkinder - Klangkarussell.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/SpotiDownloader.com - Sternenkinder - Klangkarussell.mp3",
+      "size": 198399,
+      "mtime_ns": 1770414034948921360
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/SpotiDownloader.com - What I Feel - Rose Ringed.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/SpotiDownloader.com - What I Feel - Rose Ringed.mp3",
+      "size": 8669526,
+      "mtime_ns": 1762916565443372909
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/melodic house/Supermode - Tell Me Why (MEDUZA Extended Remix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/melodic house/Supermode - Tell Me Why (MEDUZA Extended Remix).flac",
+      "size": 64137010,
+      "mtime_ns": 1782507366232243082
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/1-06 Lamur (Henry Saiz Mix Edit).m4a",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/1-06 Lamur (Henry Saiz Mix Edit).m4a",
+      "size": 4710338,
+      "mtime_ns": 1770414925687500547
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/29-chab_feat_jd_davis-closer_to_me__2024_remastered_album_12_inch_mix.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/29-chab_feat_jd_davis-closer_to_me__2024_remastered_album_12_inch_mix.flac",
+      "size": 128482651,
+      "mtime_ns": 1782488942504358299
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/409-yotto_-_walls_(joris_voorn_remix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/409-yotto_-_walls_(joris_voorn_remix).flac",
+      "size": 53630908,
+      "mtime_ns": 1769733669740500132
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/Chab - Closer to Me [album Mix_PN.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/Chab - Closer to Me [album Mix_PN.mp3",
+      "size": 25832636,
+      "mtime_ns": 1770415282941287840
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/Guy J - Lamur (Henry Saiz Remix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/Guy J - Lamur (Henry Saiz Remix).flac",
+      "size": 80615112,
+      "mtime_ns": 1782505289826810822
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/Leftfield - Tourism - 09 - Afrika Shox.flac",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/Leftfield - Tourism - 09 - Afrika Shox.flac",
+      "size": 57113955,
+      "mtime_ns": 1782504875059654961
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/Raffa Guido - Famax (Original Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/Raffa Guido - Famax (Original Mix).flac",
+      "size": 40391358,
+      "mtime_ns": 1770414349265914610
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/progressive house/SpotiDownloader.com - Parfume - Dosem Remix - Eli & Fur.mp3",
+      "destination": "music/DJ CHILL - GROOVE/house/progressive house/SpotiDownloader.com - Parfume - Dosem Remix - Eli & Fur.mp3",
+      "size": 16095369,
+      "mtime_ns": 1767657960046130436
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/01 - Solomun - Something We All Adore.flac",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/01 - Solomun - Something We All Adore.flac",
+      "size": 50940061,
+      "mtime_ns": 1769733821603171435
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/15. Marco Resmann - Basic Motion (Original Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/15. Marco Resmann - Basic Motion (Original Mix).flac",
+      "size": 44624300,
+      "mtime_ns": 1782508383585554851
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/SHEE - win your love.mp3",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/SHEE - win your love.mp3",
+      "size": 8846333,
+      "mtime_ns": 1769481498081917041
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/SpotiDownloader.com - Boy Boy Boy - Joris Voorn Remix - andhim.mp3",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/SpotiDownloader.com - Boy Boy Boy - Joris Voorn Remix - andhim.mp3",
+      "size": 16469437,
+      "mtime_ns": 1762916634591489167
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/SpotiDownloader.com - No Goodbye - Paul Kalkbrenner.mp3",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/SpotiDownloader.com - No Goodbye - Paul Kalkbrenner.mp3",
+      "size": 6854192,
+      "mtime_ns": 1762916578909482250
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/The Blaze - JUNGLE - 04 - MADLY.flac",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/The Blaze - JUNGLE - 04 - MADLY.flac",
+      "size": 35168638,
+      "mtime_ns": 1782508745949398221
+    },
+    {
+      "source": "music/DJ CHILL - GROOVE/deep techno/Underworld & Joris Voorn - Too Little Too Late (Little Late Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/techno/deep techno/Underworld & Joris Voorn - Too Little Too Late (Little Late Mix).flac",
+      "size": 51345667,
+      "mtime_ns": 1769734911934893866
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/01 - Ian Asher - Desire.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/01 - Ian Asher - Desire.flac",
+      "size": 24165392,
+      "mtime_ns": 1782488016129443879
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/02-Pauli Pocket & Daniel Jaeger - Microsonic (Lars Moston remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/02-Pauli Pocket & Daniel Jaeger - Microsonic (Lars Moston remix).flac",
+      "size": 41180730,
+      "mtime_ns": 1782504633368265979
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/02. FISHER - Wanna Go Dancin' (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/02. FISHER - Wanna Go Dancin' (Extended Mix).flac",
+      "size": 41935848,
+      "mtime_ns": 1771967673325885408
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/03. Detlef - JayDee (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/03. Detlef - JayDee (Original Mix).flac",
+      "size": 48387125,
+      "mtime_ns": 1771968834102393643
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/08. Kamino & Stalking Gia - Take The Pill (PO Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/08. Kamino & Stalking Gia - Take The Pill (PO Extended Mix).mp3",
+      "size": 12062329,
+      "mtime_ns": 1771968806048920528
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/1-01 Microsonic (Original Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/1-01 Microsonic (Original Mix).mp3",
+      "size": 17417857,
+      "mtime_ns": 1771967883937015401
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/13. Discip - Pull Up (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/13. Discip - Pull Up (Extended Mix).flac",
+      "size": 38723133,
+      "mtime_ns": 1771967757494653723
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/1491 - Rachel Row - Follow The Step (Justin Martin Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/1491 - Rachel Row - Follow The Step (Justin Martin Remix).flac",
+      "size": 46678535,
+      "mtime_ns": 1769735085257232679
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/1541 - Ben Hemsley - Caress Me.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/1541 - Ben Hemsley - Caress Me.flac",
+      "size": 38128022,
+      "mtime_ns": 1771967952227487412
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/17. WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/17. WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "size": 35479792,
+      "mtime_ns": 1771967871220941027
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/18. Funk Cartel - The Fix (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/18. Funk Cartel - The Fix (Original Mix).flac",
+      "size": 41735249,
+      "mtime_ns": 1771967528493896092
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/22. Biscits, Jalja - Do It For The Girls (feat. Jalja) [Extended Mix] (feat. Jalja).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/22. Biscits, Jalja - Do It For The Girls (feat. Jalja) [Extended Mix] (feat. Jalja).flac",
+      "size": 30529365,
+      "mtime_ns": 1771967682229400939
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/25-Adrian Hour - Love Something (original mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/25-Adrian Hour - Love Something (original mix).flac",
+      "size": 48934400,
+      "mtime_ns": 1771968925087919383
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/25. Acraze ft. Cherish - Do It To It (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/25. Acraze ft. Cherish - Do It To It (Extended Mix).mp3",
+      "size": 8079171,
+      "mtime_ns": 1771967591556762255
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/28.BL3SS; CamrinWatsin - Craving 4 U (feat. bbyclose).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/28.BL3SS; CamrinWatsin - Craving 4 U (feat. bbyclose).flac",
+      "size": 18603363,
+      "mtime_ns": 1782486857138431617
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/35. Kisch - Love All Day (feat. Leela D) (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/35. Kisch - Love All Day (feat. Leela D) (Extended Mix).mp3",
+      "size": 12531917,
+      "mtime_ns": 1766773678218152886
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/44. Sonny Fodera, Biscits - Insane (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/44. Sonny Fodera, Biscits - Insane (Extended Mix).mp3",
+      "size": 14654789,
+      "mtime_ns": 1771968559542381863
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/55. AC Slater, Young Lyxx - Bass Face (Original Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/55. AC Slater, Young Lyxx - Bass Face (Original Mix).mp3",
+      "size": 9954539,
+      "mtime_ns": 1771968936473879113
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Adventures Of Stevie V, PAWSA - Dirty Cash (Money Talks) (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Adventures Of Stevie V, PAWSA - Dirty Cash (Money Talks) (Extended Mix).flac",
+      "size": 30159649,
+      "mtime_ns": 1782486720587165638
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Andruss - Frikitona Original Mix-www.groovytunes.org.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Andruss - Frikitona Original Mix-www.groovytunes.org.flac",
+      "size": 38339473,
+      "mtime_ns": 1770414445075243388
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Biscits, Jalja - Do It For The Girls (feat. Jalja) [Extended Mix] (feat. Jalja).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Biscits, Jalja - Do It For The Girls (feat. Jalja) [Extended Mix] (feat. Jalja).flac",
+      "size": 29165679,
+      "mtime_ns": 1770415188662657607
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Boss Priester - Keep the Crowd Moving (Radio Edit).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Boss Priester - Keep the Crowd Moving (Radio Edit).flac",
+      "size": 24379544,
+      "mtime_ns": 1782487227075534697
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Brandon (De) - Keep It Cool (2025).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Brandon (De) - Keep It Cool (2025).flac",
+      "size": 25409460,
+      "mtime_ns": 1771969284387039664
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Chris Lake, Abel Balder - Ease My Mind (Extended Mix) - 1A - 126.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Chris Lake, Abel Balder - Ease My Mind (Extended Mix) - 1A - 126.mp3",
+      "size": 17713997,
+      "mtime_ns": 1770260153886759671
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Clyde P - Blow (Original Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Clyde P - Blow (Original Mix).mp3",
+      "size": 16069358,
+      "mtime_ns": 1770415002645835629
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Discip - Pull Up (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Discip - Pull Up (Extended Mix).flac",
+      "size": 39599529,
+      "mtime_ns": 1770414734128565762
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Disco Lines - No Broke Boys (Lee Foss Remix) - 01 - No Broke Boys (Lee Foss Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Disco Lines - No Broke Boys (Lee Foss Remix) - 01 - No Broke Boys (Lee Foss Remix).flac",
+      "size": 26202605,
+      "mtime_ns": 1782487669853882818
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Dom Dolla - GIRL$ (Ed Hoffman's Extended Disco Bootleg).wav",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Dom Dolla - GIRL$ (Ed Hoffman's Extended Disco Bootleg).wav",
+      "size": 93646532,
+      "mtime_ns": 1769481935352828997
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Duke Dumont_Duality_08_Love Song.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Duke Dumont_Duality_08_Love Song.flac",
+      "size": 41905633,
+      "mtime_ns": 1770415446171672180
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Eden Prince, Nonô - Memories - Extended Mix.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Eden Prince, Nonô - Memories - Extended Mix.flac",
+      "size": 58641778,
+      "mtime_ns": 1782487574321562197
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/FISHER (OZ), ARCO - Ocean (Extended Mix) - www.djsoundtop.com.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/FISHER (OZ), ARCO - Ocean (Extended Mix) - www.djsoundtop.com.flac",
+      "size": 43023831,
+      "mtime_ns": 1782487906467516084
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/FISHER (OZ), bbyclose - Blackberries (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/FISHER (OZ), bbyclose - Blackberries (Extended Mix).flac",
+      "size": 32299104,
+      "mtime_ns": 1782487867604695029
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Flowdan, FISHER (OZ) - Boost Up (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Flowdan, FISHER (OZ) - Boost Up (Extended Mix).flac",
+      "size": 41930132,
+      "mtime_ns": 1782477010337649227
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Freak Nasty - Da' Dip (Brandon Remix) 135.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Freak Nasty - Da' Dip (Brandon Remix) 135.mp3",
+      "size": 8602622,
+      "mtime_ns": 1770260263448408907
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Funk Cartel - The Fix (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Funk Cartel - The Fix (Original Mix).flac",
+      "size": 42002714,
+      "mtime_ns": 1770415049163474237
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/HILLS (US), WELKER (BR) - SWAGGER (EXTENDED).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/HILLS (US), WELKER (BR) - SWAGGER (EXTENDED).flac",
+      "size": 39183893,
+      "mtime_ns": 1782487900318401522
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Hugo Cantarra & Taim - What Did You Say (AVIRA Extended Remix) myfreemp3.vip  - 11A - 124.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Hugo Cantarra & Taim - What Did You Say (AVIRA Extended Remix) myfreemp3.vip  - 11A - 124.mp3",
+      "size": 11954854,
+      "mtime_ns": 1769481321999607619
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/James Hype - Drums (Extended) .mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/James Hype - Drums (Extended) .mp3",
+      "size": 12740570,
+      "mtime_ns": 1770261747695238729
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/James Hype - Trigger Finger Extended Mix-www.groovytunes.org.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/James Hype - Trigger Finger Extended Mix-www.groovytunes.org.flac",
+      "size": 32758269,
+      "mtime_ns": 1782488694283157983
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/James Hype, Shamiya Battles - 7 Seconds (feat. Shamiya Battles) (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/James Hype, Shamiya Battles - 7 Seconds (feat. Shamiya Battles) (Original Mix).flac",
+      "size": 48347299,
+      "mtime_ns": 1770261812601179020
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Josh Baker - Down To The Bone.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Josh Baker - Down To The Bone.flac",
+      "size": 36013581,
+      "mtime_ns": 1782488189753374917
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Josh Baker, Paige Cavell, Silva Bumpa - Feel This Way (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Josh Baker, Paige Cavell, Silva Bumpa - Feel This Way (Original Mix).flac",
+      "size": 33108928,
+      "mtime_ns": 1770261627336451862
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Joshwa - Out of My Mind  (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Joshwa - Out of My Mind  (Extended Mix).flac",
+      "size": 37183343,
+      "mtime_ns": 1771969168847282012
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Kichta - Dreams (Galactic Harmony Premiere).wav",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Kichta - Dreams (Galactic Harmony Premiere).wav",
+      "size": 56222704,
+      "mtime_ns": 1782487128249071706
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Kita Alexander, FISHER (OZ) - Atmosphere (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Kita Alexander, FISHER (OZ) - Atmosphere (Extended Mix).flac",
+      "size": 44488305,
+      "mtime_ns": 1782476995941242098
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Laherte - Pump Up The Jam (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Laherte - Pump Up The Jam (Extended Mix).mp3",
+      "size": 9737254,
+      "mtime_ns": 1767047262853527941
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/PAWSA - TOO COOL TO BE CARELESS (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/PAWSA - TOO COOL TO BE CARELESS (Extended Mix).flac",
+      "size": 40202434,
+      "mtime_ns": 1770261764350686913
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Piero Pirupa Ben Kim - Smells Like Teen Spirit Extended Mix-www.groovytunes.org.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Piero Pirupa Ben Kim - Smells Like Teen Spirit Extended Mix-www.groovytunes.org.flac",
+      "size": 44675054,
+      "mtime_ns": 1770261936832848387
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Roddy Lima - Night Time (Extended Mix) - www.djsoundtop.com.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Roddy Lima - Night Time (Extended Mix) - www.djsoundtop.com.flac",
+      "size": 46923990,
+      "mtime_ns": 1782487638588085725
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Ruben Mandolini - Pekka (Original Mix) - www.electronicfresh.com.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Ruben Mandolini - Pekka (Original Mix) - www.electronicfresh.com.mp3",
+      "size": 18607965,
+      "mtime_ns": 1782487860487011391
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SIDEPIECE, Barney Bones - Ménage À Trois (Extended Mix) (1).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SIDEPIECE, Barney Bones - Ménage À Trois (Extended Mix) (1).flac",
+      "size": 33584567,
+      "mtime_ns": 1782486700944670532
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Samantha Loveridge - Backtrack Blow Up (Max Styler Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Samantha Loveridge - Backtrack Blow Up (Max Styler Remix).flac",
+      "size": 39487338,
+      "mtime_ns": 1771968784388819225
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Script - Wtf (Original Mix) 130.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Script - Wtf (Original Mix) 130.flac",
+      "size": 34970504,
+      "mtime_ns": 1771967645531341150
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Sidepiece, Barney Bones - Ménage À Trois (Extended Mix) 128.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Sidepiece, Barney Bones - Ménage À Trois (Extended Mix) 128.flac",
+      "size": 32190862,
+      "mtime_ns": 1771968987652564269
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - 18 Month Free Trial - Original Mix - Will Easton.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - 18 Month Free Trial - Original Mix - Will Easton.mp3",
+      "size": 16044452,
+      "mtime_ns": 1762916659990928883
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Back It Up - Extended Mix - Josh Baker.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Back It Up - Extended Mix - Josh Baker.mp3",
+      "size": 9549208,
+      "mtime_ns": 1767660085696793597
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Bugging - Maur.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Bugging - Maur.mp3",
+      "size": 12528497,
+      "mtime_ns": 1762916581858138016
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Enough to Believe - Jamie Jones Remix - Bob Moses.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Enough to Believe - Jamie Jones Remix - Bob Moses.mp3",
+      "size": 12643071,
+      "mtime_ns": 1762916554435962488
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Freak Like Me - DJ Deeon vs Lee Walker Remix - Lee Walker.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Freak Like Me - DJ Deeon vs Lee Walker Remix - Lee Walker.mp3",
+      "size": 13935840,
+      "mtime_ns": 1766774859184808041
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Love All Day - Extended Mix - Kisch.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Love All Day - Extended Mix - Kisch.mp3",
+      "size": 12708646,
+      "mtime_ns": 1766774826639374793
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Marimba - German Brigante.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Marimba - German Brigante.mp3",
+      "size": 16091235,
+      "mtime_ns": 1762916628569597710
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Not Today - Pedro Andrade G.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Not Today - Pedro Andrade G.mp3",
+      "size": 2044442,
+      "mtime_ns": 1771968452545796484
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Rinse & Repeat - Riton.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Rinse & Repeat - Riton.mp3",
+      "size": 6362265,
+      "mtime_ns": 1766774754010748050
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Technic - Will Easton.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Technic - Will Easton.mp3",
+      "size": 9483194,
+      "mtime_ns": 1762916641094355117
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - Want You (Rework) - Rocksted.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - Want You (Rework) - Rocksted.mp3",
+      "size": 11696245,
+      "mtime_ns": 1769734550063041101
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/SpotiDownloader.com - With Or Without You - Original Mix - Vlada Asanin.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/SpotiDownloader.com - With Or Without You - Original Mix - Vlada Asanin.mp3",
+      "size": 6355688,
+      "mtime_ns": 1767657994662159175
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Tinashe - No Broke Boys (Lee Foss Remix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Tinashe - No Broke Boys (Lee Foss Remix).mp3",
+      "size": 10027200,
+      "mtime_ns": 1770261896484856740
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Tinashe, Disco Lines - No Broke Boys (Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Tinashe, Disco Lines - No Broke Boys (Extended).flac",
+      "size": 24703459,
+      "mtime_ns": 1782486798558411673
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Tiësto - VHS RAVE - 01 - VHS RAVE.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Tiësto - VHS RAVE - 01 - VHS RAVE.flac",
+      "size": 24430133,
+      "mtime_ns": 1782486972310692363
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/TyriqueOrDie, bradeazy - Up Down (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/TyriqueOrDie, bradeazy - Up Down (Extended Mix).flac",
+      "size": 35358791,
+      "mtime_ns": 1771969205257741798
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Vintage Culture, James Hype - You Give Me A Feeling (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Vintage Culture, James Hype - You Give Me A Feeling (Original Mix).flac",
+      "size": 35166019,
+      "mtime_ns": 1770261846459619479
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Vintage Culture, Max Styler - You & Me (Vintage Culture Extended Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Vintage Culture, Max Styler - You & Me (Vintage Culture Extended Remix).flac",
+      "size": 43304828,
+      "mtime_ns": 1782488046501453978
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/tech house/Volkoder - All Night Long (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/tech house/Volkoder - All Night Long (Original Mix).flac",
+      "size": 39139890,
+      "mtime_ns": 1770414436305341137
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/01 - R 2 ME (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/01 - R 2 ME (Extended Mix).mp3",
+      "size": 9199079,
+      "mtime_ns": 1771969911627944697
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/07.BL3SS; Tchami - R 2 ME.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/07.BL3SS; Tchami - R 2 ME.flac",
+      "size": 20073102,
+      "mtime_ns": 1782485387851798651
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/08 - Jungle.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/08 - Jungle.flac",
+      "size": 40236147,
+      "mtime_ns": 1769481229919639083
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/17. WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/17. WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "size": 35479792,
+      "mtime_ns": 1771969884762054316
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/21. James Hype, Kaitlin Aragon, HAVEN. - I Run (James Hype Extended Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/21. James Hype, Kaitlin Aragon, HAVEN. - I Run (James Hype Extended Remix).flac",
+      "size": 39102062,
+      "mtime_ns": 1771969669770381537
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/304-lucky_luke_-_cooler_than_me.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/304-lucky_luke_-_cooler_than_me.flac",
+      "size": 22254205,
+      "mtime_ns": 1769734049377247818
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/46. HNTR - Victory (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/46. HNTR - Victory (Original Mix).flac",
+      "size": 35726877,
+      "mtime_ns": 1771970109473902279
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/48. Walker & Royce, VNSSA - Activate  (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/48. Walker & Royce, VNSSA - Activate  (Extended Mix).flac",
+      "size": 31905959,
+      "mtime_ns": 1771969836110112194
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/71. Westend, SIDEPIECE - Take Your Places (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/71. Westend, SIDEPIECE - Take Your Places (Extended Mix).flac",
+      "size": 33879229,
+      "mtime_ns": 1782485770322286407
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/81. GENESI (ITA) - Tempo (Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/81. GENESI (ITA) - Tempo (Extended).flac",
+      "size": 45164613,
+      "mtime_ns": 1771969655764117903
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/83. Ship Wrek - Shake That (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/83. Ship Wrek - Shake That (Extended Mix).flac",
+      "size": 29161493,
+      "mtime_ns": 1771969741446084524
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/89. ACRAZE - Take Me Away (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/89. ACRAZE - Take Me Away (Extended Mix).mp3",
+      "size": 13018792,
+      "mtime_ns": 1771969733555402180
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/AC Slater, Jack Beats, Kate Wild - Healing (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/AC Slater, Jack Beats, Kate Wild - Healing (Extended Mix).flac",
+      "size": 30401652,
+      "mtime_ns": 1771970306027595601
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Bobby Shmurda, Sidepiece - Cash Out (Extended Mix) 130.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Bobby Shmurda, Sidepiece - Cash Out (Extended Mix) 130.flac",
+      "size": 30660151,
+      "mtime_ns": 1771970320354057605
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Boris Way, Zans - More (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Boris Way, Zans - More (Extended Mix).flac",
+      "size": 31912593,
+      "mtime_ns": 1771970354659634526
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Breaking Beattz, DJ Glen - Hold Your Pants (Remix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Breaking Beattz, DJ Glen - Hold Your Pants (Remix).mp3",
+      "size": 11590194,
+      "mtime_ns": 1782486557394548285
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Fatsync - Anytime (2026).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Fatsync - Anytime (2026).flac",
+      "size": 17720099,
+      "mtime_ns": 1771970714360582460
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Fred Again.. - Victory Lap (NOAIR Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Fred Again.. - Victory Lap (NOAIR Remix).flac",
+      "size": 40815234,
+      "mtime_ns": 1782504380110987206
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Fred again.. - Jungle (Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Fred again.. - Jungle (Extended).flac",
+      "size": 29185970,
+      "mtime_ns": 1782486275636366926
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/GENESI (ITA) - Everything You Have Done (Meduza Edit Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/GENESI (ITA) - Everything You Have Done (Meduza Edit Extended).flac",
+      "size": 45556560,
+      "mtime_ns": 1782486304724238462
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/GENESI - Push Me.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/GENESI - Push Me.flac",
+      "size": 39619929,
+      "mtime_ns": 1782485987463605905
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Hntr - Shook Ones, Pt. Iii (19NTY Halloween Set Intro) (Clean) 6B 132.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Hntr - Shook Ones, Pt. Iii (19NTY Halloween Set Intro) (Clean) 6B 132.mp3",
+      "size": 11081570,
+      "mtime_ns": 1771969804470336588
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/House Every Weeekend (Majestic Dirty Dub).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/House Every Weeekend (Majestic Dirty Dub).mp3",
+      "size": 9892383,
+      "mtime_ns": 1764176133324120917
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Juos, Techno Tupac - Side Man (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Juos, Techno Tupac - Side Man (Extended Mix).flac",
+      "size": 35778630,
+      "mtime_ns": 1782486348447800166
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Kamino, MERYLL - Up N Down (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Kamino, MERYLL - Up N Down (Extended Mix).flac",
+      "size": 35209161,
+      "mtime_ns": 1771970679138735677
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Matroda, Klp - Bullshit (Extended Mix) (2025).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Matroda, Klp - Bullshit (Extended Mix) (2025).flac",
+      "size": 24899380,
+      "mtime_ns": 1771969922205565915
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Mau P - Tesla (extended mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Mau P - Tesla (extended mix).flac",
+      "size": 42022509,
+      "mtime_ns": 1782486195297542819
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/NIIKO X SWAE - Disco Inferno (Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/NIIKO X SWAE - Disco Inferno (Extended).flac",
+      "size": 20772345,
+      "mtime_ns": 1771970040450551076
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/NIIKO X SWAE - Upside Down (Extended).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/NIIKO X SWAE - Upside Down (Extended).flac",
+      "size": 24741165,
+      "mtime_ns": 1782485480896352054
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Naeleck - Monster Paradise.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Naeleck - Monster Paradise.flac",
+      "size": 23276736,
+      "mtime_ns": 1782485706172711164
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Omnom - Lavender Town (Extended Mix) (2026).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Omnom - Lavender Town (Extended Mix) (2026).flac",
+      "size": 19453297,
+      "mtime_ns": 1771970200606552256
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Phantogram, HNTR - Fall In Love Again (Extended Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Phantogram, HNTR - Fall In Love Again (Extended Mix).mp3",
+      "size": 11233938,
+      "mtime_ns": 1771969978354024041
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/SCRIPT - Headshake (Original Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/SCRIPT - Headshake (Original Mix).flac",
+      "size": 29934715,
+      "mtime_ns": 1782485593501176989
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/WELKER (BR) - Got The Floor (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/WELKER (BR) - Got The Floor (Extended Mix).flac",
+      "size": 33373196,
+      "mtime_ns": 1771969950411151722
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/WELKER (BR) - Ice In My Eyes (Extended Mix).flac",
+      "size": 36519825,
+      "mtime_ns": 1770414889624881292
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Wax Motif - Gimme That Money (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Wax Motif - Gimme That Money (Extended Mix).flac",
+      "size": 31966361,
+      "mtime_ns": 1782486124057444807
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/bass house/Wax Motif - Touch It (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/bass house/Wax Motif - Touch It (Extended Mix).flac",
+      "size": 31804102,
+      "mtime_ns": 1782486445377571525
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/03 Justice, Rimon - Afterimage (Jersey Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/03 Justice, Rimon - Afterimage (Jersey Remix).flac",
+      "size": 46337722,
+      "mtime_ns": 1782485244688930751
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/05-Jersey_-_The_World_I'm_Searching_For.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/05-Jersey_-_The_World_I'm_Searching_For.flac",
+      "size": 21453410,
+      "mtime_ns": 1782484940316025332
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/06 BUNT. & Elley Duhé - Lost My Mind (Wake Up).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/06 BUNT. & Elley Duhé - Lost My Mind (Wake Up).flac",
+      "size": 31368506,
+      "mtime_ns": 1782485203119990821
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/09 - Daft Punk - Around the World (Maw remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/09 - Daft Punk - Around the World (Maw remix).flac",
+      "size": 60772498,
+      "mtime_ns": 1782504228601156140
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Jersey - Keep Things Random.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Jersey - Keep Things Random.flac",
+      "size": 21579720,
+      "mtime_ns": 1782485184497244783
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Jersey - Over & Over - 06 Colors Turn Grey.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Jersey - Over & Over - 06 Colors Turn Grey.mp3",
+      "size": 8511314,
+      "mtime_ns": 1782484839651155062
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Jersey - Talk Tonight.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Jersey - Talk Tonight.flac",
+      "size": 57702794,
+      "mtime_ns": 1782484791178050436
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Jersey - Tomorrow Never Comes.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Jersey - Tomorrow Never Comes.mp3",
+      "size": 6458739,
+      "mtime_ns": 1782485367903925840
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Lana Del Rey - Video Games (Mekki Martin Bigroom Mix).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Lana Del Rey - Video Games (Mekki Martin Bigroom Mix).mp3",
+      "size": 15413018,
+      "mtime_ns": 1643922990000000000
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/SpotiDownloader.com - Sonderling - Radio Edit - Zonderling.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/SpotiDownloader.com - Sonderling - Radio Edit - Zonderling.mp3",
+      "size": 9155687,
+      "mtime_ns": 1762916631357011514
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/electro house/Steve Angello & Laidback Luke Feat. Robin S. - Show Me Love (Extended Mix).aiff",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/electro house/Steve Angello & Laidback Luke Feat. Robin S. - Show Me Love (Extended Mix).aiff",
+      "size": 70705432,
+      "mtime_ns": 1769733294026208059
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/melbourne bounce/01 Meiko, Will Sparks - Leave The Lights On (Will Sparks Remix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce/01 Meiko, Will Sparks - Leave The Lights On (Will Sparks Remix).flac",
+      "size": 38158124,
+      "mtime_ns": 1782488073337062732
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/melbourne bounce/SpotiDownloader.com - She Doesn't Mind - Jesse Bloch.mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce/SpotiDownloader.com - She Doesn't Mind - Jesse Bloch.mp3",
+      "size": 7713826,
+      "mtime_ns": 1765339276211432415
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/melbourne bounce/The Longest Road Ahead - Morgan Page, Will Sparks.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce/The Longest Road Ahead - Morgan Page, Will Sparks.flac",
+      "size": 29648913,
+      "mtime_ns": 1782505368220982897
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/melbourne bounce/WILL SPARKS - UH OH (EXTENDED).mp3",
+      "destination": "music/DJ PEAK HOUSE - CLUB/house/melbourne bounce/WILL SPARKS - UH OH (EXTENDED).mp3",
+      "size": 12371989,
+      "mtime_ns": 1782505673045838862
+    },
+    {
+      "source": "music/DJ PEAK HOUSE - CLUB/speed garage/Charlie Boon - All My Life.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/garage/speed garage/Charlie Boon - All My Life.flac",
+      "size": 18113325,
+      "mtime_ns": 1782484972928140410
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/01. Fangbanger (Victor Ruiz Remix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/01. Fangbanger (Victor Ruiz Remix).flac",
+      "size": 55684837,
+      "mtime_ns": 1782477998226658685
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/01. Victor Ruiz, D-nox, Alex Stein - Lucky Strike.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/01. Victor Ruiz, D-nox, Alex Stein - Lucky Strike.flac",
+      "size": 48778758,
+      "mtime_ns": 1782480593569002062
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/02. Easy Riders.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/02. Easy Riders.flac",
+      "size": 50780293,
+      "mtime_ns": 1782443514531002992
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/13 - Thomas Schumacher - Fangbanger (Victor Ruiz Remix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/13 - Thomas Schumacher - Fangbanger (Victor Ruiz Remix).flac",
+      "size": 58279528,
+      "mtime_ns": 1782495490453958540
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/Deborah De Luca_Hard Pop_01_Hallucination.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/Deborah De Luca_Hard Pop_01_Hallucination.flac",
+      "size": 45164596,
+      "mtime_ns": 1769650240442997832
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/Joyhauser - Running Away (Original Mix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/Joyhauser - Running Away (Original Mix).flac",
+      "size": 50683700,
+      "mtime_ns": 1782443092254949570
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/Mark Reeve, Joyhauser - Focus (Original Mix) - www.djsoundtop.com.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/Mark Reeve, Joyhauser - Focus (Original Mix) - www.djsoundtop.com.flac",
+      "size": 39269071,
+      "mtime_ns": 1782435820180104726
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/Miami Vice (Original Mix) - Timmo.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/Miami Vice (Original Mix) - Timmo.flac",
+      "size": 36361305,
+      "mtime_ns": 1782478443821815466
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/SpotiDownloader.com - Access - Joris Voorn Extended Remix - DJ Misjah.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/SpotiDownloader.com - Access - Joris Voorn Extended Remix - DJ Misjah.mp3",
+      "size": 14450829,
+      "mtime_ns": 1766774892889544806
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/SpotiDownloader.com - Addicted - Mixed - Mausio.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/SpotiDownloader.com - Addicted - Mixed - Mausio.mp3",
+      "size": 10603647,
+      "mtime_ns": 1770261509001572143
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/SpotiDownloader.com - Evanescent - Reinier Zonneveld.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/SpotiDownloader.com - Evanescent - Reinier Zonneveld.mp3",
+      "size": 11864629,
+      "mtime_ns": 1762916673715987305
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/peak time techno/SpotiDownloader.com - Horn Resumed - Reinier Zonneveld.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/peak time techno/SpotiDownloader.com - Horn Resumed - Reinier Zonneveld.mp3",
+      "size": 9764017,
+      "mtime_ns": 1762916569045512834
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/minimal techno/05. Sidney Samson Feat. Wizard Sleeve – Riverside (Let's Go!) ( Dirty Extended Mix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/minimal techno/05. Sidney Samson Feat. Wizard Sleeve – Riverside (Let's Go!) ( Dirty Extended Mix).flac",
+      "size": 25813675,
+      "mtime_ns": 1769481862685305710
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/(Miss Monique, Nahue Sintes, JOSEFINA) 2021.  - 00. Don't Come Back (feat. JOSEFINA) (Extended Mix).mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/(Miss Monique, Nahue Sintes, JOSEFINA) 2021.  - 00. Don't Come Back (feat. JOSEFINA) (Extended Mix).mp3",
+      "size": 16897954,
+      "mtime_ns": 1782503752466731070
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/01 - ZHU - Risky Business Mathame remix.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/01 - ZHU - Risky Business Mathame remix.flac",
+      "size": 40838614,
+      "mtime_ns": 1769734041502329807
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/09.Tiger Stripes - Nocturne (Extended Mix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/09.Tiger Stripes - Nocturne (Extended Mix).flac",
+      "size": 50065832,
+      "mtime_ns": 1782504080027265644
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Adam Sellouk & Doriann - Carnage (Extended).mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Adam Sellouk & Doriann - Carnage (Extended).mp3",
+      "size": 10957805,
+      "mtime_ns": 1782484529281950786
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Bicep - Water - 01 Water (feat. Clara La San).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Bicep - Water - 01 Water (feat. Clara La San).flac",
+      "size": 69295149,
+      "mtime_ns": 1782484368341311889
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Da Hool, Cassian & YOTTO - Love Parade.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Da Hool, Cassian & YOTTO - Love Parade.flac",
+      "size": 33304661,
+      "mtime_ns": 1770261647167399352
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Elderbrook - Numb (Joris Voorn Remix).mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Elderbrook - Numb (Joris Voorn Remix).mp3",
+      "size": 14861948,
+      "mtime_ns": 1770414454403646657
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Faded (Blacklizt Version) - HNTR Remix - ZHU, HNTR.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Faded (Blacklizt Version) - HNTR Remix - ZHU, HNTR.flac",
+      "size": 23441070,
+      "mtime_ns": 1782484491340635611
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Josh Gigante, Ugo Banchi - Kill Bill (Extended Mix) - www.djsoundtop.com.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Josh Gigante, Ugo Banchi - Kill Bill (Extended Mix) - www.djsoundtop.com.mp3",
+      "size": 14023584,
+      "mtime_ns": 1770261745479279485
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Mathame - For Every Forever.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Mathame - For Every Forever.flac",
+      "size": 41459489,
+      "mtime_ns": 1782484058654921759
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Mila Journee, Zafrir - Pas (Original Mix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Mila Journee, Zafrir - Pas (Original Mix).flac",
+      "size": 37701219,
+      "mtime_ns": 1782484853885599504
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/Rafael Cerato, Laherte - Thunderbolt (Extended Mix).flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/Rafael Cerato, Laherte - Thunderbolt (Extended Mix).flac",
+      "size": 43133897,
+      "mtime_ns": 1782484339669438851
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Britannia - Undercatt.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Britannia - Undercatt.mp3",
+      "size": 16276167,
+      "mtime_ns": 1762916559923140670
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Dying Of The Light (ABGT251) - Victor’s Interstellar Remake - Victor Ruiz.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Dying Of The Light (ABGT251) - Victor’s Interstellar Remake - Victor Ruiz.mp3",
+      "size": 10951803,
+      "mtime_ns": 1763521742318547505
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Laguna - Gierto.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Laguna - Gierto.mp3",
+      "size": 15076743,
+      "mtime_ns": 1769480725530681322
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Miracle Of The Rose - Denis Horvat.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Miracle Of The Rose - Denis Horvat.mp3",
+      "size": 13415706,
+      "mtime_ns": 1767658185800160876
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Mutant Robotics - Maceo Plex.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Mutant Robotics - Maceo Plex.mp3",
+      "size": 16653563,
+      "mtime_ns": 1762916682977222737
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Say Yes To Heaven - Anyma Remix - Lana Del Rey.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Say Yes To Heaven - Anyma Remix - Lana Del Rey.mp3",
+      "size": 8922181,
+      "mtime_ns": 1762916575292317182
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/melodic techno/SpotiDownloader.com - Shanti - Solee.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/melodic techno/SpotiDownloader.com - Shanti - Solee.mp3",
+      "size": 21666841,
+      "mtime_ns": 1762916686347077137
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/hard groove/07. Alarico - What For.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/hard groove/07. Alarico - What For.flac",
+      "size": 41457430,
+      "mtime_ns": 1782478351888563795
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/hard groove/Alarico - Drops Of You - 07 What For.flac",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/hard groove/Alarico - Drops Of You - 07 What For.flac",
+      "size": 41252156,
+      "mtime_ns": 1782480187972951225
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/hard groove/Area 91 - Gabriel Padrevita (Original Mix) 150.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/hard groove/Area 91 - Gabriel Padrevita (Original Mix) 150.mp3",
+      "size": 9826351,
+      "mtime_ns": 1782495508809246883
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/hard groove/Drake & 21 Savage - Knife Talk (Pegassi Edit).mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/hard groove/Drake & 21 Savage - Knife Talk (Pegassi Edit).mp3",
+      "size": 6900995,
+      "mtime_ns": 1782478395061051646
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/hard groove/SpotiDownloader.com - Azul - Bad Boombox Remix - Funk Tribu.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/techno/hard groove/SpotiDownloader.com - Azul - Bad Boombox Remix - Funk Tribu.mp3",
+      "size": 9355416,
+      "mtime_ns": 1767047605367365336
+    },
+    {
+      "source": "music/DJ FAST TECH - GROOVE/psytrance/SpotiDownloader.com - Drama - Mandragora.mp3",
+      "destination": "music/DJ FAST TECH - GROOVE/trance/psytrance/SpotiDownloader.com - Drama - Mandragora.mp3",
+      "size": 8285468,
+      "mtime_ns": 1762916664026941526
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/11-andy_farley_and_frank_farrell-touch_me_(original_mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/11-andy_farley_and_frank_farrell-touch_me_(original_mix).mp3",
+      "size": 13115700,
+      "mtime_ns": 1782482272735900090
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/11. Andy Farley - Touch Me.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/11. Andy Farley - Touch Me.mp3",
+      "size": 13557207,
+      "mtime_ns": 1782503113479409796
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/4-Andy Farley & Frank Farrell - Rupha N Tupha (Original Mix).wav",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/4-Andy Farley & Frank Farrell - Rupha N Tupha (Original Mix).wav",
+      "size": 83961388,
+      "mtime_ns": 1769795489354687970
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/Flashback (Radio Edit) - Pegassi.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/Flashback (Radio Edit) - Pegassi.flac",
+      "size": 22085666,
+      "mtime_ns": 1782481779552877407
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/Kettama - It Gets Better (Forever Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/Kettama - It Gets Better (Forever Mix).flac",
+      "size": 56812792,
+      "mtime_ns": 1782502846484941185
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard house/davyboi - Get Nasty.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/house/hard house/davyboi - Get Nasty.mp3",
+      "size": 10283418,
+      "mtime_ns": 1782481806213829067
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/01 - MASH EM.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/01 - MASH EM.flac",
+      "size": 28708356,
+      "mtime_ns": 1782478761879362079
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/01-240_km-h_and_kolab_and_dvaid-bad_to_the_bone.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/01-240_km-h_and_kolab_and_dvaid-bad_to_the_bone.mp3",
+      "size": 9527475,
+      "mtime_ns": 1782479042523268523
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/02-ueberrest-surrender.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/02-ueberrest-surrender.flac",
+      "size": 47122012,
+      "mtime_ns": 1782479693721209585
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/07. Colonized Mind (intro) - Joy In Repetition (incl. (Sometimes I Feel Like A) Motherless Child).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/07. Colonized Mind (intro) - Joy In Repetition (incl. (Sometimes I Feel Like A) Motherless Child).flac",
+      "size": 65382861,
+      "mtime_ns": 1782444746890699475
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/150 - Umbraid - Anarchy.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/150 - Umbraid - Anarchy.flac",
+      "size": 37085649,
+      "mtime_ns": 1782497241396763810
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/18. Electronic - Feel Every Beat (DNA Remix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/18. Electronic - Feel Every Beat (DNA Remix).mp3",
+      "size": 14013416,
+      "mtime_ns": 1782497044127645397
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/332 - Cadzow - Sensation.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/332 - Cadzow - Sensation.flac",
+      "size": 27774845,
+      "mtime_ns": 1782478716158147555
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/ACRAZE_Do It to It_01_Do It To It (Sub Focus remix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/ACRAZE_Do It to It_01_Do It To It (Sub Focus remix).flac",
+      "size": 26737936,
+      "mtime_ns": 1782496690600042291
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/Abr. - A Warm Place.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/Abr. - A Warm Place.flac",
+      "size": 21538012,
+      "mtime_ns": 1782497409486171083
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/David Temessi, Two Half Broke Dudes - Klankernschranz (Original Mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/David Temessi, Two Half Broke Dudes - Klankernschranz (Original Mix).mp3",
+      "size": 12758650,
+      "mtime_ns": 1782444023487141820
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/Iosio, Tars - Sundar (Original Mix) 155.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/Iosio, Tars - Sundar (Original Mix) 155.mp3",
+      "size": 11193932,
+      "mtime_ns": 1782444517723646141
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/Minuit Machine, RAUMM - Honey - RAUMM Remix.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/Minuit Machine, RAUMM - Honey - RAUMM Remix.flac",
+      "size": 25070932,
+      "mtime_ns": 1782444647905738476
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/Nicolas Julian, Storm & Aenjay - Like This (2025).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/Nicolas Julian, Storm & Aenjay - Like This (2025).flac",
+      "size": 18445426,
+      "mtime_ns": 1782445101631001699
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/SP4CKS - make me feel like.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/SP4CKS - make me feel like.flac",
+      "size": 25249448,
+      "mtime_ns": 1782478672637999964
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/SpotiDownloader.com - Shattered Dreams - Trancemaster Krause.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/SpotiDownloader.com - Shattered Dreams - Trancemaster Krause.mp3",
+      "size": 7842804,
+      "mtime_ns": 1767048307970812403
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/SpotiDownloader.com - Stay High - Ueberrest.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/SpotiDownloader.com - Stay High - Ueberrest.mp3",
+      "size": 11069424,
+      "mtime_ns": 1767663552664443528
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/Ueberrest - Disturbing Paradise.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/Ueberrest - Disturbing Paradise.flac",
+      "size": 48082094,
+      "mtime_ns": 1782479656160068784
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/ZAPRAVKA - MASH EM.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/ZAPRAVKA - MASH EM.flac",
+      "size": 17343229,
+      "mtime_ns": 1782496403462387501
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard techno/snoritz - Do This Often.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/hard techno/snoritz - Do This Often.flac",
+      "size": 34382963,
+      "mtime_ns": 1782444703514547324
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/11-noimage-spot_light.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/11-noimage-spot_light.mp3",
+      "size": 10887880,
+      "mtime_ns": 1782481194389292213
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/Garoad - VA-11 HALL-A - Second Round - 33 Through the Storm, We Will Find a Way.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/Garoad - VA-11 HALL-A - Second Round - 33 Through the Storm, We Will Find a Way.flac",
+      "size": 25292916,
+      "mtime_ns": 1782502124465981008
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/InntRaw - Breathe (Extended Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/InntRaw - Breathe (Extended Mix).flac",
+      "size": 33373625,
+      "mtime_ns": 1782481661413409960
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/SpotiDownloader.com - Graveyard - missed..mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/SpotiDownloader.com - Graveyard - missed..mp3",
+      "size": 2459258,
+      "mtime_ns": 1767663473579412898
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/SpotiDownloader.com - Spot Light - Noimage.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/SpotiDownloader.com - Spot Light - Noimage.mp3",
+      "size": 10961474,
+      "mtime_ns": 1767664606026345602
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/Veenmol, Black Mode - Overload (Original Mix) 137.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/Veenmol, Black Mode - Overload (Original Mix) 137.mp3",
+      "size": 14141245,
+      "mtime_ns": 1782481445187317006
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/industrial/noimage - Body Moment (Original Mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/industrial/noimage - Body Moment (Original Mix).mp3",
+      "size": 11850680,
+      "mtime_ns": 1782481437117514940
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/Bombs Away - I Like the Way you Kiss me (Techno Remix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/Bombs Away - I Like the Way you Kiss me (Techno Remix).mp3",
+      "size": 5634012,
+      "mtime_ns": 1782500665892801841
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/Lightforce - Join Me (KSN Schranz Rework Extended Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/Lightforce - Join Me (KSN Schranz Rework Extended Mix).flac",
+      "size": 37501516,
+      "mtime_ns": 1782500640759713521
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/Luciid - Charm.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/Luciid - Charm.flac",
+      "size": 37064368,
+      "mtime_ns": 1782499995590704986
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/Schattenklinge - Ben Techy (Original Mix) 155.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/Schattenklinge - Ben Techy (Original Mix) 155.mp3",
+      "size": 10759441,
+      "mtime_ns": 1782499978153456053
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/SpotiDownloader.com - SINNER - DJ DRECKISCH.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/SpotiDownloader.com - SINNER - DJ DRECKISCH.mp3",
+      "size": 6033751,
+      "mtime_ns": 1767048280577849395
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/schranz/TRASHKIDS - Mischluft - pop a pill.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/techno/schranz/TRASHKIDS - Mischluft - pop a pill.flac",
+      "size": 45204117,
+      "mtime_ns": 1782500508151833430
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/01. Ctrl, Panteros666 - Fire II Dragon Return (Extended Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/01. Ctrl, Panteros666 - Fire II Dragon Return (Extended Mix).flac",
+      "size": 29259506,
+      "mtime_ns": 1782481248751287869
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/03. DJ Misjah - Access.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/03. DJ Misjah - Access.flac",
+      "size": 74708842,
+      "mtime_ns": 1782502959546121931
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/1158 - Trancemaster Krause - Bittersweet.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/1158 - Trancemaster Krause - Bittersweet.flac",
+      "size": 22290289,
+      "mtime_ns": 1782501943229533113
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/Electro - Mika Heggemann - Music Never Lies.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/Electro - Mika Heggemann - Music Never Lies.flac",
+      "size": 29128892,
+      "mtime_ns": 1782501996456949351
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/Lost Frequencies X Bomfunk Mc's - Freestyler (Rock The Microphone) (Extended Mix) 160.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/Lost Frequencies X Bomfunk Mc's - Freestyler (Rock The Microphone) (Extended Mix) 160.mp3",
+      "size": 12354066,
+      "mtime_ns": 1766774679584180630
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/SpotiDownloader.com - Heartbreaking - umbraid.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/SpotiDownloader.com - Heartbreaking - umbraid.mp3",
+      "size": 7468252,
+      "mtime_ns": 1767664665842672405
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/SpotiDownloader.com - I Got It For You - Funk Tribu.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/SpotiDownloader.com - I Got It For You - Funk Tribu.mp3",
+      "size": 8748065,
+      "mtime_ns": 1765145946304374335
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/SpotiDownloader.com - Phonky Tribu - Funk Tribu.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/SpotiDownloader.com - Phonky Tribu - Funk Tribu.mp3",
+      "size": 11646846,
+      "mtime_ns": 1765558240652660310
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/SpotiDownloader.com - Winds (Feel for You) - Part Time Killer.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/SpotiDownloader.com - Winds (Feel for You) - Part Time Killer.mp3",
+      "size": 6856012,
+      "mtime_ns": 1765348409828155960
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/SpotiDownloader.com - You Can Say You Hate Me - umbraid.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/SpotiDownloader.com - You Can Say You Hate Me - umbraid.mp3",
+      "size": 8018515,
+      "mtime_ns": 1769480445769462671
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/neo trance/Trancemaster Krause - Never Give Up.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/neo trance/Trancemaster Krause - Never Give Up.mp3",
+      "size": 9898637,
+      "mtime_ns": 1782501749698373395
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard trance/27. KI,KI - What's a Girl to Do in '25 (Extended) (Extended).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/hard trance/27. KI,KI - What's a Girl to Do in '25 (Extended) (Extended).mp3",
+      "size": 11142244,
+      "mtime_ns": 1782501692080535583
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard trance/403-dbf_-_freestyle_fanatic.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/hard trance/403-dbf_-_freestyle_fanatic.flac",
+      "size": 40936960,
+      "mtime_ns": 1782498084449247994
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard trance/HouseWerk & T78 & Ducamp - Rave Nation (Original Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/hard trance/HouseWerk & T78 & Ducamp - Rave Nation (Original Mix).flac",
+      "size": 43406485,
+      "mtime_ns": 1782481088825120507
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard trance/Mauro Picotto Pres. CRW x Kamilo Sanclemente - I Feel Love (Extended Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/hard trance/Mauro Picotto Pres. CRW x Kamilo Sanclemente - I Feel Love (Extended Mix).flac",
+      "size": 57885113,
+      "mtime_ns": 1782497936472396643
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hard trance/SpotiDownloader.com - What's a Girl to Do in '25 - KI_KI.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/trance/hard trance/SpotiDownloader.com - What's a Girl to Do in '25 - KI_KI.mp3",
+      "size": 6132908,
+      "mtime_ns": 1766085242995520192
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/01-jude_bradshaw_and_3amdisco_-_when_we_touch-zzzz.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/01-jude_bradshaw_and_3amdisco_-_when_we_touch-zzzz.mp3",
+      "size": 8180954,
+      "mtime_ns": 1782483280232152014
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/04-adb-night_break__grand_v_remix.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/04-adb-night_break__grand_v_remix.flac",
+      "size": 36314224,
+      "mtime_ns": 1782482733425309248
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/142 - mietze conte - nanana.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/142 - mietze conte - nanana.flac",
+      "size": 12611031,
+      "mtime_ns": 1782481922982489900
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/263 - Dimitri Vegas & Like Mike - Thank You (Not So Bad).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/263 - Dimitri Vegas & Like Mike - Thank You (Not So Bad).flac",
+      "size": 17316710,
+      "mtime_ns": 1782483190727317159
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/ADB - Take The Heat.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/ADB - Take The Heat.mp3",
+      "size": 12749963,
+      "mtime_ns": 1782482498811669851
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Butschi - Clouds Over My Mind (Original Mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Butschi - Clouds Over My Mind (Original Mix).mp3",
+      "size": 11880118,
+      "mtime_ns": 1782482906169271832
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/DJ Guestlist - DALE DURO (Original Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/DJ Guestlist - DALE DURO (Original Mix).flac",
+      "size": 23058166,
+      "mtime_ns": 1782481947445727162
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Ely Oaks – Running Around.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Ely Oaks – Running Around.flac",
+      "size": 20374760,
+      "mtime_ns": 1782482819202346499
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Igda, Yønder - Okay Okay (Orig. Mix) (Dirty) 2A 160.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Igda, Yønder - Okay Okay (Orig. Mix) (Dirty) 2A 160.mp3",
+      "size": 8480744,
+      "mtime_ns": 1782482943192030414
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Linds - Night (Extended Mix) (2026).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Linds - Night (Extended Mix) (2026).flac",
+      "size": 29843137,
+      "mtime_ns": 1782482415425675629
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Odymel - Thank You (Rework) (Extended Mix) 150.wav",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Odymel - Thank You (Rework) (Extended Mix) 150.wav",
+      "size": 90649218,
+      "mtime_ns": 1782483251494552671
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/Panteros666 - Let UwU Go (Original Mix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/Panteros666 - Let UwU Go (Original Mix).flac",
+      "size": 41877485,
+      "mtime_ns": 1782482142881389409
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/SpotiDownloader.com - Cassiopeia - DJ Sonnenbrand.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/SpotiDownloader.com - Cassiopeia - DJ Sonnenbrand.mp3",
+      "size": 14196923,
+      "mtime_ns": 1769480523001201082
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/SpotiDownloader.com - Move Your Body - Cara Elizabeth.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/SpotiDownloader.com - Move Your Body - Cara Elizabeth.mp3",
+      "size": 8773815,
+      "mtime_ns": 1767660402229772653
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hypertechno/SpotiDownloader.com - Vela - DJ Sonnenbrand.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hypertechno/SpotiDownloader.com - Vela - DJ Sonnenbrand.mp3",
+      "size": 16514483,
+      "mtime_ns": 1767047685245858507
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hardtekk/SpotiDownloader.com - Dormez Bien - Luzkan.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hardtekk/SpotiDownloader.com - Dormez Bien - Luzkan.mp3",
+      "size": 9601161,
+      "mtime_ns": 1769649862234817269
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hardstyle/332 - Cadzow - Sensation.flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hardstyle/332 - Cadzow - Sensation.flac",
+      "size": 27774845,
+      "mtime_ns": 1782443839687485809
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hardstyle/SpotiDownloader.com - Better Off Alone - Rian Wood.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hardstyle/SpotiDownloader.com - Better Off Alone - Rian Wood.mp3",
+      "size": 4179389,
+      "mtime_ns": 1767660191543835069
+    },
+    {
+      "source": "music/DJ HARD - NEO-RAVE/hardstyle/SpotiDownloader.com - Little Rave Planet - IGDA.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/hardstyle/SpotiDownloader.com - Little Rave Planet - IGDA.mp3",
+      "size": 8303574,
+      "mtime_ns": 1767663381722319336
+    }
+  ],
+  "already_in_place": [
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/03. Zhu - In the Morning.flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/03. Zhu - In the Morning.flac",
+      "size": 26116404,
+      "mtime_ns": 1769733771357610683,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/06 BUNT. & Elley Duhé - Lost My Mind (Wake Up).flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/06 BUNT. & Elley Duhé - Lost My Mind (Wake Up).flac",
+      "size": 31368506,
+      "mtime_ns": 1782506533658711613,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/1. Hurting.flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/1. Hurting.flac",
+      "size": 23110806,
+      "mtime_ns": 1770415509423022136,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/10. All You Children.flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/10. All You Children.flac",
+      "size": 50372421,
+      "mtime_ns": 1769481685750055870,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/10. Jamie xx - All You Children (feat. The Avalanches).flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/10. Jamie xx - All You Children (feat. The Avalanches).flac",
+      "size": 51421463,
+      "mtime_ns": 1782505570466472488,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/11 - vive la fête - maquillage.flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/11 - vive la fête - maquillage.flac",
+      "size": 23455768,
+      "mtime_ns": 1770415242454746666,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/BUNT. - Crown.mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/BUNT. - Crown.mp3",
+      "size": 10004758,
+      "mtime_ns": 1770414792426786783,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/Fred again. - Actual Life 2 (February 2 - October 15 2021) - 09 - Faisal (envelops me).flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/Fred again. - Actual Life 2 (February 2 - October 15 2021) - 09 - Faisal (envelops me).flac",
+      "size": 77745329,
+      "mtime_ns": 1782506627934220666,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/Fred again. - Actual Life 3 (January 1 - September 9 2022) - 11 - Clara (the night is dark).flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/Fred again. - Actual Life 3 (January 1 - September 9 2022) - 11 - Clara (the night is dark).flac",
+      "size": 59082795,
+      "mtime_ns": 1782507016117486401,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/LouLou Players, Kolombo - 2Sexy (Original mix).mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/LouLou Players, Kolombo - 2Sexy (Original mix).mp3",
+      "size": 14477673,
+      "mtime_ns": 1770414813981265922,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/Max Styler, Deomid - Every Night (Original Mix).flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/Max Styler, Deomid - Every Night (Original Mix).flac",
+      "size": 46380261,
+      "mtime_ns": 1782489207605467634,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/Only Friends - Bunt..flac",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/Only Friends - Bunt..flac",
+      "size": 17640293,
+      "mtime_ns": 1782506427762682515,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/SG Lewis - Hurting (feat. AlunaGeorge).mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/SG Lewis - Hurting (feat. AlunaGeorge).mp3",
+      "size": 7898334,
+      "mtime_ns": 1782505609415090300,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - Entre el Techno y el Amor - Ácido Pantera.mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - Entre el Techno y el Amor - Ácido Pantera.mp3",
+      "size": 9068071,
+      "mtime_ns": 1762916668507761212,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - Tempest - Pional.mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - Tempest - Pional.mp3",
+      "size": 13090614,
+      "mtime_ns": 1762916637967770442,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - What's a Girl to Do - Fatima Yamaha.mp3",
+      "destination": "music/DJ CHILL - GROOVE/indie dance/SpotiDownloader.com - What's a Girl to Do - Fatima Yamaha.mp3",
+      "size": 17935397,
+      "mtime_ns": 1762916697960073310,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ PEAK HOUSE - CLUB/breakbeat/07 Around the World.flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/breakbeat/07 Around the World.flac",
+      "size": 49175325,
+      "mtime_ns": 1770413985146644659,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ PEAK HOUSE - CLUB/breakbeat/1. Cloonee, Prospa - Free Your Mind (Extended Mix).flac",
+      "destination": "music/DJ PEAK HOUSE - CLUB/breakbeat/1. Cloonee, Prospa - Free Your Mind (Extended Mix).flac",
+      "size": 38021152,
+      "mtime_ns": 1782502609691020175,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/01 Meiko, Will Sparks - Leave The Lights On (Will Sparks Remix).flac",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/01 Meiko, Will Sparks - Leave The Lights On (Will Sparks Remix).flac",
+      "size": 38158124,
+      "mtime_ns": 1782483323918103975,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/02-dbf_x_the_obsessed_and_david_forbes_feat_mc_cyclone_-_rock_the_dancefloor_(extended_mix)-zzzz.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/02-dbf_x_the_obsessed_and_david_forbes_feat_mc_cyclone_-_rock_the_dancefloor_(extended_mix)-zzzz.mp3",
+      "size": 12593065,
+      "mtime_ns": 1782483529365335082,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/02-tyler_jack_-_here_we_go_(extended_mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/02-tyler_jack_-_here_we_go_(extended_mix).mp3",
+      "size": 12454259,
+      "mtime_ns": 1767047120864288591,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/20-feta_felice_-_feel_it_in_your_soul_(run_it_up)-zzzz.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/20-feta_felice_-_feel_it_in_your_soul_(run_it_up)-zzzz.mp3",
+      "size": 12194044,
+      "mtime_ns": 1782483452225769080,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/Flowfaze - Ride Or Die (Original Mix).mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/Flowfaze - Ride Or Die (Original Mix).mp3",
+      "size": 5447696,
+      "mtime_ns": 1769648483654936477,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/LAMMER - Highly Rogue EP - 01 Time To Move.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/LAMMER - Highly Rogue EP - 01 Time To Move.mp3",
+      "size": 13585883,
+      "mtime_ns": 1782483309593952900,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/LUKA - I Got It (Extended Mix).wav",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/LUKA - I Got It (Extended Mix).wav",
+      "size": 85532052,
+      "mtime_ns": 1782483516149440773,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - All I Need - Edo.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - All I Need - Edo.mp3",
+      "size": 8287107,
+      "mtime_ns": 1769805506341335784,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - Gucci - Odymel.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - Gucci - Odymel.mp3",
+      "size": 11061009,
+      "mtime_ns": 1765339135864056328,
+      "reason": "v2 parent destination already matches the legacy path"
+    },
+    {
+      "path": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - Gucci but different - Odymel.mp3",
+      "destination": "music/DJ HARD - NEO-RAVE/hard dance/SpotiDownloader.com - Gucci but different - Odymel.mp3",
+      "size": 12174877,
+      "mtime_ns": 1765347348376592742,
+      "reason": "v2 parent destination already matches the legacy path"
+    }
+  ],
+  "collisions": [],
+  "summary": {
+    "pending_nodes": 25,
+    "audio_files": 307,
+    "moves": 279,
+    "already_in_place": 28,
+    "bytes": 8482002583,
+    "collisions": 0
+  },
+  "manifest_sha256": "c0e6fad74206cc2200cab2ca94df6042e8574d9cceed4d501949a58382f1fbbe"
+}

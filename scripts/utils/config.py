@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).parents[2]
 
 
 def load_env() -> dict:
-    load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
+    load_dotenv(dotenv_path=PROJECT_ROOT / ".env", override=True)
     return {
         "SPOTIFY_CLIENT_ID": os.getenv("SPOTIFY_CLIENT_ID"),
         "SPOTIFY_CLIENT_SECRET": os.getenv("SPOTIFY_CLIENT_SECRET"),
@@ -23,6 +23,8 @@ def load_env() -> dict:
         "MIN_BITRATE_KBPS": int(os.getenv("MIN_BITRATE_KBPS", "320")),
         "PREFERRED_FORMATS": os.getenv("PREFERRED_FORMATS", "flac,wav,aiff,mp3").split(","),
         "YTDLP_OUTPUT_TEMPLATE": os.getenv("YTDLP_OUTPUT_TEMPLATE", "%(artist)s - %(title)s.%(ext)s"),
+        "LASTFM_API_KEY": os.getenv("LASTFM_API_KEY"),
+        "LASTFM_SHARED_SECRET": os.getenv("LASTFM_SHARED_SECRET"),
     }
 
 

@@ -1,0 +1,33 @@
+{
+  "artifact_type": "module_06_approval",
+  "artifact_version": 1,
+  "approved_at": "2026-08-07T17:55:02.967852+00:00",
+  "reviewed_by": [
+    "codex",
+    "user"
+  ],
+  "source_playlist_id": "39aSAxWOwWEwqoACmBafsG",
+  "provisional_json_sha256": "c9e9310f0d480367593a4bf5452c782b502a997785f0c4eecb4aa4c2ef6de9a3",
+  "provisional_markdown_sha256": "8a0abc832d4b4d6772621928026f55fb880a1bb13d5f60ad35c0fb3aaf6c5645",
+  "reviewed_json_sha256": "93b5251932b317c29bd55b42198b59e40c336437a8978c302b441006365b7ab8",
+  "reviewed_markdown_sha256": "f56ee3bf984b50c24052df6800c280c8ccd15b89201eb25882cb111644a905c0",
+  "classify_results_sha256": "4c4c2b016760bbb266a837a2e871d092b5fcbba8cacf2a00878902c70e416479",
+  "applied_taxonomy": {
+    "main_genres": [
+      "Latin Rave"
+    ],
+    "subgenres": [
+      "Nasty Club",
+      "Trance (Main Floor)",
+      "Uplifting Trance",
+      "Eurotrance",
+      "Neo Rave",
+      "Hard Bounce",
+      "Hard Trance Pop"
+    ],
+    "aliases": [
+      "Hardtrance"
+    ],
+    "routing_changes": 0
+  }
+}

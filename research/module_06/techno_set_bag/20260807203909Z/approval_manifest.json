@@ -1,0 +1,23 @@
+{
+  "artifact_type": "module_06_approval",
+  "artifact_version": 1,
+  "approved_at": "2026-08-07T20:59:24.125508+00:00",
+  "reviewed_by": [
+    "codex",
+    "user"
+  ],
+  "source_playlist_id": "7whLbufyOr29SRn1hGRcrD",
+  "provisional_json_sha256": "b24277afe84dc30d4e2d5ee3d21f83def520bbefcd4e6cfe3ec75e32cd6cc198",
+  "provisional_markdown_sha256": "b5d5a4cdfddf7f43bbb9f2ae70c93cc68903628aae8163da116cdfd7336af699",
+  "reviewed_json_sha256": "509ba20e42cdf9cbdb731856bf76ff6c135f9f73a16cbba41ccd486010b86f26",
+  "reviewed_markdown_sha256": "658bf292a56f4e5bff9d07637e4cdf50cf86b1584465ea594c1cb777b1a29067",
+  "classify_results_sha256": "12a55ff2e7eab844619afc8a13dd67068b743ec755a6b35df65f67aa1aeca3e2",
+  "applied_taxonomy": {
+    "main_genres": [],
+    "subgenres": [
+      "Raw Trance"
+    ],
+    "aliases": [],
+    "routing_changes": 0
+  }
+}

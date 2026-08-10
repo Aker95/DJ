@@ -1,0 +1,3575 @@
+{
+  "artifact_type": "spotify_classify_results",
+  "artifact_version": 2,
+  "source_playlist_id": "3ccwhQZUar8NrnYqMJSpuR",
+  "source_playlist_name": "Techno_Trance  +140bpm",
+  "classified_at": "2026-08-07T21:45:41.159935+00:00",
+  "classification_method": "codex_web_research",
+  "review_history": "research/module_06/techno_trance_140bpm/20260807213226Z",
+  "total_tracks": 136,
+  "tracks": [
+    {
+      "spotify_track_id": "5z1o5T68MOdOtdNDQxm17n",
+      "artist": "Mandragora",
+      "title": "Estilo Medieval",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "1yBoKEkV1gkPAtmLpeeEj0",
+      "artist": "Pawlowski, Fenrick",
+      "title": "Back With Another One",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Pawlowski track catalog",
+          "url": "https://www.beatport.com/artist/pawlowski/685889/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact 150 BPM recording as Trance (Main Floor); Bad Bounce additionally carries a Hard Trance subtag, so Main Floor remains the common canonical destination."
+    },
+    {
+      "spotify_track_id": "11iKh5MtGPL63NnlCbBQtf",
+      "artist": "Schrotthagen",
+      "title": "Astralkörper",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "33SHY3d3l5et0sCHsIuZ16",
+      "artist": "Odymel",
+      "title": "Tous les Copains",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "5w0AQRIA4BJuP1U318uxGp",
+      "artist": "Odymel",
+      "title": "Cute Song",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "3TicwRRPmOOEfxorU6w2bN",
+      "artist": "mischluft, DOOLIE",
+      "title": "I'm a Star",
+      "approved": true,
+      "main_genre": "Garage",
+      "subgenre": "Speed Garage",
+      "classification_level": "subgenre",
+      "master_folder": "DJ PEAK HOUSE / CLUB",
+      "confidence": 0.96,
+      "review_flags": [
+        "conflicting-sources",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4maDYpjYSV3eFV02fgkrZr",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "I'm a Star",
+          "url": "https://www.beatport.com/track/im-a-star/22191508",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact recording as UK Garage / Bassline at 148 BPM. Speed Garage is the closest canonical leaf, though its tempo exceeds the current placement range."
+    },
+    {
+      "spotify_track_id": "3V8NtZAKzVhM6XexfKl0fq",
+      "artist": "Marlon Hoffstadt, DJ Daddy Trance",
+      "title": "Turn It Up",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Marlon Hoffstadt track catalog",
+          "url": "https://www.beatport.com/artist/marlon-hoffstadt/211050/tracks",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact releases are broad Dance/Pop at 145–147 BPM, but DJ Daddy Trance's catalog and the recordings' trance-led arrangement support Main Floor Trance as the useful genre judgment."
+    },
+    {
+      "spotify_track_id": "7MWZVJnzWaHBzlwJGWy2Pf",
+      "artist": "DJ Traytex, Dschinn",
+      "title": "Stars Still Shine but Not the Same",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "DJ Traytex exact track catalog",
+          "url": "https://www.beatport.com/artist/dj-traytex/929574/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact DJ Traytex releases are listed as Trance (Main Floor) at 155–160 BPM."
+    },
+    {
+      "spotify_track_id": "0iUwIi7QYV7ecwiwx5pCgd",
+      "artist": "Marlon Hoffstadt, BIIANCO, DJ Daddy Trance",
+      "title": "Touch My Body",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Marlon Hoffstadt track catalog",
+          "url": "https://www.beatport.com/artist/marlon-hoffstadt/211050/tracks",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact releases are broad Dance/Pop at 145–147 BPM, but DJ Daddy Trance's catalog and the recordings' trance-led arrangement support Main Floor Trance as the useful genre judgment."
+    },
+    {
+      "spotify_track_id": "2EIshnvBiAK90RErpnk8fM",
+      "artist": "EUROCLUB",
+      "title": "MOVE ME",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "MOVE ME",
+          "url": "https://www.beatport.com/track/move-me/22816594",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact 145 BPM recording as Trance (Main Floor); the shared 145 BPM boundary is routed to the existing Main Floor placement."
+    },
+    {
+      "spotify_track_id": "30RW3vkmLwGxsNU5UkFxBt",
+      "artist": "Floerk, Antotek",
+      "title": "Geld ist nur Papier",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardtekk",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3mOFq9X9gDUyI4KW3R222h",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The German tekk/tekno artist context, release naming and fast hard-dance construction support Hardtekk; evidence is mainly artist and metadata scoped."
+    },
+    {
+      "spotify_track_id": "24pVJuVXlkkUiJQ7rvruZY",
+      "artist": "Luzkan",
+      "title": "We Are Not Okay",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "5TLD277d4hubJWy1ak2MDd",
+      "artist": "t e s t p r e s s",
+      "title": "DIM THE LIGHTS",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "6vldTpIDtl3VQPGLWTprQs",
+      "artist": "Marlon Hoffstadt, blazey, DJ Daddy Trance",
+      "title": "Freedom",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Marlon Hoffstadt track catalog",
+          "url": "https://www.beatport.com/artist/marlon-hoffstadt/211050/tracks",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact releases are broad Dance/Pop at 145–147 BPM, but DJ Daddy Trance's catalog and the recordings' trance-led arrangement support Main Floor Trance as the useful genre judgment."
+    },
+    {
+      "spotify_track_id": "5RKXzetcywWEKbbsSNm2YB",
+      "artist": "DJ Traytex, TEER",
+      "title": "In Your Arms",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "DJ Traytex exact track catalog",
+          "url": "https://www.beatport.com/artist/dj-traytex/929574/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact DJ Traytex releases are listed as Trance (Main Floor) at 155–160 BPM."
+    },
+    {
+      "spotify_track_id": "4goduFZnQvZNwJw1XoarRN",
+      "artist": "David Löhlein, Eliangel",
+      "title": "Rebotar",
+      "approved": true,
+      "main_genre": "Latin Rave",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.78,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "main_genre",
+      "target_playlist_id": "3HlinAABamNkw9H8vt0pHA",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Rebotar release",
+          "url": "https://www.beatport.com/release/rebotar/5446287",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The exact release description emphasizes Latin passion, European club drive and a relentless bassline; Latin Rave is the strongest parent classification without forcing the creator-specific Nasty Club leaf."
+    },
+    {
+      "spotify_track_id": "5KbGQaAOKUqDRYxT52h439",
+      "artist": "FoxTune",
+      "title": "JUST MISSING YOU",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "5EMJUddK1FOsvZhsgWdI2k",
+      "artist": "Noimage",
+      "title": "Breathing Out",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "3T1r39jgsJwCNGp3aRDKle",
+      "artist": "Odymel",
+      "title": "Touch My Body",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "6nLv6va3AA5Z4GH6opBeF2",
+      "artist": "Afem Syko, Linds",
+      "title": "Dream",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "3WTRRyTuMWqVCbBsNy4oMC",
+      "artist": "PRADA2000",
+      "title": "GoGoGo! - VIP Intro Mix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "1k7W7ks8nGs0k6sDNrDP6V",
+      "artist": "Odymel",
+      "title": "Euphoria",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "62aYbLBtIjMMmOHcSm8j9f",
+      "artist": "Mattzz",
+      "title": "Sorry Mama - Mattzz Edit",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "1eRf9vQjnCx6LuCzCJwSA6",
+      "artist": "Kichta",
+      "title": "Boundary",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Kichta exact track catalog",
+          "url": "https://www.beatport.com/artist/kichta/1285934/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport lists Boundary at 155 BPM and Freak Out at 160 BPM, both as Trance (Main Floor)."
+    },
+    {
+      "spotify_track_id": "6MeferVudQsyMTXGotnCdX",
+      "artist": "Ueberrest",
+      "title": "Motor Beam",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Motor Beam",
+          "url": "https://www.mixgraph.io/artists/ueberrest",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact 150 BPM release is cataloged as Hard Dance / Hardcore / Neo Rave with the Neo Rave subtag."
+    },
+    {
+      "spotify_track_id": "0qA6wKcQYhAyD2z6MUgmG8",
+      "artist": "Odymel",
+      "title": "Hot Stuff",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "6PpsyLLKzseL8rfzHELl4V",
+      "artist": "Fenrick",
+      "title": "Tricky House",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "1g6eEvsKWDW4RlS28GePwp",
+      "artist": "Paraçek, Samitschkie",
+      "title": "All You Wanted",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Trance catalog context",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artists/releases sit in the fast hard-trance circuit, with explicit hard-trance/power-trance context and the harder kick and hoover-led metadata cues."
+    },
+    {
+      "spotify_track_id": "3WoJw4EjrO06LYwQXA2o2w",
+      "artist": "mischluft, Fairy Mary",
+      "title": "Our Song",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Our Song",
+          "url": "https://www.beatport.com/track/our-song/20367327",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact recording as Trance (Main Floor) at 160 BPM."
+    },
+    {
+      "spotify_track_id": "50evvsguJzEuKhPjkgBq3d",
+      "artist": "Kichta",
+      "title": "Freak Out",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Kichta exact track catalog",
+          "url": "https://www.beatport.com/artist/kichta/1285934/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport lists Boundary at 155 BPM and Freak Out at 160 BPM, both as Trance (Main Floor)."
+    },
+    {
+      "spotify_track_id": "1XVKd7DL3DL9GYMKOCktph",
+      "artist": "Paraçek, mrgnstrn",
+      "title": "Rave All Night",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Trance catalog context",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artists/releases sit in the fast hard-trance circuit, with explicit hard-trance/power-trance context and the harder kick and hoover-led metadata cues."
+    },
+    {
+      "spotify_track_id": "5Ro52dwsVGrOMELaYv39a7",
+      "artist": "August Tange",
+      "title": "2500",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "523AqfT2ZS83bFCKkUdNJs",
+      "artist": "DJ SCHEMA",
+      "title": "ALL MY HEART",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Shazam",
+          "title": "ALL MY HEART",
+          "url": "https://www.shazam.com/song/1819218290/all-my-heart",
+          "scope": "track"
+        },
+        {
+          "provider": "Bandcamp",
+          "title": "ALL MY HEART extended",
+          "url": "https://djschema.bandcamp.com/track/all-my-heart-extended",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Shazam identifies the exact release as Trance at 150 BPM, while the creator describes its rapid euphoric club construction; Main Floor is the best canonical leaf."
+    },
+    {
+      "spotify_track_id": "6i7EW5BMY2KYC4IG1t8MVV",
+      "artist": "EFESIAN",
+      "title": "Sleep",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Trance Main Floor store taxonomy",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Artist/release context and the fast euphoric recording profile indicate contemporary Main Floor Trance; no stronger conflicting leaf tag was found."
+    },
+    {
+      "spotify_track_id": "1rH0zk1IY7hJf7gBsaPkNG",
+      "artist": "KE-YEN, Solsta",
+      "title": "ALL I EVER - KE-YEN VIP MIX",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Trance Main Floor store taxonomy",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Artist/release context and the fast euphoric recording profile indicate contemporary Main Floor Trance; no stronger conflicting leaf tag was found."
+    },
+    {
+      "spotify_track_id": "4qRshR0NW7GCKG2WEdv4X1",
+      "artist": "Scot Project",
+      "title": "H2 (Steal Your Heart)",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Trance catalog context",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artists/releases sit in the fast hard-trance circuit, with explicit hard-trance/power-trance context and the harder kick and hoover-led metadata cues."
+    },
+    {
+      "spotify_track_id": "7ePMIxPmjc28q3cxq48vST",
+      "artist": "ANTNK, DJ Traytex",
+      "title": "Bambi Eyes",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "DJ Traytex exact track catalog",
+          "url": "https://www.beatport.com/artist/dj-traytex/929574/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact DJ Traytex releases are listed as Trance (Main Floor) at 155–160 BPM."
+    },
+    {
+      "spotify_track_id": "29LvrhHCFMe0ars4VVFS7C",
+      "artist": "TECHNO KING, 2Hounds",
+      "title": "In My Mind",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "6Dq6G5Q8ofAzF7O5a1NBRx",
+      "artist": "Reinier Zonneveld, JG",
+      "title": "Music Is The Answer",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Peak-Time Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.95,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "2U0I2Ak4InIlGYPDNkLTEj",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Music Is The Answer",
+          "url": "https://www.beatport.com/track/music-is-the-answer/17738706",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Anfisa Letyago catalog",
+          "url": "https://www.beatport.com/artist/anfisa-letyago/600250/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The exact release/store context identifies driving Peak-Time Techno in the 138–142 BPM fast-tech range."
+    },
+    {
+      "spotify_track_id": "31nfdEooLEq7dn3UMcIeB5",
+      "artist": "BENNETT",
+      "title": "Vois sur ton chemin - Techno Mix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "5ltHjr66eSUCy2stQsrxG7",
+      "artist": "Moonlight",
+      "title": "Swan - Techno",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "4niDEprqb6eUnUgJrlCWwB",
+      "artist": "Pawlowski",
+      "title": "Final Outsider",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "2gV8zzF9ElzHIHm7U0LpSA",
+      "artist": "New Beat Order, tekknological, TECHNO KING",
+      "title": "Safe And Sound",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "6cP6IST6zj0sPIDOjmA1JZ",
+      "artist": "Distorted Dreams",
+      "title": "Acid Cry",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "08lKWR8JNqZdlNOvyE7O1s",
+      "artist": "KI/KI",
+      "title": "Time to Party",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.95,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "KI/KI exact catalog",
+          "url": "https://www.mixgraph.io/artists/ki-ki",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact KI/KI recordings are cataloged as Trance (Main Floor) at 146–155 BPM."
+    },
+    {
+      "spotify_track_id": "5I6Ef6ob9e3HXw9B969Eie",
+      "artist": "GRAViiTY",
+      "title": "Alien Teens from Outerspace",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "2iH1dTkVI0pdFMSfLd4MaW",
+      "artist": "MC Ingryd, Mandragora",
+      "title": "Vapo Vapo (Remix)",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "3csQrA6PS6jmDacrkIYHkB",
+      "artist": "Michael Caspar",
+      "title": "Got Me Hypnotized",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "301oJIHAvyWrm7G6iVQdgM",
+      "artist": "Funk Tribu",
+      "title": "I Got It For You",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "6gOUbTSsQ5ypbh9ad45Euz",
+      "artist": "Mandragora",
+      "title": "Dj Tiesto",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "3OgdqZIgGIqusstV9IqX6p",
+      "artist": "KI/KI",
+      "title": "What's a Girl to Do in '25",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.95,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "KI/KI exact catalog",
+          "url": "https://www.mixgraph.io/artists/ki-ki",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact KI/KI recordings are cataloged as Trance (Main Floor) at 146–155 BPM."
+    },
+    {
+      "spotify_track_id": "4fhXWfuztdP0uqPINbF7bs",
+      "artist": "Onlynumbers, Lucie Hart",
+      "title": "Euphoric Night",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "5GIxi8CV2yHUsF7vQdJtrB",
+      "artist": "Simon Ochmann",
+      "title": "Would You Say Yes",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Hard Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "7Ci8ClpWjOTOruSTfb0trQ",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Trance catalog context",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artists/releases sit in the fast hard-trance circuit, with explicit hard-trance/power-trance context and the harder kick and hoover-led metadata cues."
+    },
+    {
+      "spotify_track_id": "4y4NBmnV3QWygYpjLNDWOw",
+      "artist": "KUKO",
+      "title": "Die Tonight",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "4IQurQNKcddy3AIEU5jXCJ",
+      "artist": "Ben Techy",
+      "title": "Kein Vorbei",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "4tsCyD7TSbNFZgtdMOLcwZ",
+      "artist": "FUTURAMI",
+      "title": "Outro",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "0VBS3aGkFOSGbIX1XLnR4f",
+      "artist": "KUKO",
+      "title": "Blurred",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "4zmDjQo7YG1l2oHsOpAn5U",
+      "artist": "Odymel",
+      "title": "Gucci but different",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "7D9nLNkpBM3X43NTTK6ODa",
+      "artist": "KI/KI",
+      "title": "Can't Stop Loving You",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.95,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "KI/KI exact catalog",
+          "url": "https://www.mixgraph.io/artists/ki-ki",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact KI/KI recordings are cataloged as Trance (Main Floor) at 146–155 BPM."
+    },
+    {
+      "spotify_track_id": "0KlYcmzN1ZZZRfxXDPIFX9",
+      "artist": "Sonny Aka",
+      "title": "Auf Und Ab - Techno Machine Mix",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Eurotrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "2TUN5l6FCvaSTyb9CcVjCE",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact legacy releases",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The European commercial-trance/Eurodance release context and roughly 140 BPM construction fit canonical Eurotrance."
+    },
+    {
+      "spotify_track_id": "1C0voHosMFAnOgG4A7eYGD",
+      "artist": "銀製品Agprod",
+      "title": "67 Tekno",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardtekk",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3mOFq9X9gDUyI4KW3R222h",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The German tekk/tekno artist context, release naming and fast hard-dance construction support Hardtekk; evidence is mainly artist and metadata scoped."
+    },
+    {
+      "spotify_track_id": "3UV2cW1InbsDo9oG83nKrG",
+      "artist": "銀製品Agprod",
+      "title": "Ground",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardtekk",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3mOFq9X9gDUyI4KW3R222h",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The German tekk/tekno artist context, release naming and fast hard-dance construction support Hardtekk; evidence is mainly artist and metadata scoped."
+    },
+    {
+      "spotify_track_id": "4DKVyH6BKyZvjYciS9HxVE",
+      "artist": "Dither Wild",
+      "title": "Say It Right - Techno Mix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "14UtoTFdSPTp5U63WTCstD",
+      "artist": "Dither Wild",
+      "title": "Trance To Techno",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "1wwliux4KiUhlA5Ppz8nir",
+      "artist": "Dither Wild",
+      "title": "I Need a Miracle",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "6Sy9BUbgFse0n0LPA5lwy5",
+      "artist": "Darude",
+      "title": "Sandstorm",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": null,
+      "classification_level": "main_genre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.96,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "main_genre",
+      "target_playlist_id": "4OXx7oQOmQzq2PEfiUvsuz",
+      "evidence": [
+        {
+          "provider": "MusicBrainz",
+          "title": "Sandstorm recording",
+          "url": "https://musicbrainz.org/recording/0b170f84-5bf8-4b62-b7d6-7ae0d6c8f89a",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The original 136 BPM recording is a canonical trance record, but available evidence does not justify a narrower current-schema leaf without rewriting its historical identity."
+    },
+    {
+      "spotify_track_id": "2FseetX4Od9OkF80RiQQW8",
+      "artist": "Dan Heist",
+      "title": "KIDS",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "4kq42WAkHQAyfPiHpK2qtQ",
+      "artist": "Durdenhauer",
+      "title": "MARGINAL",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "16oVwureVVCAtSWfChTzPV",
+      "artist": "Odymel",
+      "title": "The Defendant",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "1AlgBaC7NYPQmH1umS1Xco",
+      "artist": "Odymel, 2HOT2PLAY, Edo",
+      "title": "Dance with your crew",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "1XuiuFYRDGsqY1udaB7RdE",
+      "artist": "Odymel, Durdenhauer",
+      "title": "Love Bullet - Pt.2",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "0JMc5HIprf20UZgrqriq37",
+      "artist": "FoxTune",
+      "title": "your eyes don't glow",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "76ps4UJR2gZccBJA2MK1Hp",
+      "artist": "Maesic, Marshall Jefferson, Salomé Das, TRYM",
+      "title": "Life Is Simple (Move Your Body) - TRYM Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "3IAxJkFW0AeEHhmSFHjX0G",
+      "artist": "Anfisa Letyago, Marlon Hoffstadt",
+      "title": "Haze - Marlon Hoffstadt AKA DJ Daddy Trance Remix",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Marlon Hoffstadt track catalog",
+          "url": "https://www.beatport.com/artist/marlon-hoffstadt/211050/tracks",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact releases are broad Dance/Pop at 145–147 BPM, but DJ Daddy Trance's catalog and the recordings' trance-led arrangement support Main Floor Trance as the useful genre judgment."
+    },
+    {
+      "spotify_track_id": "4atLPkcljMp14JBaigYFKC",
+      "artist": "Empire Of The Sun, southstar",
+      "title": "We Are The People - southstar Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "7skteOnDbwZ3ZvjSe99xv2",
+      "artist": "Artemas, southstar",
+      "title": "i like the way you kiss me - southstar remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "1xjbXrUGEC1vpGlz73hNzB",
+      "artist": "Mandragora",
+      "title": "Standing Ground",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "6Odjp2wB7SbeBGq9k2H9HF",
+      "artist": "Noizu, Westend, No/Me, t e s t p r e s s",
+      "title": "Push To Start - t e s t p r e s s Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "6OuPcOjGIysSt19Cs3MGSR",
+      "artist": "Funk Tribu",
+      "title": "ICE",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "ICE",
+          "url": "https://www.mixgraph.io/tracks/funk-tribu-ice",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact 154 BPM release is cataloged as Neo Rave."
+    },
+    {
+      "spotify_track_id": "4RNCXxaqfcx0RpVAOluzHs",
+      "artist": "AEREA",
+      "title": "AMOR ACIDO",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "2UsioXuoS0jpSFsB6NM6il",
+      "artist": "TEKKNO",
+      "title": "addicted to you tekkno",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "1GVAaZfE04mIU8Gq25PI2e",
+      "artist": "Elektrotechnika, Arian",
+      "title": "I'm afraid to fall - Elektrotechnika Sped Up Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "4KWQxB7md8c5w7qpfug3bu",
+      "artist": "Lonely Night, Ari, Felix Röder, Lost Dreamers",
+      "title": "Lied To Me (Felix Röder Hypertechno Remix)",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "2FWVwfXpwnekqUsCUFiyXz",
+      "artist": "Astech",
+      "title": "I Follow Rivers - Techno Version",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "3gRnR33Z7eBeMXYrhPXRIX",
+      "artist": "Odymel",
+      "title": "Gucci",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "0bRygxau6wABXiIJTJDMaI",
+      "artist": "Astech",
+      "title": "All The Things She Said (Techno)",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "1226S07g8abeCX8zt7yLlZ",
+      "artist": "Anfisa Letyago",
+      "title": "Origami",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Peak-Time Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.95,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "2U0I2Ak4InIlGYPDNkLTEj",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Music Is The Answer",
+          "url": "https://www.beatport.com/track/music-is-the-answer/17738706",
+          "scope": "track"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Anfisa Letyago catalog",
+          "url": "https://www.beatport.com/artist/anfisa-letyago/600250/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The exact release/store context identifies driving Peak-Time Techno in the 138–142 BPM fast-tech range."
+    },
+    {
+      "spotify_track_id": "0ctqtNUPyl0ZvX81w1v4QT",
+      "artist": "Jazer",
+      "title": "Play Right",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "4Qyt5IZYkQLv92I2Qk4QSS",
+      "artist": "Joey Risdon",
+      "title": "Final Call",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "1bq0odxoXVY7pJbwk6uLcD",
+      "artist": "Adapter, James Hype",
+      "title": "Kattapult (James Hype Edit)",
+      "approved": true,
+      "main_genre": "House",
+      "subgenre": "Tech House",
+      "classification_level": "subgenre",
+      "master_folder": "DJ PEAK HOUSE / CLUB",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5jZh4kDXiCQgsV14rXodeU",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Kattapult James Hype edit",
+          "url": "https://www.beatport.com/search?q=Kattapult%20James%20Hype",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "The exact James Hype edit is a 128 BPM tech-house recording despite appearing in this nominally 140+ source playlist."
+    },
+    {
+      "spotify_track_id": "0moccXu2AkRQemYzEotJfy",
+      "artist": "Allnighters, BK",
+      "title": "Black Is Black - BK Remix",
+      "approved": true,
+      "main_genre": "House",
+      "subgenre": "Hard House",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.9,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1I3kb2SoSLLtiuiY95cdJ2",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "BK artist catalog",
+          "url": "https://www.beatport.com/artist/bk/1548/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "BK's remix belongs to the turn-of-the-century UK hard-house lineage and is more precise as Hard House than generic Hard Dance."
+    },
+    {
+      "spotify_track_id": "1FMzhuhir4CuW32ZgSeraq",
+      "artist": "ARGOT",
+      "title": "CLUB BIZARRE (EDIT)",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "0idHToU96KgKkyYIK1c7XQ",
+      "artist": "Tyler Jack",
+      "title": "Teke Teke",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "3DC7bt853nI546wicUQtnO",
+      "artist": "Ueberrest",
+      "title": "Insomnia",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "6bs1myCEARQoI7oOLxqHkp",
+      "artist": "Klangkuenstler, Ski Aggu",
+      "title": "Sonne Geht Auf",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Klangkuenstler catalog",
+          "url": "https://www.mixgraph.io/artists/klangkuenstler",
+          "scope": "track"
+        },
+        {
+          "provider": "Mixgraph",
+          "title": "Lee Ann Roberts catalog",
+          "url": "https://www.mixgraph.io/artists/lee-ann-roberts",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport/Mixgraph identify the exact 155–156 BPM recordings as Hard Techno."
+    },
+    {
+      "spotify_track_id": "7GdjFk8eDj6Jva44lteYGi",
+      "artist": "EFESIAN",
+      "title": "2BWU",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "3XM28rqDGZLNKEE2M3lgbL",
+      "artist": "$ONO$ CLIQ, Drunken Masters, mrgnstrn, POETRY",
+      "title": "Bauchnabelpiercing - mrgnstrn & Poetry Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hypertechno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "1RcTvRoQeHN4hMm24P7Ik3",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hypertechno artist/release context",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The sped-up pop-song construction, explicit Techno/Hypertechno remix naming, and artist context match Hypertechno rather than straight Hard Techno."
+    },
+    {
+      "spotify_track_id": "32xJ5JNxi5mPGvVo7JLWnk",
+      "artist": "Mausio, Trancemaster Krause",
+      "title": "taste ur luv",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "2tb2SFB5P8Cw1jB4YL7v43",
+      "artist": "alejandrø",
+      "title": "Energia",
+      "approved": true,
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "74DiTgVs9CKP8aGmFbIUZ2",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release identities",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The Latin vocal/rhythmic construction and artist-scene context match the creator-defined Nasty Club fusion of Latin club, trance, hard house and techno."
+    },
+    {
+      "spotify_track_id": "46pRl8DYnV5GRLmtiLSS5t",
+      "artist": "BIIANCO, Mika Heggemann",
+      "title": "2 Hard 2 Luv",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "6quk1l5mfPvFxjskO1oQQ0",
+      "artist": "Odymel",
+      "title": "Vitamin C",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "02iid7jLIDPuI4JyHTtyBz",
+      "artist": "Somewhen",
+      "title": "Promise",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.96,
+      "review_flags": [
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Somewhen exact track catalog",
+          "url": "https://www.beatport.com/artist/somewhen/479044/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport classifies Promise as Hard Dance/Neo Rave at 160 BPM and CH4N2O explicitly as Neo Rave (the displayed 78 BPM is a half-time encoding)."
+    },
+    {
+      "spotify_track_id": "1pA4Zl7rTjekmEdaMTjErv",
+      "artist": "Mika Heggemann, DJ Cringey, KYANU",
+      "title": "Acid Base Reaction",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "7dWtD20d1lepYPXJ46Csw8",
+      "artist": "Odymel",
+      "title": "Big System",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "5EKs4QSKt3PNhj2FRGXevx",
+      "artist": "TAKTSTÖRER",
+      "title": "Mask",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardtekk",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3mOFq9X9gDUyI4KW3R222h",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The German tekk/tekno artist context, release naming and fast hard-dance construction support Hardtekk; evidence is mainly artist and metadata scoped."
+    },
+    {
+      "spotify_track_id": "0KawhkNoYWkksXH4OtnOSW",
+      "artist": "TAKTSTÖRER, Antonia Meh",
+      "title": "Mindless",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardtekk",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3mOFq9X9gDUyI4KW3R222h",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The German tekk/tekno artist context, release naming and fast hard-dance construction support Hardtekk; evidence is mainly artist and metadata scoped."
+    },
+    {
+      "spotify_track_id": "0IruDrkxiWEsm8SjNJ4S6f",
+      "artist": "Vilchezz",
+      "title": "Camelo's - Original Mix",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Raw Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.99,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "741IRMj2ARZCStkWXRKFDo",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Camelo's",
+          "url": "https://www.beatport.com/track/camelos/18293911",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact 145 BPM recording as Trance (Raw / Deep / Hypnotic), specifically Raw Trance."
+    },
+    {
+      "spotify_track_id": "58uQz5X3NinstpE6HSY3lk",
+      "artist": "Novah, CERES",
+      "title": "Papi",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Novah exact track catalog",
+          "url": "https://www.beatport.com/artist/novah/1138766/tracks?page=1&per_page=25",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies both exact recordings as Neo Rave at 155 BPM."
+    },
+    {
+      "spotify_track_id": "29ijt1NbRBN9S1SpzbaXqr",
+      "artist": "Tyler Jack, Ella Young",
+      "title": "Calling For Me",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "6md6Rz5JqMUqCBdB0qOe39",
+      "artist": "AREA ØNE",
+      "title": "Switch",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "2zj4IiwxwQE3uzyXIqjJOv",
+      "artist": "Macon",
+      "title": "Snatcher",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "5Eie57B99fwZvr6Hu0uEgg",
+      "artist": "Somewhen",
+      "title": "CH4N2O",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.96,
+      "review_flags": [
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Somewhen exact track catalog",
+          "url": "https://www.beatport.com/artist/somewhen/479044/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport classifies Promise as Hard Dance/Neo Rave at 160 BPM and CH4N2O explicitly as Neo Rave (the displayed 78 BPM is a half-time encoding)."
+    },
+    {
+      "spotify_track_id": "3wHBmVKoaQ85dq1fignoWK",
+      "artist": "Esca",
+      "title": "SUPER BOUNCY HEAT",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hard Bounce",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0TlD2P4z1q72lmBSMZy72H",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The artist and track framing explicitly center the contemporary bouncy hard-dance sound; Hard Bounce is more precise than Neo Rave."
+    },
+    {
+      "spotify_track_id": "0oqkeo8rQmKHguCGSN9j7g",
+      "artist": "UNLOGIX",
+      "title": "Storm",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Mandragora artist and catalog profile",
+          "url": "https://www.mixgraph.io/artists/mandragora",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The artist/release context consistently identifies psychedelic trance; the recording metadata and 140-ish fast-set context support the Psytrance placement."
+    },
+    {
+      "spotify_track_id": "0MKb1A7VD4EGdRjQzeSyE8",
+      "artist": "Restricted, NIKSTER",
+      "title": "Insomnia - Extended Mix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Hard Dance / Neo Rave catalog",
+          "url": "https://www.beatport.com/genre/hard-dance-hardcore-neo-rave/8",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "The exact or artist catalog places the recording in contemporary 150–160 BPM hard dance/neo-rave rather than straight techno or trance."
+    },
+    {
+      "spotify_track_id": "2C2pCFlc6w1k0ju6WYVTxp",
+      "artist": "Rian Wood, Mr.Machine",
+      "title": "Better Off Alone",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardstyle",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.78,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5jPLi1mMMGywafMadaMJWo",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact source recordings",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Artist/release context and the existing library placements identify these fast, reverse-bass/euphoric recordings as Hardstyle."
+    },
+    {
+      "spotify_track_id": "2eUCxGBjvgIoGAEIf1tI12",
+      "artist": "Lee Ann Roberts",
+      "title": "Sabie Sunset",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Klangkuenstler catalog",
+          "url": "https://www.mixgraph.io/artists/klangkuenstler",
+          "scope": "track"
+        },
+        {
+          "provider": "Mixgraph",
+          "title": "Lee Ann Roberts catalog",
+          "url": "https://www.mixgraph.io/artists/lee-ann-roberts",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport/Mixgraph identify the exact 155–156 BPM recordings as Hard Techno."
+    },
+    {
+      "spotify_track_id": "1VHz5MiYP4prm8amGnsa6T",
+      "artist": "Cadzow",
+      "title": "Sensation",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardstyle",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.78,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5jPLi1mMMGywafMadaMJWo",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact source recordings",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Artist/release context and the existing library placements identify these fast, reverse-bass/euphoric recordings as Hardstyle."
+    },
+    {
+      "spotify_track_id": "1c6jkJJeZPXXNehgtq7TJy",
+      "artist": "IGDA, A.N.I.",
+      "title": "Little Rave Planet",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hardstyle",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.78,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5jPLi1mMMGywafMadaMJWo",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact source recordings",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Artist/release context and the existing library placements identify these fast, reverse-bass/euphoric recordings as Hardstyle."
+    },
+    {
+      "spotify_track_id": "4L4wse303O7RrIPxGGdtQP",
+      "artist": "Luciid, Novah",
+      "title": "Bye Bye - NOVAH Remix",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Neo Rave",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "5F9unsJVwI8gQQsD4b9qjd",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Novah exact track catalog",
+          "url": "https://www.beatport.com/artist/novah/1138766/tracks?page=1&per_page=25",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies both exact recordings as Neo Rave at 155 BPM."
+    },
+    {
+      "spotify_track_id": "1DgPbXydfkJntDn5OrBngy",
+      "artist": "snoritz",
+      "title": "Breathe it in",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "0GoQXezu5Ssm6MZLCXJykm",
+      "artist": "Scooter",
+      "title": "Posse (I Need You On The Floor) - Extended Version",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Eurotrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "2TUN5l6FCvaSTyb9CcVjCE",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact legacy releases",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The European commercial-trance/Eurodance release context and roughly 140 BPM construction fit canonical Eurotrance."
+    },
+    {
+      "spotify_track_id": "60BlJffpclqV9gdFbgu6ig",
+      "artist": "Rising Dust, Astrix",
+      "title": "Universo",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Rising Dust tracks and releases",
+          "url": "https://www.beatport.com/artist/rising-dust/365815/tracks?page=1&per_page=150",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Rising Dust's catalog and these exact collaborations are cataloged as Psy-Trance, with the original releases in the traditional fast-trance range."
+    },
+    {
+      "spotify_track_id": "2kvoVJGPLUZ9maPRWGepxl",
+      "artist": "Noro$t",
+      "title": "Pa que la pases bien",
+      "approved": true,
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "74DiTgVs9CKP8aGmFbIUZ2",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release identities",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The Latin vocal/rhythmic construction and artist-scene context match the creator-defined Nasty Club fusion of Latin club, trance, hard house and techno."
+    },
+    {
+      "spotify_track_id": "5rPgJwF7noggcEt7ef7Etz",
+      "artist": "Haus of Panda",
+      "title": "BLACKSHEEP - (Extended Mix)",
+      "approved": true,
+      "main_genre": "House",
+      "subgenre": "Speed House",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.98,
+      "review_flags": [
+        "new-taxonomy"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "3HUVMsTxkOFe3CkoU280wZ",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Haus of Panda artist profile",
+          "url": "https://www.beatport.com/artist/haus-of-panda/648211",
+          "scope": "artist"
+        },
+        {
+          "provider": "Beatport",
+          "title": "BLACKSHEEP",
+          "url": "https://www.beatport.com/track/blacksheep/22662969",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Haus of Panda explicitly describes his style as Speed House—a fusion of speed garage and bass house—and the exact BLACKSHEEP extended mix is 152 BPM."
+    },
+    {
+      "spotify_track_id": "6xISf00WUgnSwnwt5KJJ0k",
+      "artist": "Rising Dust, HYBIT, Gproject",
+      "title": "Sparo - Gproject Remix",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Rising Dust tracks and releases",
+          "url": "https://www.beatport.com/artist/rising-dust/365815/tracks?page=1&per_page=150",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Rising Dust's catalog and these exact collaborations are cataloged as Psy-Trance, with the original releases in the traditional fast-trance range."
+    },
+    {
+      "spotify_track_id": "6EJWJK7ruSj19YppRhIaiz",
+      "artist": "Rising Dust, Shayman",
+      "title": "Acid",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Rising Dust tracks and releases",
+          "url": "https://www.beatport.com/artist/rising-dust/365815/tracks?page=1&per_page=150",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Rising Dust's catalog and these exact collaborations are cataloged as Psy-Trance, with the original releases in the traditional fast-trance range."
+    },
+    {
+      "spotify_track_id": "525VWaphxCAWrHnWMD8fUm",
+      "artist": "Rising Dust, Darwish",
+      "title": "Noyla Menoyla",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Psytrance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ FAST TECH / GROOVE",
+      "confidence": 0.94,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "4mpOj1tD3PGQzuyv8fgivi",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Rising Dust tracks and releases",
+          "url": "https://www.beatport.com/artist/rising-dust/365815/tracks?page=1&per_page=150",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Rising Dust's catalog and these exact collaborations are cataloged as Psy-Trance, with the original releases in the traditional fast-trance range."
+    },
+    {
+      "spotify_track_id": "2WXqdd2HHJk30lds0jcrw7",
+      "artist": "IOSIO",
+      "title": "PAPI",
+      "approved": true,
+      "main_genre": "Latin Rave",
+      "subgenre": "Nasty Club",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.82,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "74DiTgVs9CKP8aGmFbIUZ2",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release identities",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "The Latin vocal/rhythmic construction and artist-scene context match the creator-defined Nasty Club fusion of Latin club, trance, hard house and techno."
+    },
+    {
+      "spotify_track_id": "46ZxqVXaCfgND6xITggi49",
+      "artist": "LUKA",
+      "title": "Vintage Motorola",
+      "approved": true,
+      "main_genre": "Hard Dance",
+      "subgenre": "Hard Bounce",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "review_flags": [
+        "artist-only",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0TlD2P4z1q72lmBSMZy72H",
+      "evidence": [
+        {
+          "provider": "Spotify",
+          "title": "Exact release metadata",
+          "url": "https://open.spotify.com/playlist/3ccwhQZUar8NrnYqMJSpuR",
+          "scope": "metadata"
+        }
+      ],
+      "research_rationale": "The artist and track framing explicitly center the contemporary bouncy hard-dance sound; Hard Bounce is more precise than Neo Rave."
+    },
+    {
+      "spotify_track_id": "1u6GhCEZ49iVJddwICb0O8",
+      "artist": "Schrotthagen",
+      "title": "Labyrinth",
+      "approved": true,
+      "main_genre": "Techno",
+      "subgenre": "Hard Techno",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.72,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0YOmri2e8qOVUiM713ezUr",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Hard Techno tempo and artist context",
+          "url": "https://www.mixgraph.io/bpm-for/hard-techno",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Exact and artist-level evidence places the recording in the 150–160 BPM hard-techno lane; the harder industrial drive outweighs broader rave tags."
+    },
+    {
+      "spotify_track_id": "6ku2s9cuMIYPfS5VrO9cn3",
+      "artist": "Pawlowski",
+      "title": "Bad Bounce",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.97,
+      "review_flags": [],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Pawlowski track catalog",
+          "url": "https://www.beatport.com/artist/pawlowski/685889/tracks",
+          "scope": "track"
+        }
+      ],
+      "research_rationale": "Beatport identifies the exact 150 BPM recording as Trance (Main Floor); Bad Bounce additionally carries a Hard Trance subtag, so Main Floor remains the common canonical destination."
+    },
+    {
+      "spotify_track_id": "0FYcpxgHB8AwGvF4jzcGOt",
+      "artist": "Butschi, Sandsy",
+      "title": "ups://downs",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Neo Trance",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.68,
+      "review_flags": [
+        "artist-only",
+        "broad-source",
+        "inferred-from-metadata"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "196XMLHP7Vylrv66vEIZxn",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Contemporary trance catalog",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Available artist/release context places the recording in the modern fast trance revival; its rave-pop/euphoric construction is better represented by Neo Trance than broad Trance."
+    },
+    {
+      "spotify_track_id": "1gtNPC1IuWZBjQrH8GpZMW",
+      "artist": "Odymel",
+      "title": "Non-stop",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "3FKzLGVryEn19yZzNMPknU",
+      "artist": "Odymel",
+      "title": "Rumors",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.86,
+      "review_flags": [
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Mixgraph",
+          "title": "Odymel track catalog",
+          "url": "https://www.mixgraph.io/artists/odymel",
+          "scope": "release"
+        },
+        {
+          "provider": "Beatport",
+          "title": "Odymel label tracks",
+          "url": "https://www.beatport.com/label/odymel/122279/tracks",
+          "scope": "release"
+        }
+      ],
+      "research_rationale": "Odymel's exact and adjacent catalog repeatedly resolves to 146–150 BPM Mainstage/Trance (Main Floor); the melodic, high-energy recordings fit the Main Floor leaf better than generic Trance."
+    },
+    {
+      "spotify_track_id": "20wy1H1nGWaz3NyrwaXP8P",
+      "artist": "ADB",
+      "title": "Tell Me More",
+      "approved": true,
+      "main_genre": "Trance",
+      "subgenre": "Trance (Main Floor)",
+      "classification_level": "subgenre",
+      "master_folder": "DJ HARD / NEO-RAVE",
+      "confidence": 0.7,
+      "review_flags": [
+        "artist-only",
+        "broad-source"
+      ],
+      "target_kind": "subgenre",
+      "target_playlist_id": "0yiAeT0apV82OOVPvzVPD1",
+      "evidence": [
+        {
+          "provider": "Beatport",
+          "title": "Trance Main Floor store taxonomy",
+          "url": "https://www.beatport.com/genre/trance-main-floor/7",
+          "scope": "artist"
+        }
+      ],
+      "research_rationale": "Artist/release context and the fast euphoric recording profile indicate contemporary Main Floor Trance; no stronger conflicting leaf tag was found."
+    }
+  ]
+}
