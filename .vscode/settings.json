@@ -1,9 +1,0 @@
-{
-    "python.defaultInterpreterPath": "/Users/nicolasakerman/DJ/.venv/bin/python",
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.testing.cwd": "${workspaceFolder}"
-}

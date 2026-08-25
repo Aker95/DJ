@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: dj-library
+Version: 0.1.0
+Summary: Agent-oriented Spotify, local-library, and Rekordbox workflows
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: mutagen>=1.47.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: rapidfuzz>=3.0.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: spotipy>=2.24.0
+Provides-Extra: audio
+Requires-Dist: essentia==2.1b6.dev1389; extra == "audio"
+Provides-Extra: rekordbox
+Requires-Dist: pyrekordbox==0.4.4; extra == "rekordbox"
+Provides-Extra: dev
+Requires-Dist: pytest>=9.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=6.0.0; extra == "dev"
+Requires-Dist: ruff>=0.11.0; extra == "dev"

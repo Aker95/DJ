@@ -3,31 +3,45 @@
 ## Source of truth
 
 - Read `music_schema_knowledge.json` before classifying, routing, acquiring, or moving music.
-- The schema is a three-level taxonomy: BPM master folder → canonical main genre → optional subgenre.
-- Use canonical names from the schema. Treat aliases as lookup terms only; never create a second folder or playlist for a synonym.
+- The schema is BPM master → canonical main genre → optional subgenre.
+- Canonical names create destinations. Aliases are lookup terms only.
+- Stable Spotify IDs, placement IDs, ISRCs, and SHA-256 hashes are identity keys; display names are not.
 
-## Module 06: Codex-researched classification
+## Classification
 
-- Module 06 is orchestrated by Codex and the user. Do not use the Discogs/Last.fm consensus classifier for this workflow.
-- Fetch Spotify metadata read-only, then research the exact recording on the public web. Prefer exact track and release evidence, but artist-profile evidence is acceptable when track-level genre information is unavailable.
-- BPM, ISRC, duration, release/version, label, store taxonomy, descriptions, related releases, and an available preview may all support the conclusion.
-- If tags are broad or conflicting, search for more detail and then make a documented best judgment.
-- Every valid Spotify track must receive at least a canonical main genre. Use a parent-genre fallback plus review flags instead of leaving a track uncertain.
-- Propose a new recognized or creator-defined subgenre whenever it describes the recording better than existing nodes. Check every canonical name and alias first so synonyms are merged rather than duplicated.
-- Produce provisional JSON and Markdown for joint Codex/user review. A later `continue` approves every listed classification, schema proposal, alias, and routing change unless the user supplies corrections.
-- Approval preserves versioned review artifacts and generates Part 2 input. It never authorizes Spotify writes.
-- Spotify sorting is a separate step: run a dry-run first and require a subsequent explicit instruction for live changes.
+- Classification is Codex/user research through `scripts/research.py`; do not use the retired Discogs/Last.fm consensus classifier.
+- Fetch Spotify metadata read-only, then research the exact recording. Prefer track, release, label, and store evidence; artist evidence is a fallback.
+- Every valid track receives a canonical main genre. A missing subgenre uses the parent fallback. Use review flags instead of leaving the main genre unset.
+- Check canonical names and aliases before proposing a main genre, subgenre, alias, or new BPM placement.
+- Metadata BPM may be inferred only when marked `inferred-bpm`.
+- Approval records classification decisions only. Spotify sorting is a separate plan/apply workflow.
 
-## Routing rules
+## Routing and identity
 
-- A subgenre classification routes only to its leaf folder/playlist.
-- A main-genre classification routes to that parent genre's fallback folder/playlist.
-- User approval, not confidence, is the eligibility gate for reviewed v2 results. Confidence and review flags remain visible for audit.
-- Spotify Web API playlist folders cannot be read or created. Any Spotify folder placement is a manual UI task.
+- BPM bands are 118–<126, 126–<132, 132–<145, and 145–180 inclusive.
+- Subgenre classifications route to their leaf; main-genre classifications route to the parent fallback.
+- New files remain under neutral intake until identity and BPM verification passes.
+- Existing files use Rekordbox BPM and are never sent through the preflight analyzer.
+- Evaluate mismatches in this order: recording identity → version identity → BPM interpretation → genre → BPM placement.
+- Identity uses exactly one of `same-recording`, `alternate-version`, `wrong-download`, `duplicate-copy`, `spotify-catalog-gap`, or `needs-evidence`.
+- A same recording may then have `metadata-error`, `genre-error`, `bpm-routing-error`, `spotify-membership-error`, or `local-path-error` corrections.
+- A wrong download never changes the intended Spotify track's classification. Preserve it for review and propose reacquisition.
+- An alternate version receives its own Spotify identity or a local-only identity; never inherit another version's metadata.
 
-## Local library safety
+## Approval and mutation
 
-- Do not reclassify tracks that are already correctly sorted unless the user explicitly requests an audit or an approved schema migration requires a path change.
-- Never apply a folder migration without first producing and reviewing a collision-checked dry-run manifest.
-- Do not delete old empty directories automatically.
-- Do not run acquisition or live Spotify mutations without an explicit user instruction.
+- Public workflow functions return data and never print, prompt, or exit.
+- Consequential changes require an explicit apply action and the exact reviewed manifest hash.
+- Research, validation, audits, reconciliation, and plan actions never mutate Spotify or local audio.
+- Do not acquire, move ordinary library files, change Spotify, retag, or deduplicate without explicit user authorization for the apply action.
+- Alignment order is Spotify add and verify → local move and hash verify → previous Spotify membership remove → final verification.
+- Never overwrite or automatically delete audio. Refuse collisions and source files changed after review.
+- Do not remove old empty music directories automatically.
+- Spotify Web API cannot manage playlist folders; folder placement is manual in the Spotify UI.
+- Neutral `music/intake` and `music/review` directories never appear in generated Rekordbox XML.
+
+## Repository boundaries
+
+- Business logic belongs in `src/dj_library`; `scripts/` contains only the five JSON adapters.
+- Generated state belongs under `data/runs/<domain>/<run-id>/`; the runtime registry is `data/registry.json`.
+- `context.md` is the durable home for project reasoning. Do not replace it with generated run data.
