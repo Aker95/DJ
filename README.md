@@ -1,172 +1,219 @@
-# DJ Library
+# DJ Library MVP
 
-An agent-oriented toolkit for keeping Spotify placements, local audio, and Rekordbox aligned. The package separates repeatable logic from five thin command adapters: commands validate arguments, call `dj_library` functions, and emit exactly one JSON result.
+A readable solo-project toolkit for researching Spotify playlists, keeping local music aligned, acquiring missing tracks, and using Rekordbox as feedback.
 
-The project deliberately avoids a service framework, global workflow state, interactive prompts, and implicit "latest run" behavior. Plans are reviewable artifacts; consequential operations accept only explicit, hashed manifests.
-
-## Architecture
+The project follows one simple pattern:
 
 ```text
-music_schema_knowledge.json       canonical v3 taxonomy
-src/dj_library/                  reusable domain functions
-scripts/                         five JSON tool adapters
-tests/unit/                      isolated logic tests
-tests/integration/               offline workflow and adapter tests
-tests/e2e/                       optional live-service tests
-data/registry.json               generated workflow registry (ignored)
-data/runs/<domain>/<run-id>/     generated artifacts (ignored)
-music/intake/                    neutral new-file intake (ignored)
-music/review/                    neutral exceptions (ignored)
+inspect → write a readable work file → review → explicitly apply
 ```
 
-The package uses plain functions and dictionaries. `Settings` is the only shared immutable object; paths, schemas, and external clients are otherwise passed explicitly.
+There is no installed project package, workflow registry, run history, generic manifest system, or automatic genre voting.
 
-## Installation
+## Repository map
+
+```text
+music_schema_knowledge.json   Canonical BPM/genre/subgenre taxonomy
+scripts/                      Commands you run
+scripts/utils/                Logic genuinely shared by commands
+data/*.json                   Current preview and review files
+music/intake/<spotify-id>/    New files that still need verification
+tests/                        Offline behavior tests
+requirements.txt              Python dependencies
+setup.sh                      Environment setup
+```
+
+## Setup
 
 Python 3.11 or newer is required.
 
 ```bash
-python -m venv .venv
-.venv/bin/pip install -e '.[dev]'
+./setup.sh
+source .venv/bin/activate
 ```
 
-Install optional integrations only when needed:
+`setup.sh` creates `.venv`, installs `requirements.txt`, and creates `.env` from `.env.example` only when `.env` is missing.
+
+Important dependencies:
+
+- Spotipy communicates with Spotify.
+- Requests and pylast collect Discogs and Last.fm evidence.
+- Mutagen reads local audio metadata.
+- RapidFuzz compares Spotify metadata with real-world filenames.
+- Essentia checks BPM/key for newly acquired intake files.
+- pyrekordbox reads a temporary copy of the Rekordbox database.
+- pytest runs the offline test suite.
+
+Fill in the integrations you use in `.env`, then authenticate Spotify once:
 
 ```bash
-.venv/bin/pip install -e '.[audio]'
-.venv/bin/pip install -e '.[rekordbox]'
+python scripts/spotify_auth.py
 ```
 
-## Environment
+## Playlist research—the central workflow
 
-Copy values into `.env`; it is ignored by Git.
-
-| Variable | Purpose | Default |
-|---|---|---|
-| `MUSIC_ROOT` | Local audio root | `<repo>/music` |
-| `SPOTIFY_CLIENT_ID` | Spotify OAuth client | required for Spotify actions |
-| `SPOTIFY_CLIENT_SECRET` | Spotify OAuth secret | required for Spotify actions |
-| `SPOTIFY_REDIRECT_URI` | OAuth callback | required for Spotify actions |
-| `SPOTIFY_CACHE_PATH` | Reusable OAuth cache | `data/spotify-token-cache.json` |
-| `SLSKD_BASE_URL` | slskd API | `http://localhost:5030` |
-| `SLSKD_API_KEY` | slskd API key | required for acquisition apply |
-| `SLSKD_DOWNLOADS_DIR` | completed slskd files | `~/.slskd/downloads` |
-| `SLSKD_CONTAINER_NAME` | local Docker container | `slskd` |
-| `MIN_BITRATE_KBPS` | Minimum MP3 bitrate | `320` |
-| `PREFERRED_FORMATS` | Comma-separated acquisition order | `flac,wav,aiff,mp3` |
-
-Spotify authentication is intentional and cache-preserving:
+Prepare a complete breakdown of a Spotify playlist:
 
 ```bash
-.venv/bin/python scripts/spotify.py auth
+python scripts/classification_research.py --playlist "Playlist name or URL"
 ```
 
-## Tool contract
+This creates:
 
-Every script writes one JSON object to stdout:
+- `data/research.json`: editable structured research.
+- `data/research.md`: human-readable playlist breakdown.
+
+Each track contains Spotify identity/release metadata, Discogs styles, Last.fm tags, direct evidence links, and empty fields for the agent's final recommendation and rationale. Providers never vote or classify automatically.
+
+The agent researches every exact recording, compares all plausible existing taxonomy nodes, and fills the recommendations. The Markdown groups the results by BPM master, main genre, subgenre, parent fallback, and review flag.
+
+After editing the JSON, regenerate the readable breakdown without fetching Spotify again:
+
+```bash
+python scripts/classification_research.py --render data/research.json
+```
+
+Optional user corrections and accepted taxonomy changes live in `data/decisions.json`:
 
 ```json
 {
-  "ok": true,
-  "action": "spotify.sort-plan",
-  "run_id": "20260819T120000Z-ab12cd34",
-  "artifacts": {"manifest": "data/runs/spotify/.../sort_manifest.json"},
-  "summary": {"tracks_to_sort": 12, "tracks_skipped": 1}
+  "tracks": [
+    {
+      "spotify_track_id": "spotify-id",
+      "master_folder": "03 • 132–144 FAST/RAVE",
+      "main_genre": "Techno",
+      "subgenre": "Hard Groove",
+      "rationale": "Exact release and label evidence support hard groove.",
+      "alternatives_considered": ["Techno parent", "Peak-Time Techno"],
+      "web_evidence": [{"url": "https://example.com/release"}],
+      "review_flags": [],
+      "research_status": "reviewed"
+    }
+  ],
+  "schema_changes": []
 }
 ```
 
-Diagnostics go to stderr. Failures use the same envelope with `ok: false` and return a non-zero status.
-
-### Research
+When research proposes accepted taxonomy, preview and apply it first:
 
 ```bash
-.venv/bin/python scripts/research.py prepare --playlist 'Review Queue'
-.venv/bin/python scripts/research.py validate --input data/runs/research/<run-id>/provisional.json
-.venv/bin/python scripts/research.py approve \
-  --input data/runs/research/<run-id>/provisional.json \
-  --decisions decisions.json
+python scripts/schema_update.py data/research.json --decisions data/decisions.json
+python scripts/schema_update.py data/research.json --decisions data/decisions.json --apply
+python scripts/library_structure.py --apply
 ```
 
-`prepare` is read-only. `approve` records reviewed classifications and approved taxonomy proposals but does not sort Spotify.
-
-### Spotify
+Provision a Spotify playlist for any new destination, then approve classifications:
 
 ```bash
-.venv/bin/python scripts/spotify.py sort-plan --input data/runs/research/<run-id>/approved.json
-.venv/bin/python scripts/spotify.py sort-apply --manifest data/runs/spotify/<run-id>/sort_manifest.json
-.venv/bin/python scripts/spotify.py sort-audit --input data/runs/research/<run-id>/approved.json
-.venv/bin/python scripts/spotify.py schema-plan
-.venv/bin/python scripts/spotify.py schema-apply --manifest data/runs/spotify/<run-id>/schema_manifest.json
+python scripts/spotify_playlist.py --master "03 • 132–144 FAST/RAVE" --main Techno --subgenre "Hard Groove"
+python scripts/spotify_playlist.py --master "03 • 132–144 FAST/RAVE" --main Techno --subgenre "Hard Groove" --apply
+python scripts/classification_approve.py data/research.json --decisions data/decisions.json
 ```
 
-Snapshots never backfill schema IDs or clear OAuth state. Only `schema-apply` can update schema playlist mappings.
+`spotify_playlist.py` handles one narrow job: it maps one schema destination to one real Spotify playlist. Preview shows whether it will reuse an exact-name playlist or create one. Apply saves the playlist ID into that destination. It does not classify or sort tracks and cannot create Spotify folders.
 
-### Synchronization and acquisition
+Finally preview and apply the Spotify sort:
 
 ```bash
-.venv/bin/python scripts/sync.py snapshot
-.venv/bin/python scripts/sync.py delta --snapshot data/runs/sync/<run-id>/snapshot.json
-.venv/bin/python scripts/sync.py reconcile-plan --delta data/runs/sync/<run-id>/delta.json
-.venv/bin/python scripts/sync.py reconcile-apply --manifest data/runs/sync/<run-id>/reconciliation_manifest.json
-.venv/bin/python scripts/sync.py acquire-plan --delta data/runs/sync/<run-id>/delta.json
-.venv/bin/python scripts/sync.py acquire-apply --manifest data/runs/acquisition/<run-id>/acquisition_plan.json
-.venv/bin/python scripts/sync.py analyze music/intake/<run-id>/track.flac
-.venv/bin/python scripts/sync.py verify --manifest data/runs/acquisition/<run-id>/acquisition_manifest.json
-.venv/bin/python scripts/sync.py promote-apply --manifest data/runs/acquisition/<run-id>/promotion_manifest.json
+python scripts/spotify_sort.py data/classifications.json
+python scripts/spotify_sort.py --apply
 ```
 
-Acquisition writes only to a run-specific intake directory. Verification separates consistent files from review items. Promotion uses the reviewed, hash-checked move manifest.
+Apply adds and verifies target membership before removing and verifying source membership.
 
-### Local library
+## Spotify-to-local synchronization
 
 ```bash
-.venv/bin/python scripts/library.py structure-plan
-.venv/bin/python scripts/library.py structure-apply --manifest data/runs/library/<run-id>/structure_manifest.json
-.venv/bin/python scripts/library.py audit
-.venv/bin/python scripts/library.py dedupe-plan
-.venv/bin/python scripts/library.py dedupe-apply --manifest data/runs/library/<run-id>/deduplication_manifest.json
-.venv/bin/python scripts/library.py alignment-plan --review review.json --decisions decisions.json
-.venv/bin/python scripts/library.py alignment-apply --manifest data/runs/library/<run-id>/alignment_manifest.json
+python scripts/spotify_snapshot.py
+python scripts/library_structure.py
+python scripts/library_structure.py --apply
+python scripts/library_delta.py
 ```
 
-Deduplication quarantines selected copies under `music/review`; it never deletes them. Alignment preserves the required Spotify-add → local-move → previous-membership-remove order.
+The snapshot reads schema-mapped playlists without changing Spotify or the schema. The delta compares those tracks with direct files in their canonical local destinations and writes `data/delta.json`.
 
-### Rekordbox
+Before downloading, look for matches in unsorted local folders:
 
 ```bash
-.venv/bin/python scripts/rekordbox.py verify --database ~/Library/Pioneer/rekordbox/master.db
-.venv/bin/python scripts/rekordbox.py reconcile --reviewed approved.json
-.venv/bin/python scripts/rekordbox.py export
+python scripts/library_reconcile.py
+python scripts/library_reconcile.py --apply
+python scripts/library_delta.py
 ```
 
-Database inspection uses a temporary copy. XML export scans direct files in final schema destinations only, excluding intake and review trees.
+The preview records exact source/destination paths and hashes. Apply refuses collisions and changed files.
 
-## Normal workflows
+## Acquisition
 
-1. Research: `research prepare` → agent/user decisions → `validate` → `approve`.
-2. Spotify sorting: `spotify sort-plan` → review → explicit `sort-apply` → `sort-audit`.
-3. New files: `sync snapshot` → `delta` → optional unsorted reconciliation → acquisition plan/apply → verification → promotion or mismatch review.
-4. Existing library: `rekordbox verify` → `reconcile` → decisions → `library alignment-plan` → review → explicit `alignment-apply`.
-5. Export: run `rekordbox export` after final local alignment.
-
-No plan implies permission to apply it. Pass artifact paths explicitly; do not infer a newest run.
-
-## Testing and quality
-
-The default suite is offline and uses fake Spotify, slskd, and Rekordbox boundaries.
+Preview missing tracks:
 
 ```bash
-.venv/bin/pytest
-.venv/bin/pytest --cov=dj_library --cov-report=term-missing
-.venv/bin/ruff format --check src scripts tests/unit tests/integration
-.venv/bin/ruff check src scripts tests/unit tests/integration
+python scripts/acquire.py
 ```
 
-Coverage must remain at least 85% for `src/dj_library`. Optional live-client implementations are excluded; their workflow behavior is tested through injected clients. Put real service checks under `tests/e2e` with the `e2e` marker; they are excluded by default.
+Start slskd yourself, then explicitly acquire:
 
-## Project documents
+```bash
+python scripts/acquire.py --apply
+```
 
-- `README.md` describes the current software and commands.
-- `context.md` preserves durable reasoning, domain lessons, and limitations.
-- `AGENTS.md` contains mandatory safety and classification rules.
-- `music_schema_knowledge.json` is the canonical taxonomy and routing source.
+Downloads enter `music/intake/<spotify-id>/`. Mutagen and Essentia verify identity, version, duration, and BPM band. A file is promoted automatically only when every check passes and the destination is free. Otherwise it stays in intake and appears in `data/intake_review.json`.
+
+## Rekordbox feedback
+
+```bash
+python scripts/rekordbox_review.py
+```
+
+This reads a temporary database copy and writes `data/rekordbox_review.json`. It flags files outside the schema, missing BPM, BPM-folder mismatches, identity ambiguity, acquisition version/download warnings, and disagreement with approved Spotify classifications. It never modifies Rekordbox or moves files.
+
+Export canonical final folders to Rekordbox XML:
+
+```bash
+python scripts/rekordbox_export.py
+```
+
+Intake and review files are excluded.
+
+## Schema tools
+
+Validate the current taxonomy at any time:
+
+```bash
+python scripts/schema_validate.py
+```
+
+Accepted schema changes support only three clear actions:
+
+- `add_alias`
+- `ensure_main_genre`
+- `ensure_subgenre`
+
+The update tool resolves canonical names and aliases first, reuses existing subgenre identity across BPM placements, validates before saving, and is safe to rerun.
+
+## Command reference
+
+| Script | Input | Output | Default / `--apply` |
+|---|---|---|---|
+| `spotify_auth.py` | Spotify credentials in `.env` | token cache | Opens authorization only when run. |
+| `classification_research.py` | `--playlist`, or `--render research.json` | `data/research.json`, `data/research.md` | Always read-only toward Spotify, schema, and audio. |
+| `schema_validate.py` | current schema | terminal summary | Always read-only. |
+| `schema_update.py` | research and optional decisions | `data/schema_plan.json` | Previews; `--apply` atomically updates only the schema. |
+| `classification_approve.py` | reviewed research and optional decisions | `data/classifications.json`, final research files | Validates and writes work files; never changes Spotify. |
+| `spotify_playlist.py` | one master/main/optional subgenre | playlist plan/result; schema mapping | Previews reuse/create; `--apply` provisions and records the ID. |
+| `spotify_sort.py` | classifications | `data/spotify_sort_plan.json` or result | Previews; `--apply` adds/verifies, then removes/verifies. |
+| `spotify_snapshot.py` | mapped Spotify playlists | `data/spotify_snapshot.json` | Always read-only. |
+| `library_structure.py` | schema | terminal folder list | Previews; `--apply` creates missing folders. |
+| `library_delta.py` | Spotify snapshot | `data/delta.json` | Always read-only. |
+| `library_reconcile.py` | delta and unsorted files | `data/reconcile_plan.json` | Previews; `--apply` performs verified collision-safe moves. |
+| `acquire.py` | delta | acquisition plan/results and intake review | Previews; `--apply` downloads, verifies, and safely promotes. |
+| `rekordbox_review.py` | Rekordbox DB, classifications, acquisition results | `data/rekordbox_review.json` | Always read-only. |
+| `rekordbox_export.py` | schema and direct final files | `rekordbox_schema.xml` | Generates XML; never modifies Rekordbox. |
+
+## Tests
+
+```bash
+python -m pytest
+python -m compileall scripts
+```
+
+The default suite uses fake external clients and never mutates live services.

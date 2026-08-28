@@ -1,0 +1,102 @@
+import pytest
+
+from tests.helpers import sample_schema
+from utils.research import approve_document, prepare_document, render_markdown
+
+
+def researched_document():
+    document = prepare_document(
+        {"id": "source-playlist", "name": "Research Bag"},
+        [
+            {
+                "spotify_track_id": "track-1",
+                "artist": "Artist",
+                "title": "Track",
+                "album": "Release",
+                "release_date": "2026",
+                "isrc": "CODE",
+                "duration_ms": 300000,
+                "spotify_url": "https://open.spotify.com/track/track-1",
+                "provider_evidence": {
+                    "discogs": {"styles": ["Hard Groove"], "url": "https://discogs.com/release/1", "warning": None},
+                    "lastfm": {"tags": ["techno"], "url": "https://last.fm/track", "warning": None},
+                },
+            }
+        ],
+        sample_schema(),
+    )
+    document["tracks"][0].update(
+        {
+            "master_folder": "FAST",
+            "main_genre": "Techno",
+            "subgenre": "Hard Groove",
+            "rationale": "Exact release styles and label context support hard groove.",
+            "alternatives_considered": ["Techno parent"],
+            "research_status": "reviewed",
+        }
+    )
+    return document
+
+
+def test_research_markdown_is_a_playlist_breakdown():
+    markdown = render_markdown(researched_document())
+    assert "# Playlist Research: Research Bag" in markdown
+    assert "### Main genres" in markdown
+    assert "Artist — Track" in markdown
+    assert "Alternatives considered: Techno parent" in markdown
+    assert "https://discogs.com/release/1" in markdown
+
+
+def test_research_counts_unavailable_playlist_items():
+    document = prepare_document(
+        {"id": "source", "name": "Bag", "total_items": 3},
+        researched_document()["tracks"],
+        sample_schema(),
+    )
+    assert document["summary"]["available_tracks"] == 1
+    assert document["summary"]["unavailable_tracks"] == 2
+
+
+def test_approval_derives_canonical_destination():
+    classifications, reviewed = approve_document(researched_document(), None, sample_schema())
+    assert classifications["tracks"][0]["placement_id"] == "fast:techno:hard-groove"
+    assert reviewed["summary"]["pending"] == 0
+    assert reviewed["tracks"][0]["research_status"] == "approved"
+
+
+def test_user_correction_is_applied_before_approval():
+    document = researched_document()
+    document["tracks"][0]["subgenre"] = None
+    decisions = {
+        "tracks": {
+            "track-1": {
+                "subgenre": "Hard Groove",
+                "rationale": "User-confirmed exact release evidence.",
+            }
+        }
+    }
+    classifications, _reviewed = approve_document(document, decisions, sample_schema())
+    assert classifications["tracks"][0]["placement_id"] == "fast:techno:hard-groove"
+
+
+def test_approval_refuses_unaccepted_schema_proposals():
+    document = researched_document()
+    document["proposed_schema_changes"] = [
+        {"action": "add_alias", "canonical_name": "Techno", "alias": "Techno Music"}
+    ]
+    with pytest.raises(ValueError, match="not been explicitly accepted"):
+        approve_document(document, None, sample_schema())
+
+
+def test_approval_refuses_a_track_still_marked_pending():
+    document = researched_document()
+    document["tracks"][0]["research_status"] = "pending"
+    with pytest.raises(ValueError, match="research is still pending"):
+        approve_document(document, None, sample_schema())
+
+
+def test_metadata_modules_do_not_contain_voting_logic():
+    for path in ("scripts/utils/metadata.py", "scripts/classification_research.py"):
+        source = open(path, encoding="utf-8").read().casefold()
+        assert "weighted vote" not in source
+        assert "consensusclassifier" not in source

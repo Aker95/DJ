@@ -1,0 +1,9 @@
+spotipy>=2.24.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+mutagen>=1.47.0
+rapidfuzz>=3.0.0
+pylast>=5.2.0
+essentia==2.1b6.dev1389
+pyrekordbox==0.4.4
+pytest>=9.0.0

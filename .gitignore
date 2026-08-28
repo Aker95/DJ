@@ -1,8 +1,8 @@
 /music/
 /.env
 /.venv/
-/data/registry.json
-/data/runs/
+/data/*.json
+/data/*.md
 /research/
 /.spotify_cache
 /spotify_snapshot.json
