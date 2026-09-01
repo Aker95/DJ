@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from utils.config import Config
+from config import Config
 
 
 def sample_schema() -> dict:

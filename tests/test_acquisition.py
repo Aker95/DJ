@@ -1,6 +1,5 @@
-from pathlib import Path
+from acquisition import apply_acquisition_plan, build_acquisition_plan
 
-from acquire import acquire_tracks
 from tests.helpers import config_for, sample_schema
 
 
@@ -24,7 +23,14 @@ def test_safe_acquisition_is_promoted(tmp_path, monkeypatch):
     }
 
     def search(_config, _artist, _title):
-        return [{"username": "user", "files": [{"filename": "Artist - Track.flac", "size": 1000, "length": 300}]}]
+        return [
+            {
+                "username": "user",
+                "files": [
+                    {"filename": "Artist - Track.flac", "size": 1000, "length": 300}
+                ],
+            }
+        ]
 
     def download(_config, _candidate, intake):
         intake.mkdir(parents=True)
@@ -33,11 +39,17 @@ def test_safe_acquisition_is_promoted(tmp_path, monkeypatch):
         return path
 
     monkeypatch.setattr(
-        "acquire.inspect_audio",
-        lambda path: {"file_name": path.name, "size": 5, "sha256": "ignored", "duration_ms": 300000, "tags": {"artist": "Artist", "title": "Track"}},
+        "acquisition._inspect_audio",
+        lambda path: {
+            "file_name": path.name,
+            "size": 5,
+            "sha256": "ignored",
+            "duration_ms": 300000,
+            "tags": {"artist": "Artist", "title": "Track"},
+        },
     )
-    result = acquire_tracks(
-        delta,
+    result = apply_acquisition_plan(
+        build_acquisition_plan(delta, sample_schema()),
         config,
         sample_schema(),
         search=search,
@@ -65,8 +77,12 @@ def test_ambiguous_bpm_remains_in_intake(tmp_path, monkeypatch):
         ]
     }
     monkeypatch.setattr(
-        "acquire.inspect_audio",
-        lambda path: {"file_name": path.name, "duration_ms": 300000, "tags": {"artist": "Artist", "title": "Track"}},
+        "acquisition._inspect_audio",
+        lambda path: {
+            "file_name": path.name,
+            "duration_ms": 300000,
+            "tags": {"artist": "Artist", "title": "Track"},
+        },
     )
 
     def download(_config, _candidate, intake):
@@ -75,11 +91,18 @@ def test_ambiguous_bpm_remains_in_intake(tmp_path, monkeypatch):
         path.write_bytes(b"audio")
         return path
 
-    result = acquire_tracks(
-        delta,
+    result = apply_acquisition_plan(
+        build_acquisition_plan(delta, sample_schema()),
         config,
         sample_schema(),
-        search=lambda *_args: [{"username": "u", "files": [{"filename": "Artist - Track.flac", "size": 1000, "length": 300}]}],
+        search=lambda *_args: [
+            {
+                "username": "u",
+                "files": [
+                    {"filename": "Artist - Track.flac", "size": 1000, "length": 300}
+                ],
+            }
+        ],
         download=download,
         analyze=lambda _path: {"raw_bpm": 100.0, "bpm_estimates": []},
     )
@@ -105,8 +128,8 @@ def test_existing_intake_file_is_a_collision_not_a_reused_download(tmp_path):
             }
         ]
     }
-    result = acquire_tracks(
-        delta,
+    result = apply_acquisition_plan(
+        build_acquisition_plan(delta, sample_schema()),
         config,
         sample_schema(),
         search=lambda *_args: (_ for _ in ()).throw(AssertionError("must not search")),

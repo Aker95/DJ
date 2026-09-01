@@ -29,7 +29,19 @@
 - Mark a metadata-derived BPM as `inferred-bpm`; do not present it as measured audio or Rekordbox BPM.
 - Spotify, Discogs, and Last.fm provide evidence only. They never vote or make the final classification.
 - The agent proposes classifications and taxonomy changes. The user accepts or corrects them.
-- Only `scripts/schema_update.py --apply` changes taxonomy from accepted research.
+- Only `scripts/catalog.py update --apply` changes taxonomy from accepted research.
+
+## Deep module boundaries
+
+- The six capability modules are `catalog.py`, `classification.py`, `spotify.py`,
+  `local_library.py`, `acquisition.py`, and `rekordbox.py`.
+- `config.py`, `artifacts.py`, and `matching.py` are the only shared modules. Do not recreate a
+  generic `utils` directory or an `audio.py` module.
+- Prefer atomic private functions behind small module-level public interfaces. Keep behavior in
+  its owning capability unless extraction protects a genuinely shared policy or invariant.
+- Catalog owns taxonomy mutation; Local Library owns canonical file moves; Acquisition owns
+  intake inspection and Essentia; Rekordbox remains read-only.
+- Future UI and agent layers must use public capability functions rather than private helpers.
 
 ## Local music and BPM
 

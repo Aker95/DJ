@@ -1,8 +1,8 @@
-"""Read-only Rekordbox inspection and XML export helpers."""
+"""Read-only Rekordbox review and canonical XML export."""
 
 from __future__ import annotations
 
-import re
+import argparse
 import shutil
 import tempfile
 from collections import Counter
@@ -12,22 +12,29 @@ from typing import Any
 from urllib.parse import quote
 from xml.etree import ElementTree as ET
 
+from artifacts import now_iso, read_artifact, write_artifact
+from catalog import list_destinations, load_catalog, resolve_bpm_master
+from config import SUPPORTED_AUDIO_EXTENSIONS, Config, load_config
+from matching import metadata_match_scores
 from mutagen import File as MutagenFile
 
-from .audio import AUDIO_EXTENSIONS
-from .config import Config
-from .io import now_iso, relative_path
-from .matching import match_scores
-from .schema import bpm_in_master, bpm_master, iter_destinations, load_schema
-
 KIND_BY_EXTENSION = {
-    ".aac": "AAC File", ".aif": "AIFF File", ".aiff": "AIFF File", ".alac": "ALAC File",
-    ".flac": "FLAC File", ".m4a": "M4A File", ".mp3": "MP3 File", ".ogg": "OGG File",
-    ".opus": "Opus File", ".wav": "WAV File",
+    ".aac": "AAC File",
+    ".aif": "AIFF File",
+    ".aiff": "AIFF File",
+    ".alac": "ALAC File",
+    ".flac": "FLAC File",
+    ".m4a": "M4A File",
+    ".mp3": "MP3 File",
+    ".ogg": "OGG File",
+    ".opus": "Opus File",
+    ".wav": "WAV File",
 }
 
 
-def read_tracks(database_path: Path, config: Config, schema: dict) -> list[dict]:  # pragma: no cover
+def read_library(
+    database_path: Path, config: Config, schema: dict
+) -> list[dict]:  # pragma: no cover
     """Read a temporary database copy so the live Rekordbox database remains untouched."""
 
     try:
@@ -37,7 +44,7 @@ def read_tracks(database_path: Path, config: Config, schema: dict) -> list[dict]
         raise RuntimeError("pyrekordbox is required for Rekordbox review") from error
     destinations = {
         Path(item["local_folder"]).resolve(): item
-        for item in iter_destinations(schema, config.project_root)
+        for item in list_destinations(schema, config.project_root)
         if item.get("local_folder")
     }
     with tempfile.TemporaryDirectory(prefix="dj-rekordbox-readonly-") as temporary:
@@ -53,7 +60,8 @@ def read_tracks(database_path: Path, config: Config, schema: dict) -> list[dict]
             return [
                 record
                 for content in database.get_content()
-                if (record := _content_record(content, config, destinations)) is not None
+                if (record := _content_record(content, config, destinations))
+                is not None
             ]
         finally:
             database.close()
@@ -70,13 +78,15 @@ def _content_record(content: Any, config: Config, destinations: dict) -> dict | 
     destination = destinations.get(path.parent)
     try:
         artist = content.Artist.Name if content.Artist else ""
-    except Exception:
+    except Exception:  # noqa: BLE001 - tolerate incomplete ORM relationships in read-only review
         artist = ""
     raw_bpm = float(content.BPM) / 100 if content.BPM else None
-    normalized_bpm = raw_bpm * 2 if raw_bpm and raw_bpm < 118 and raw_bpm * 2 <= 180 else raw_bpm
+    normalized_bpm = (
+        raw_bpm * 2 if raw_bpm and raw_bpm < 118 and raw_bpm * 2 <= 180 else raw_bpm
+    )
     return {
         "rekordbox_content_id": str(content.ID),
-        "path": relative_path(path, config.project_root),
+        "path": str(path.resolve().relative_to(config.project_root.resolve())),
         "artist": artist,
         "title": content.Title or path.stem,
         "duration_ms": int(content.Length or 0) * 1000 or None,
@@ -91,11 +101,17 @@ def _public_destination(destination: dict | None) -> dict | None:
         return None
     return {
         key: destination.get(key)
-        for key in ("placement_id", "master_folder", "main_genre", "subgenre", "local_folder")
+        for key in (
+            "placement_id",
+            "master_folder",
+            "main_genre",
+            "subgenre",
+            "local_folder",
+        )
     }
 
 
-def review_tracks(
+def review_library(
     tracks: list[dict],
     schema: dict,
     classifications: dict | None = None,
@@ -118,19 +134,27 @@ def review_tracks(
             flags.append("rekordbox-bpm-missing")
         elif current:
             current_master = next(
-                (master for master in schema["master_folders"] if master["name"] == current["master_folder"]),
+                (
+                    master
+                    for master in schema["master_folders"]
+                    if master["name"] == current["master_folder"]
+                ),
                 None,
             )
-            if not current_master or not bpm_in_master(current_master, bpm):
+            if not current_master or not _bpm_in_master(current_master, bpm):
                 flags.append("bpm-band-mismatch")
-        identity = match_classification(track, approved)
+        identity = _match_classification(track, approved)
         if identity.get("status") == "ambiguous":
             flags.append("identity-ambiguous")
         elif identity.get("status") == "matched":
             expected = identity["classification"]
             if current and current["placement_id"] != expected.get("placement_id"):
                 flags.append("classification-path-mismatch")
-            if bpm_master(schema, bpm) and expected.get("master_folder") != bpm_master(schema, bpm)["name"]:
+            if (
+                resolve_bpm_master(schema, bpm)
+                and expected.get("master_folder")
+                != resolve_bpm_master(schema, bpm)["name"]
+            ):
                 flags.append("spotify-rekordbox-bpm-mismatch")
         acquisition = None
         if identity.get("status") == "matched":
@@ -160,62 +184,97 @@ def review_tracks(
     }
 
 
-def match_classification(local: dict, classifications: list[dict]) -> dict:
+def _match_classification(local: dict, classifications: list[dict]) -> dict:
     exact = [
-        item for item in classifications if local.get("isrc") and item.get("isrc") == local["isrc"]
+        item
+        for item in classifications
+        if local.get("isrc") and item.get("isrc") == local["isrc"]
     ]
     if len(exact) == 1:
         return {"status": "matched", "method": "isrc", "classification": exact[0]}
     candidates: list[tuple[float, dict]] = []
     for item in classifications:
-        artist_score, title_score = match_scores(
-            local.get("artist", ""), local.get("title", ""), item.get("artist", ""), item.get("title", "")
+        artist_score, title_score = metadata_match_scores(
+            local.get("artist", ""),
+            local.get("title", ""),
+            item.get("artist", ""),
+            item.get("title", ""),
         )
         duration = 1.0
         if local.get("duration_ms") and item.get("duration_ms"):
-            duration = max(0, 1 - abs(local["duration_ms"] - item["duration_ms"]) / 15000)
+            duration = max(
+                0, 1 - abs(local["duration_ms"] - item["duration_ms"]) / 15000
+            )
         if artist_score >= 0.80 and title_score >= 0.85 and duration >= 0.5:
-            candidates.append((artist_score * 0.4 + title_score * 0.5 + duration * 0.1, item))
+            candidates.append(
+                (artist_score * 0.4 + title_score * 0.5 + duration * 0.1, item)
+            )
     candidates.sort(key=lambda value: value[0], reverse=True)
     if not candidates:
         return {"status": "unmatched"}
     if len(candidates) > 1 and candidates[0][0] - candidates[1][0] < 0.03:
         return {"status": "ambiguous"}
-    return {"status": "matched", "method": "metadata", "classification": candidates[0][1]}
+    return {
+        "status": "matched",
+        "method": "metadata",
+        "classification": candidates[0][1],
+    }
 
 
-def export_xml(config: Config, schema: dict, output_path: Path) -> dict:
+def export_library(config: Config, schema: dict, output_path: Path) -> dict:
     root = ET.Element("DJ_PLAYLISTS", {"Version": "1.0.0"})
-    ET.SubElement(root, "PRODUCT", {"Name": "DJ Library", "Version": "1.0", "Company": "Personal"})
+    ET.SubElement(
+        root, "PRODUCT", {"Name": "DJ Library", "Version": "1.0", "Company": "Personal"}
+    )
     collection = ET.SubElement(root, "COLLECTION", {"Entries": "0"})
     playlists = ET.SubElement(root, "PLAYLISTS")
     master_root = ET.SubElement(
-        playlists, "NODE", {"Type": "0", "Name": "ROOT", "Count": str(len(schema["master_folders"]))}
+        playlists,
+        "NODE",
+        {"Type": "0", "Name": "ROOT", "Count": str(len(schema["master_folders"]))},
     )
     track_ids: dict[Path, int] = {}
     playlist_count = 0
-    destinations = list(iter_destinations(schema, config.project_root))
+    destinations = list_destinations(schema, config.project_root)
     for master in schema["master_folders"]:
-        master_destinations = [item for item in destinations if item["master_folder"] == master["name"]]
+        master_destinations = [
+            item for item in destinations if item["master_folder"] == master["name"]
+        ]
         genres = sorted({item["main_genre"] for item in master_destinations})
         master_node = ET.SubElement(
-            master_root, "NODE", {"Type": "0", "Name": master["name"], "Count": str(len(genres))}
+            master_root,
+            "NODE",
+            {"Type": "0", "Name": master["name"], "Count": str(len(genres))},
         )
         for genre in genres:
-            genre_destinations = [item for item in master_destinations if item["main_genre"] == genre]
-            parent = next(item for item in genre_destinations if item["subgenre"] is None)
+            genre_destinations = [
+                item for item in master_destinations if item["main_genre"] == genre
+            ]
+            parent = next(
+                item for item in genre_destinations if item["subgenre"] is None
+            )
             leaves = [item for item in genre_destinations if item["subgenre"]]
             if not leaves:
-                master_node.append(_playlist_node(genre, _register(parent, track_ids, collection)))
+                master_node.append(
+                    _playlist_node(genre, _register(parent, track_ids, collection))
+                )
                 playlist_count += 1
                 continue
             genre_node = ET.SubElement(
-                master_node, "NODE", {"Type": "0", "Name": genre, "Count": str(len(leaves) + 1)}
+                master_node,
+                "NODE",
+                {"Type": "0", "Name": genre, "Count": str(len(leaves) + 1)},
             )
-            genre_node.append(_playlist_node(genre, _register(parent, track_ids, collection)))
+            genre_node.append(
+                _playlist_node(genre, _register(parent, track_ids, collection))
+            )
             playlist_count += 1
             for leaf in leaves:
-                genre_node.append(_playlist_node(leaf["subgenre"], _register(leaf, track_ids, collection)))
+                genre_node.append(
+                    _playlist_node(
+                        leaf["subgenre"], _register(leaf, track_ids, collection)
+                    )
+                )
                 playlist_count += 1
     collection.set("Entries", str(len(track_ids)))
     ET.indent(root, space="  ")
@@ -228,18 +287,25 @@ def export_xml(config: Config, schema: dict, output_path: Path) -> dict:
     return {"tracks": len(track_ids), "playlists": playlist_count}
 
 
-def _register(destination: dict, ids: dict[Path, int], collection: ET.Element) -> list[int]:
+def _register(
+    destination: dict, ids: dict[Path, int], collection: ET.Element
+) -> list[int]:
     folder = Path(destination["local_folder"])
     if not folder.is_dir():
         return []
     result: list[int] = []
     for path in sorted(folder.iterdir(), key=lambda item: item.name.casefold()):
-        if not path.is_file() or path.suffix.casefold() not in AUDIO_EXTENSIONS:
+        if (
+            not path.is_file()
+            or path.suffix.casefold() not in SUPPORTED_AUDIO_EXTENSIONS
+        ):
             continue
         if path not in ids:
             ids[path] = len(ids) + 1
             attributes = {"TrackID": str(ids[path]), **_xml_metadata(path)}
-            attributes["Location"] = "file://localhost" + quote(path.resolve().as_posix(), safe="/:~!$&'()*+,;=@")
+            attributes["Location"] = "file://localhost" + quote(
+                path.resolve().as_posix(), safe="/:~!$&'()*+,;=@"
+            )
             ET.SubElement(collection, "TRACK", attributes)
         result.append(ids[path])
     return result
@@ -250,16 +316,22 @@ def _xml_metadata(path: Path) -> dict[str, str]:
         "Name": path.stem,
         "Kind": KIND_BY_EXTENSION.get(path.suffix.casefold(), "Audio File"),
         "Size": str(path.stat().st_size),
-        "DateModified": datetime.fromtimestamp(path.stat().st_mtime).strftime("%Y-%m-%d"),
+        "DateModified": datetime.fromtimestamp(
+            path.stat().st_mtime, tz=datetime.now().astimezone().tzinfo
+        ).strftime("%Y-%m-%d"),
     }
     try:
         audio = MutagenFile(path, easy=True)
-    except Exception:
+    except Exception:  # noqa: BLE001 - malformed tags must not block XML export
         return metadata
     if audio is None:
         return metadata
     tags = audio.tags or {}
-    for output, keys in (("Name", ("title",)), ("Artist", ("artist", "albumartist")), ("Album", ("album",))):
+    for output, keys in (
+        ("Name", ("title",)),
+        ("Artist", ("artist", "albumartist")),
+        ("Album", ("album",)),
+    ):
         value = next((tags.get(key) for key in keys if tags.get(key)), None)
         if isinstance(value, (list, tuple)):
             value = value[0] if value else None
@@ -276,7 +348,74 @@ def _xml_metadata(path: Path) -> dict[str, str]:
 
 
 def _playlist_node(name: str, ids: list[int]) -> ET.Element:
-    node = ET.Element("NODE", {"Type": "1", "Name": name, "Entries": str(len(ids)), "KeyType": "0"})
+    node = ET.Element(
+        "NODE", {"Type": "1", "Name": name, "Entries": str(len(ids)), "KeyType": "0"}
+    )
     for track_id in ids:
         ET.SubElement(node, "TRACK", {"Key": str(track_id)})
     return node
+
+
+def _bpm_in_master(master: dict, bpm: float) -> bool:
+    value = float(bpm)
+    minimum, maximum = float(master["bpm_min"]), float(master["bpm_max"])
+    return (
+        minimum <= value <= maximum
+        if master.get("bpm_max_inclusive")
+        else minimum <= value < maximum
+    )
+
+
+def _parse_args() -> argparse.Namespace:
+    config = load_config()
+    parser = argparse.ArgumentParser(description=__doc__)
+    commands = parser.add_subparsers(dest="command", required=True)
+    review = commands.add_parser("review")
+    review.add_argument("--database", type=Path, default=config.rekordbox_database)
+    review.add_argument(
+        "--classifications", type=Path, default=Path("data/classifications.json")
+    )
+    review.add_argument(
+        "--acquisition-results",
+        type=Path,
+        default=Path("data/acquisition_results.json"),
+    )
+    export = commands.add_parser("export")
+    export.add_argument("--output", type=Path, default=Path("rekordbox_schema.xml"))
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = _parse_args()
+    config = load_config()
+    catalog = load_catalog(config.schema_path)
+    if args.command == "review":
+        classifications = (
+            read_artifact(args.classifications, "classifications")
+            if args.classifications.exists()
+            else None
+        )
+        acquisitions = (
+            read_artifact(args.acquisition_results, "acquisition-results")
+            if args.acquisition_results.exists()
+            else None
+        )
+        result = review_library(
+            read_library(args.database, config, catalog),
+            catalog,
+            classifications,
+            acquisitions,
+        )
+        write_artifact(
+            config.data_dir / "rekordbox_review.json", "rekordbox-review", result
+        )
+        print(
+            f"Reviewed {result['summary']['files']} file(s); {len(result['review_tracks'])} require review."
+        )
+        return
+    result = export_library(config, catalog, args.output)
+    print(f"Exported {result['tracks']} track(s) in {result['playlists']} playlist(s).")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,6 @@
-from pathlib import Path
+from rekordbox import export_library, review_library
 
 from tests.helpers import config_for, sample_schema
-from utils.rekordbox import export_xml, review_tracks
 
 
 def test_rekordbox_review_flags_bpm_and_classification_path():
@@ -19,7 +18,7 @@ def test_rekordbox_review_flags_bpm_and_classification_path():
             },
         }
     ]
-    review = review_tracks(tracks, sample_schema(), {"tracks": []})
+    review = review_library(tracks, sample_schema(), {"tracks": []})
     assert "bpm-band-mismatch" in review["review_tracks"][0]["review_flags"]
 
 
@@ -47,7 +46,7 @@ def test_rekordbox_review_includes_acquisition_version_feedback():
             {"spotify_track_id": "track-1", "review_flags": ["version-mismatch"]}
         ]
     }
-    review = review_tracks(
+    review = review_library(
         [track], sample_schema(), {"tracks": [classification]}, acquisitions
     )
     assert "possible-wrong-version" in review["review_tracks"][0]["review_flags"]
@@ -62,7 +61,7 @@ def test_rekordbox_xml_exports_only_direct_final_files(tmp_path):
     intake.mkdir(parents=True)
     (intake / "Ignored.flac").write_bytes(b"audio")
     output = tmp_path / "rekordbox.xml"
-    summary = export_xml(config, sample_schema(), output)
+    summary = export_library(config, sample_schema(), output)
     assert summary["tracks"] == 1
     xml = output.read_text()
     assert "Track.flac" in xml

@@ -28,6 +28,6 @@ fi
 echo
 echo "Setup complete."
 echo "Activate the environment with: source .venv/bin/activate"
-echo "Validate the schema with:      python scripts/schema_validate.py"
-echo "Then fill in .env and run:      python scripts/spotify_auth.py"
-echo "Start playlist research with:   python scripts/classification_research.py --playlist \"Playlist name or URL\""
+echo "Validate the catalog with:      python scripts/catalog.py validate"
+echo "Then fill in .env and run:      python scripts/spotify.py auth"
+echo "Start playlist research with:   python scripts/classification.py research --playlist \"Playlist name or URL\""

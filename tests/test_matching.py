@@ -1,6 +1,7 @@
-from acquire import normalized_bpm_analysis, version_tokens
+from acquisition import _normalized_bpm_analysis
+from matching import filename_matches, parse_filename, version_tokens
+
 from tests.helpers import sample_schema
-from utils.matching import filename_matches, preprocess_stem
 
 
 def test_filename_matching_handles_site_prefix_and_mix_suffix():
@@ -9,14 +10,14 @@ def test_filename_matching_handles_site_prefix_and_mix_suffix():
         "Artist Name",
         "Track Name",
     )
-    assert preprocess_stem("01 Artist Name - Track Name (Original Mix)") == (
+    assert parse_filename("01 Artist Name - Track Name (Original Mix)") == (
         "Artist Name",
         "Track Name",
     )
 
 
 def test_bpm_analysis_normalizes_double_time_into_schema():
-    result = normalized_bpm_analysis(
+    result = _normalized_bpm_analysis(
         {"raw_bpm": 68.0, "bpm_estimates": [68.2]}, sample_schema()
     )
     assert result["selected_bpm"] == 136.0

@@ -1,11 +1,13 @@
+from pathlib import Path
+
 import pytest
+from classification import _prepare_document, approve_research, render_research
 
 from tests.helpers import sample_schema
-from utils.research import approve_document, prepare_document, render_markdown
 
 
 def researched_document():
-    document = prepare_document(
+    document = _prepare_document(
         {"id": "source-playlist", "name": "Research Bag"},
         [
             {
@@ -18,8 +20,16 @@ def researched_document():
                 "duration_ms": 300000,
                 "spotify_url": "https://open.spotify.com/track/track-1",
                 "provider_evidence": {
-                    "discogs": {"styles": ["Hard Groove"], "url": "https://discogs.com/release/1", "warning": None},
-                    "lastfm": {"tags": ["techno"], "url": "https://last.fm/track", "warning": None},
+                    "discogs": {
+                        "styles": ["Hard Groove"],
+                        "url": "https://discogs.com/release/1",
+                        "warning": None,
+                    },
+                    "lastfm": {
+                        "tags": ["techno"],
+                        "url": "https://last.fm/track",
+                        "warning": None,
+                    },
                 },
             }
         ],
@@ -39,7 +49,7 @@ def researched_document():
 
 
 def test_research_markdown_is_a_playlist_breakdown():
-    markdown = render_markdown(researched_document())
+    markdown = render_research(researched_document())
     assert "# Playlist Research: Research Bag" in markdown
     assert "### Main genres" in markdown
     assert "Artist — Track" in markdown
@@ -48,7 +58,7 @@ def test_research_markdown_is_a_playlist_breakdown():
 
 
 def test_research_counts_unavailable_playlist_items():
-    document = prepare_document(
+    document = _prepare_document(
         {"id": "source", "name": "Bag", "total_items": 3},
         researched_document()["tracks"],
         sample_schema(),
@@ -58,7 +68,9 @@ def test_research_counts_unavailable_playlist_items():
 
 
 def test_approval_derives_canonical_destination():
-    classifications, reviewed = approve_document(researched_document(), None, sample_schema())
+    classifications, reviewed = approve_research(
+        researched_document(), None, sample_schema()
+    )
     assert classifications["tracks"][0]["placement_id"] == "fast:techno:hard-groove"
     assert reviewed["summary"]["pending"] == 0
     assert reviewed["tracks"][0]["research_status"] == "approved"
@@ -75,7 +87,7 @@ def test_user_correction_is_applied_before_approval():
             }
         }
     }
-    classifications, _reviewed = approve_document(document, decisions, sample_schema())
+    classifications, _reviewed = approve_research(document, decisions, sample_schema())
     assert classifications["tracks"][0]["placement_id"] == "fast:techno:hard-groove"
 
 
@@ -85,18 +97,18 @@ def test_approval_refuses_unaccepted_schema_proposals():
         {"action": "add_alias", "canonical_name": "Techno", "alias": "Techno Music"}
     ]
     with pytest.raises(ValueError, match="not been explicitly accepted"):
-        approve_document(document, None, sample_schema())
+        approve_research(document, None, sample_schema())
 
 
 def test_approval_refuses_a_track_still_marked_pending():
     document = researched_document()
     document["tracks"][0]["research_status"] = "pending"
     with pytest.raises(ValueError, match="research is still pending"):
-        approve_document(document, None, sample_schema())
+        approve_research(document, None, sample_schema())
 
 
 def test_metadata_modules_do_not_contain_voting_logic():
-    for path in ("scripts/utils/metadata.py", "scripts/classification_research.py"):
-        source = open(path, encoding="utf-8").read().casefold()
+    for path in ("scripts/classification.py",):
+        source = Path(path).read_text(encoding="utf-8").casefold()
         assert "weighted vote" not in source
         assert "consensusclassifier" not in source

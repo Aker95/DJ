@@ -8,7 +8,11 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+SUPPORTED_AUDIO_EXTENSIONS = frozenset(
+    {".aac", ".aif", ".aiff", ".alac", ".flac", ".m4a", ".mp3", ".ogg", ".opus", ".wav"}
+)
 
 
 @dataclass(frozen=True)
@@ -70,7 +74,9 @@ def load_config() -> Config:
         project_root=PROJECT_ROOT,
         data_dir=data_dir,
         music_root=_path(os.getenv("MUSIC_ROOT"), PROJECT_ROOT / "music"),
-        schema_path=_path(os.getenv("SCHEMA_PATH"), PROJECT_ROOT / "music_schema_knowledge.json"),
+        schema_path=_path(
+            os.getenv("SCHEMA_PATH"), PROJECT_ROOT / "music_schema_knowledge.json"
+        ),
         spotify_cache=data_dir / "spotify-token-cache.json",
         spotify_client_id=os.getenv("SPOTIFY_CLIENT_ID"),
         spotify_client_secret=os.getenv("SPOTIFY_CLIENT_SECRET"),

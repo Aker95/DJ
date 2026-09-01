@@ -1,7 +1,7 @@
 import requests
+from classification import _collect_evidence
 
 from tests.helpers import config_for
-from utils.metadata import collect_evidence
 
 
 class FakeResponse:
@@ -48,11 +48,13 @@ def test_discogs_and_lastfm_are_collected_as_evidence(tmp_path, monkeypatch):
             "lastfm_shared_secret": "secret",
         }
     )
-    monkeypatch.setattr("utils.metadata.requests.get", lambda *_args, **_kwargs: FakeResponse())
     monkeypatch.setattr(
-        "utils.metadata.pylast.LastFMNetwork", lambda **_kwargs: FakeLastFmNetwork()
+        "classification.requests.get", lambda *_args, **_kwargs: FakeResponse()
     )
-    evidence = collect_evidence({"artist": "Artist", "title": "Track"}, config)
+    monkeypatch.setattr(
+        "classification.pylast.LastFMNetwork", lambda **_kwargs: FakeLastFmNetwork()
+    )
+    evidence = _collect_evidence({"artist": "Artist", "title": "Track"}, config)
     assert evidence["discogs"]["styles"] == ["Hard Groove"]
     assert evidence["lastfm"]["tags"] == ["techno"]
 
@@ -68,13 +70,15 @@ def test_provider_failures_become_warnings(tmp_path, monkeypatch):
         }
     )
     monkeypatch.setattr(
-        "utils.metadata.requests.get",
-        lambda *_args, **_kwargs: (_ for _ in ()).throw(requests.RequestException("offline")),
+        "classification.requests.get",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            requests.RequestException("offline")
+        ),
     )
     monkeypatch.setattr(
-        "utils.metadata.pylast.LastFMNetwork",
+        "classification.pylast.LastFMNetwork",
         lambda **_kwargs: (_ for _ in ()).throw(RuntimeError("offline")),
     )
-    evidence = collect_evidence({"artist": "Artist", "title": "Track"}, config)
+    evidence = _collect_evidence({"artist": "Artist", "title": "Track"}, config)
     assert "offline" in evidence["discogs"]["warning"]
     assert "offline" in evidence["lastfm"]["warning"]
