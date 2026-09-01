@@ -4,7 +4,10 @@ import pytest
 from catalog import (
     _apply_catalog_changes,
     _playlist_name,
+    apply_update_plan,
+    build_update_plan,
     list_destinations,
+    load_catalog,
     resolve_destination,
     set_spotify_playlist,
     validate_catalog,
@@ -105,3 +108,28 @@ def test_destinations_do_not_leak_nodes_and_mapping_uses_catalog_operation():
     updated = set_spotify_playlist(catalog, destination["placement_id"], "replacement")
     assert list_destinations(updated)[1]["spotify_playlist"] == "replacement"
     assert list_destinations(catalog)[1]["spotify_playlist"] == "leaf-playlist"
+
+
+def test_fresh_catalog_update_plan_applies_atomically(tmp_path):
+    path = tmp_path / "catalog.json"
+    path.write_text(__import__("json").dumps(sample_schema()), encoding="utf-8")
+    change = {
+        "action": "add_alias",
+        "canonical_name": "Techno",
+        "alias": "Techno Music",
+    }
+    plan = build_update_plan(load_catalog(path), [change])
+    result = apply_update_plan(path, plan)
+    assert result["changes"][0]["changed"] is True
+    assert load_catalog(path)["main_genres"][0]["aliases"] == ["Techno Music"]
+
+
+def test_catalog_rejects_conflicts_and_unknown_operations():
+    conflict = sample_schema()
+    conflict["main_genres"].append({"id": "other", "name": "Hardgroove", "aliases": []})
+    with pytest.raises(ValueError, match="conflicts"):
+        validate_catalog(conflict)
+    with pytest.raises(ValueError, match="Unsupported"):
+        _apply_catalog_changes(sample_schema(), [{"action": "delete_everything"}])
+    with pytest.raises(ValueError, match="Unknown placement"):
+        set_spotify_playlist(sample_schema(), "fast:techno:missing", "playlist")

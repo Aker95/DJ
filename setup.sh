@@ -28,6 +28,7 @@ fi
 echo
 echo "Setup complete."
 echo "Activate the environment with: source .venv/bin/activate"
+echo "Run the test suite with:        .venv/bin/python -m pytest"
 echo "Validate the catalog with:      python scripts/catalog.py validate"
 echo "Then fill in .env and run:      python scripts/spotify.py auth"
 echo "Start playlist research with:   python scripts/classification.py research --playlist \"Playlist name or URL\""

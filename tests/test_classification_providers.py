@@ -82,3 +82,11 @@ def test_provider_failures_become_warnings(tmp_path, monkeypatch):
     evidence = _collect_evidence({"artist": "Artist", "title": "Track"}, config)
     assert "offline" in evidence["discogs"]["warning"]
     assert "offline" in evidence["lastfm"]["warning"]
+
+
+def test_missing_provider_credentials_are_explicit_warnings(tmp_path):
+    evidence = _collect_evidence(
+        {"artist": "Artist", "title": "Track"}, config_for(tmp_path)
+    )
+    assert evidence["discogs"]["warning"] == "DISCOGS_TOKEN is missing"
+    assert evidence["lastfm"]["warning"] == "Last.fm credentials are missing"

@@ -1,9 +1,11 @@
+import pytest
 from spotify import (
     apply_provision_plan,
     apply_sort_plan,
     build_provision_plan,
     build_snapshot,
     build_sort_plan,
+    read_playlist,
 )
 
 from tests.helpers import sample_schema
@@ -54,6 +56,14 @@ class FakeSpotify:
 
     def next(self, _page):
         return None
+
+    def playlist(self, playlist_id, fields=None):
+        item = self.playlists[playlist_id]
+        return {
+            "id": item["id"],
+            "name": item["name"],
+            "tracks": {"total": len(item["tracks"])},
+        }
 
     def current_user(self):
         return {"id": "user"}
@@ -123,3 +133,64 @@ def test_playlist_provisioning_has_one_responsibility():
         ]
         == "leaf-playlist"
     )
+
+
+def test_read_playlist_resolves_name_and_returns_rich_identity():
+    playlist, tracks = read_playlist(FakeSpotify(), "Research Bag")
+    assert playlist["id"] == "source"
+    assert tracks[0]["spotify_track_id"] == "track-1"
+    assert tracks[0]["isrc"] == "CODE"
+
+
+def test_provision_creates_when_no_mapping_or_exact_name_exists():
+    spotify = FakeSpotify()
+    del spotify.playlists["leaf-playlist"]
+    catalog = sample_schema()
+    leaf = catalog["master_folders"][0]["genre_placements"][0]["subgenres"][0]
+    leaf["spotify_playlist"] = None
+    destination = {
+        "placement_id": "fast:techno:hard-groove",
+        "spotify_playlist_name": "FAST • Techno • Hard Groove",
+        "spotify_playlist": None,
+    }
+    plan = build_provision_plan(spotify, destination, public=True)
+    updated, result = apply_provision_plan(spotify, catalog, plan)
+    assert result["playlist_id"] == "created"
+    assert spotify.playlists["created"]["name"] == destination["spotify_playlist_name"]
+    assert (
+        updated["master_folders"][0]["genre_placements"][0]["subgenres"][0][
+            "spotify_playlist"
+        ]
+        == "created"
+    )
+
+
+def test_provision_rechecks_that_a_reused_playlist_still_exists():
+    spotify = FakeSpotify()
+    catalog = sample_schema()
+    destination = {
+        "placement_id": "fast:techno:hard-groove",
+        "spotify_playlist_name": "FAST • Techno • Hard Groove",
+        "spotify_playlist": "leaf-playlist",
+    }
+    plan = build_provision_plan(spotify, destination)
+    del spotify.playlists["leaf-playlist"]
+    with pytest.raises(ValueError, match="no longer accessible"):
+        apply_provision_plan(spotify, catalog, plan)
+
+
+def test_sort_reports_unprovisioned_tracks_and_verification_failures():
+    classifications = {
+        "source_playlist_id": "source",
+        "tracks": [{"spotify_track_id": "track-1", "target_playlist_id": None}],
+    }
+    plan = build_sort_plan(classifications)
+    assert plan["summary"] == {"tracks": 0, "skipped": 1}
+
+    class BrokenAddSpotify(FakeSpotify):
+        def playlist_add_items(self, playlist_id, track_ids):
+            return None
+
+    classifications["tracks"][0]["target_playlist_id"] = "leaf-playlist"
+    with pytest.raises(RuntimeError, match="addition verification"):
+        apply_sort_plan(BrokenAddSpotify(), build_sort_plan(classifications))

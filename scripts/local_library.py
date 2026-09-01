@@ -28,7 +28,9 @@ def _sha256_file(path: Path) -> str:
 
 
 def _relative_path(path: Path, root: Path) -> str:
-    return str(path.resolve().relative_to(root.resolve()))
+    resolved = path.resolve()
+    _require_inside(resolved, root)
+    return str(resolved.relative_to(root.resolve()))
 
 
 def _build_move_plan(requests: list[dict], project_root: Path) -> dict:

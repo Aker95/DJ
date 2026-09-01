@@ -4,7 +4,13 @@ import sys
 from pathlib import Path
 
 import pytest
-from artifacts import fingerprint_artifact, read_artifact, write_artifact
+from artifacts import (
+    fingerprint_artifact,
+    read_artifact,
+    validate_plan,
+    write_artifact,
+    write_text,
+)
 from catalog import apply_update_plan, build_update_plan
 
 from tests.helpers import sample_schema
@@ -43,6 +49,22 @@ def test_catalog_update_rejects_a_stale_plan(tmp_path):
         apply_update_plan(path, plan)
 
 
+def test_plan_validation_and_atomic_text_writing(tmp_path):
+    plan_path = tmp_path / "plan.json"
+    write_artifact(
+        plan_path,
+        "spotify-sort-plan",
+        {"inputs": {"classifications": "fingerprint"}, "actions": []},
+    )
+    plan = read_artifact(plan_path, "spotify-sort-plan")
+    validate_plan(plan, "spotify-sort-plan", {"classifications": "fingerprint"})
+    with pytest.raises(ValueError, match="stale"):
+        validate_plan(plan, "spotify-sort-plan", {"classifications": "changed"})
+    text_path = tmp_path / "report.md"
+    assert write_text(text_path, "report\n") == text_path
+    assert text_path.read_text(encoding="utf-8") == "report\n"
+
+
 def test_only_deep_modules_remain_and_all_clis_have_offline_help():
     root = Path(__file__).resolve().parents[1]
     scripts = root / "scripts"
@@ -60,12 +82,22 @@ def test_only_deep_modules_remain_and_all_clis_have_offline_help():
     assert {path.name for path in scripts.glob("*.py")} == expected
     assert not (scripts / "utils").exists()
     assert not (scripts / "audio.py").exists()
-    for module in sorted(expected - {"artifacts.py", "config.py", "matching.py"}):
-        completed = subprocess.run(
-            [sys.executable, str(scripts / module), "--help"],
-            cwd=root,
-            text=True,
-            capture_output=True,
-            check=False,
-        )
-        assert completed.returncode == 0, completed.stderr
+    subcommands = {
+        "catalog.py": ("validate", "update"),
+        "classification.py": ("research", "render", "approve"),
+        "spotify.py": ("auth", "snapshot", "provision", "sort"),
+        "local_library.py": ("structure", "delta", "reconcile"),
+        "acquisition.py": (),
+        "rekordbox.py": ("review", "export"),
+    }
+    for module, commands in subcommands.items():
+        invocations = [("--help",), *((command, "--help") for command in commands)]
+        for arguments in invocations:
+            completed = subprocess.run(
+                [sys.executable, str(scripts / module), *arguments],
+                cwd=root,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+            assert completed.returncode == 0, completed.stderr

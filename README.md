@@ -147,6 +147,9 @@ new commands.
 The default suite uses fake external clients and never mutates live services:
 
 ```bash
-python -m pytest
-python -m compileall scripts
+.venv/bin/python -m pytest
+.venv/bin/python -m compileall scripts
 ```
+
+Using the explicit virtual-environment interpreter prevents a global Python installation from
+partially collecting the suite when project dependencies such as RapidFuzz are unavailable.

@@ -1,4 +1,4 @@
-from rekordbox import export_library, review_library
+from rekordbox import _match_classification, export_library, review_library
 
 from tests.helpers import config_for, sample_schema
 
@@ -66,3 +66,44 @@ def test_rekordbox_xml_exports_only_direct_final_files(tmp_path):
     xml = output.read_text()
     assert "Track.flac" in xml
     assert "Ignored.flac" not in xml
+
+
+def test_rekordbox_identity_matching_reports_unmatched_and_ambiguous():
+    local = {
+        "artist": "Artist",
+        "title": "Track",
+        "duration_ms": 300000,
+        "isrc": None,
+    }
+    assert _match_classification(local, [])["status"] == "unmatched"
+    candidates = [
+        {"artist": "Artist", "title": "Track", "duration_ms": 300000},
+        {"artist": "Artist", "title": "Track", "duration_ms": 300100},
+    ]
+    assert _match_classification(local, candidates)["status"] == "ambiguous"
+
+
+def test_rekordbox_review_flags_missing_path_bpm_and_ambiguous_identity():
+    local = {
+        "path": "music/unsorted/Track.flac",
+        "artist": "Artist",
+        "title": "Track",
+        "duration_ms": 300000,
+        "isrc": None,
+        "rekordbox_bpm": None,
+        "current_destination": None,
+    }
+    classifications = {
+        "tracks": [
+            {"artist": "Artist", "title": "Track", "duration_ms": 300000},
+            {"artist": "Artist", "title": "Track", "duration_ms": 300100},
+        ]
+    }
+    record = review_library([local], sample_schema(), classifications)["review_tracks"][
+        0
+    ]
+    assert set(record["review_flags"]) == {
+        "schema-path-missing",
+        "rekordbox-bpm-missing",
+        "identity-ambiguous",
+    }

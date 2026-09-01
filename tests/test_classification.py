@@ -1,7 +1,12 @@
 from pathlib import Path
 
 import pytest
-from classification import _prepare_document, approve_research, render_research
+from classification import (
+    _prepare_document,
+    apply_decisions,
+    approve_research,
+    render_research,
+)
 
 from tests.helpers import sample_schema
 
@@ -112,3 +117,27 @@ def test_metadata_modules_do_not_contain_voting_logic():
         source = Path(path).read_text(encoding="utf-8").casefold()
         assert "weighted vote" not in source
         assert "consensusclassifier" not in source
+
+
+def test_decisions_reject_unknown_tracks_and_approval_requires_evidence():
+    with pytest.raises(ValueError, match="unknown Spotify track"):
+        apply_decisions(
+            researched_document(),
+            {"tracks": [{"spotify_track_id": "missing", "main_genre": "Techno"}]},
+        )
+
+    document = researched_document()
+    document["tracks"][0]["spotify_url"] = None
+    document["tracks"][0]["provider_evidence"] = {}
+    with pytest.raises(ValueError, match="direct evidence URL"):
+        approve_research(document, None, sample_schema())
+
+
+def test_approval_reports_missing_rationale_and_destination():
+    document = researched_document()
+    document["tracks"][0]["rationale"] = ""
+    document["tracks"][0]["subgenre"] = "Unknown"
+    with pytest.raises(ValueError) as error:
+        approve_research(document, None, sample_schema())
+    assert "research rationale is required" in str(error.value)
+    assert "selected destination is not present" in str(error.value)
